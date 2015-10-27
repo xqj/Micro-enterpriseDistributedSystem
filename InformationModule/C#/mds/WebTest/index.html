@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body>
+    <script src="jquery-1.8.2.min.js"></script>
+    <div style="width:1100px;height:900px; padding-left:700px; padding-top:280px;"><img id="vcode" src="ValidateCodeImgTest.ashx" style="width:50px;height:50px;" />
+</div>
+    
+    <script type="text/javascript">
+        $("#vcode").on("click", function () {
+            $("#vcode").attr("src", "ValidateCodeImgTest.ashx?v="+Math.random());
+        });
+    </script>
+</body>
+</html>
