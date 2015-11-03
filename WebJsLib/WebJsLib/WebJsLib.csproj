@@ -57,6 +57,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="customlib\pageBase.js" />
+    <Content Include="customlib\pageObject.js" />
     <Content Include="FullLib\plus\pickadate\themes-source\base.date.less" />
     <Content Include="FullLib\plus\pickadate\themes-source\base.less" />
     <Content Include="FullLib\plus\pickadate\themes-source\base.time.less" />
@@ -250,7 +252,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="customlib\" />
     <Folder Include="jsTemplate\" />
     <Folder Include="pageTemplate\" />
   </ItemGroup>
