@@ -15,6 +15,9 @@ var pageObject = {
     setrequestId: function (requestId) {
         this.requestId = requestId;
         this.base.requestId = this.requestId;
+    },
+    showDialog: function (id) {
+        pageObject.base.showMultiDialog(function () { }, id);
     }
 };
 pageObject.initPageObject();

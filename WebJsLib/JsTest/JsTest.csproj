@@ -62,6 +62,7 @@
     <Content Include="basepage.html" />
     <Content Include="pageObject.js" />
     <Content Include="pageBase.js" />
+    <Content Include="validatetest.html" />
     <Content Include="Web.config" />
     <Content Include="WebServiceTest.asmx" />
   </ItemGroup>
