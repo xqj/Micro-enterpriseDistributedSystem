@@ -112,7 +112,7 @@
             <providedInterfaceShapeMoniker Id="875c1b36-46d4-4ef1-9cee-688076e9938b" />
           </nodes>
         </delegationConnector>
-        <delegationConnector edgePoints="[(3 : 1.56249997615814); (2.872 : 1.56249997615814); (2.872 : 2.203); (4.692 : 2.203); (4.692 : 2.75263159651505); (4.5 : 2.75263159651505)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+        <delegationConnector edgePoints="[(3.75 : 2.075); (3.75 : 2.375)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
           <connectorMoniker Id="2c7240d9-ce13-4136-8de2-339690ccae6e" />
           <relativeChildShapes />
           <nodes>
@@ -177,7 +177,7 @@
       </relativeChildShapes>
     </componentShape>
     <componentShape Id="08e43d48-7a14-43ab-9b28-57c027bb8131" absoluteBounds="5.5, 0.5, 1.7249999999999996, 5.3" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
-      <componentMoniker Id="8027b734-3c71-4a30-a93b-3c912c4fc69d" LastKnownName="DeploymentService" />
+      <componentMoniker Id="8027b734-3c71-4a30-a93b-3c912c4fc69d" LastKnownName="mds.DeploymentService" />
       <nestedChildShapes>
         <componentUseShape Id="ccde0c31-2275-4b3a-8a15-93ad7d93dff6" absoluteBounds="5.6, 1.25, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
           <partMoniker Id="aaf6061f-067c-4930-867c-6c2ae7cc3eb0" LastKnownName="CodeServer" />

@@ -750,7 +750,7 @@
     <packageHasNamedElement>
       <component
         Id="6dea3cfc-f933-4971-b766-41ce7dbfdaab"
-        name="DeploymentService"
+        name="mds.DeploymentService"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">

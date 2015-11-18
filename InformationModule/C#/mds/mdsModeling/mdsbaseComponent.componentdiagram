@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="dfe72e9b-d3cc-432d-8359-206262b5f517" name="mdsComponent" linkedPackageId="b30d8746-ffe0-42b9-ab06-bf1cbee12939" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="4b9066e7-99b9-4f18-ad1f-026051430c0d">
-      <profileInstance Id="89fb1b74-08ce-450b-a838-345eb8b72517" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="dc8901c9-608b-4206-8ae3-c318c3fb7f1f">
-      <profileInstance Id="080687a3-7da1-4a7e-b04a-4225d749b73c" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <componentModelHasComponents>
       <component Id="d7300930-0140-483c-837e-9d48f7cbc1b2" name="mds.DataAccess" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -437,7 +423,7 @@
       </Interface>
     </modelContainsNamedElements>
     <componentModelHasComponents>
-      <component Id="8027b734-3c71-4a30-a93b-3c912c4fc69d" name="DeploymentService" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <component Id="8027b734-3c71-4a30-a93b-3c912c4fc69d" name="mds.DeploymentService" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="6dea3cfc-f933-4971-b766-41ce7dbfdaab" />
         <ownedAttributesInternal>
           <part Id="aaf6061f-067c-4930-867c-6c2ae7cc3eb0" name="CodeServer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
@@ -490,5 +476,19 @@
   </packagedElements>
   <package Id="b30d8746-ffe0-42b9-ab06-bf1cbee12939" name="mdsModeling">
     <elementDefinition Id="0087d537-cd05-4da0-a767-0975b5628e3b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="4b9066e7-99b9-4f18-ad1f-026051430c0d">
+        <profileInstance Id="89fb1b74-08ce-450b-a838-345eb8b72517" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="dc8901c9-608b-4206-8ae3-c318c3fb7f1f">
+        <profileInstance Id="080687a3-7da1-4a7e-b04a-4225d749b73c" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </componentModel>
