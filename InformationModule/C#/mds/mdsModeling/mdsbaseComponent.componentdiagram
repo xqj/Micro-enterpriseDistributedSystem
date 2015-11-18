@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="dfe72e9b-d3cc-432d-8359-206262b5f517" name="mdsComponent" linkedPackageId="b30d8746-ffe0-42b9-ab06-bf1cbee12939" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="4b9066e7-99b9-4f18-ad1f-026051430c0d">
+      <profileInstance Id="89fb1b74-08ce-450b-a838-345eb8b72517" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="dc8901c9-608b-4206-8ae3-c318c3fb7f1f">
+      <profileInstance Id="080687a3-7da1-4a7e-b04a-4225d749b73c" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="d7300930-0140-483c-837e-9d48f7cbc1b2" name="mds.DataAccess" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="46020a1e-3543-4ea5-8b39-353552159d3b" />
+        <ownedAttributesInternal>
+          <part Id="2f44360e-e135-48e7-b79a-0ef7e807177e" name="MSSqlServer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="42cbe865-5dce-424a-9b17-6e0011226a7a" />
+            <type_NamedElement>
+              <componentMoniker Id="b7d1df06-7381-4473-a3b0-8f1eb765eac2" LastKnownName="SqlServerDataAccess" />
+            </type_NamedElement>
+          </part>
+          <part Id="e170763d-c724-489f-8ff9-cdbb6916169e" name="MySql" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="67d8cff7-504e-4546-ba80-fa6092e1859f" />
+            <type_NamedElement>
+              <componentMoniker Id="4e877855-37da-45b2-bb2c-1f48e5f23c32" LastKnownName="MySqlDataAccess" />
+            </type_NamedElement>
+          </part>
+          <providedInterface Id="b5a3f10c-cf3e-4451-b0cd-c94afc2bf4f8" name="DataClient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="05a5a97b-5de6-4269-8b31-cbc0db68ca64" />
+            <targetNamedElementsInternal>
+              <connector Id="9889bc9f-828c-4b19-8a75-d34764fc0608" isLeaf="false" isStatic="false">
+                <partMoniker Id="e170763d-c724-489f-8ff9-cdbb6916169e" LastKnownName="MySql" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="30320fec-bcb1-4d18-9cb1-aafaeda23d6f">
+                      <elementDefinition Id="7ae215a5-fe28-4ad8-8017-8eaeac565eea" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="af4a4bbc-ae37-432c-ba98-d1f7a3e81322">
+                      <elementDefinition Id="8d85a9a3-4098-4f80-a5f5-85f85708979f" />
+                      <portWithPart>
+                        <providedInterfaceMoniker Id="3799a0bd-aa9c-4a38-ba54-9c33e4c6df48" LastKnownName="Port1" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="2a61eece-20d4-4fb7-9dd1-008f99dd7808" />
+              </connector>
+              <connector Id="329d2c3f-1f50-404a-bf10-4c3c8f728faf" isLeaf="false" isStatic="false">
+                <partMoniker Id="2f44360e-e135-48e7-b79a-0ef7e807177e" LastKnownName="MSSqlServer" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="9f544104-58aa-4c38-9551-1c0593ec8b9e">
+                      <elementDefinition Id="d41fe64a-56b3-4944-96ff-48cfc5ed4e0d" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="db4bba7d-5e1d-4335-aeac-01e8dec09a97">
+                      <elementDefinition Id="a2a6af71-c2a3-47d5-990d-7058f6c8995c" />
+                      <portWithPart>
+                        <providedInterfaceMoniker Id="8680114f-8ed5-4ac7-bb64-6a1916c96621" LastKnownName="Port1" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="35efcfcb-371c-4100-b579-0a675bf7e626" />
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="bfcc24fd-b24c-4c50-8925-f6ee8d735912" LastKnownName="IDataService" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="0a7d3b89-182c-41db-8ae6-22a2696dcaf7" name="mds.Util" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d5aee15d-ff1c-4140-a427-9e02dcc0aef3" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="b123e914-48ef-4e48-abfe-d4cb9d720b04" name="mds.Maintenance" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="71f993bb-822f-46d8-bd04-16e862732d29" />
+        <ownedAttributesInternal>
+          <part Id="b71e5a20-956a-4f3f-bd44-220de1077bbb" name="MaintenanceClient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="80b1984f-5e41-4060-be05-77fb1a018f1f" />
+            <type_NamedElement>
+              <componentMoniker Id="2b40bc88-94a7-47f8-9008-34351fbcea69" LastKnownName="LogService_Client" />
+            </type_NamedElement>
+          </part>
+          <part Id="d8a8c931-4a31-4aeb-8a29-9bee6bce83be" name="LogServer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="3b0139a2-8d4d-4453-bec8-fc8fa2ab50df" />
+            <targetNamedElementsInternal>
+              <connector Id="131f2a37-cdcb-4148-adde-89df0dfa94a1" isLeaf="false" isStatic="false">
+                <partMoniker Id="b71e5a20-956a-4f3f-bd44-220de1077bbb" LastKnownName="MaintenanceClient" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="fbc3c3bb-973b-4e88-857a-19deec38cd08">
+                      <elementDefinition Id="45a28d26-2e52-4556-8d9d-f18f87f93ea4" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="d749e59f-6c91-45d9-accc-abf8eed89679">
+                      <elementDefinition Id="bff5d7a6-acc1-4a79-ac4f-a01c160bbc4d" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="c9dd707f-3fd2-4a46-8889-7e38d3d2405d" />
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker Id="c29b3c89-f176-448e-a731-0c530f976859" LastKnownName="LogService_LogServer" />
+            </type_NamedElement>
+          </part>
+          <providedInterface Id="5ff03575-17ff-4b32-a92e-3da919217703" name="LogClient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <lowerValueInternal>
+              <literalString Id="6c23ba90-cd1c-4a71-87da-799d6490a3c6" name="Lower" value="1">
+                <elementDefinition Id="f10850ea-0445-4a6f-bebc-3e770ad74b73" />
+              </literalString>
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString Id="9bfef4e1-ac53-4a3c-b446-5d42ea50cde9" name="Upper" value="1">
+                <elementDefinition Id="6a76636f-f63f-4706-9acc-893b69cf3625" />
+              </literalString>
+            </upperValueInternal>
+            <elementDefinition Id="4924843b-8adc-4601-b1fb-413451b37de5" />
+            <targetNamedElementsInternal>
+              <connector Id="9fbd8955-439e-46a8-8285-645028484782" isLeaf="false" isStatic="false">
+                <partMoniker Id="b71e5a20-956a-4f3f-bd44-220de1077bbb" LastKnownName="MaintenanceClient" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="e7bd666f-247b-47b5-9494-304a5576a1ea">
+                      <elementDefinition Id="4f0a0c5d-fdde-4524-987d-83904179561d" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="d612d2ae-a412-4da9-8c47-565a842d8602">
+                      <elementDefinition Id="661f5adc-0a76-49d5-be01-af96313156b8" />
+                      <portWithPart>
+                        <providedInterfaceMoniker Id="1ca2a56f-d3af-412f-9f0a-aee457c797f6" LastKnownName="Port1" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="79cfd626-fa5a-49a6-9c29-493cedf7c29b" />
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="f2ccb052-4159-4d0f-af71-3a4d24563a28" LastKnownName="ILogService" />
+            </type_NamedElement>
+          </providedInterface>
+          <part Id="22c4f869-819b-41ef-9281-c3b5b9a0413d" name="Server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="0bb5a925-3366-48dd-b0a5-b72c5e01446b" />
+            <targetNamedElementsInternal>
+              <connector Id="2c7240d9-ce13-4136-8de2-339690ccae6e" isLeaf="false" isStatic="false">
+                <partMoniker Id="b71e5a20-956a-4f3f-bd44-220de1077bbb" LastKnownName="MaintenanceClient" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="05093955-09fe-4c25-9bfd-1a266fc0f561">
+                      <elementDefinition Id="62eb3547-e097-4931-a905-8974f733b656" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="774586cd-1c53-4330-97b7-aff8d487bc42">
+                      <elementDefinition Id="a9029575-b2cb-4d1a-8626-623fc511cd58" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="beb5c3a7-2ff7-411e-82c7-c42715745ccb" />
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker Id="4b873536-ef95-4af7-80b9-32664c48a880" LastKnownName="MaintenanceService_Server" />
+            </type_NamedElement>
+          </part>
+          <providedInterface Id="b318d004-fc8d-40dc-afeb-57b3dce1c60b" name="DoctorClient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="8f81141a-050c-4eb9-a497-06b1cd4688de" />
+            <targetNamedElementsInternal>
+              <connector Id="30d474e4-c44e-4aef-9aa6-67a30152116e" isLeaf="false" isStatic="false">
+                <partMoniker Id="b71e5a20-956a-4f3f-bd44-220de1077bbb" LastKnownName="MaintenanceClient" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="9635d537-27c6-4a96-94a2-d88ace962e38">
+                      <elementDefinition Id="9a97c2a5-2370-47ae-b693-61b88e6bc4f2" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="7ec9f198-f27a-42a2-9527-7b4872ede6c1">
+                      <elementDefinition Id="7f13babc-4ab9-4059-ae40-1037e6f3fc9f" />
+                      <portWithPart>
+                        <providedInterfaceMoniker Id="86e21b75-a14a-4179-8428-e6986570c1f4" LastKnownName="Port2" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="ae0704ac-6374-40cb-bed6-238ab2eb10b1" />
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="a1b59ae6-7856-41a2-823b-5da73727ac46" LastKnownName="IDoctorService" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="fa099e4e-67ff-44a6-923a-b5eaafa04812" name="mds.Config" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6b67332b-ff51-4cbc-8f09-3beb6810a1d4" />
+        <ownedAttributesInternal>
+          <part Id="b3a728f1-2d22-491d-89b7-c02a8d1bcc0b" name="ConfigClient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="255a4ec6-a27c-46fc-9311-992662557a69" />
+            <type_NamedElement>
+              <componentMoniker Id="7241edf5-153e-496f-9f66-09f4674df8e4" LastKnownName="ConfigService_Client" />
+            </type_NamedElement>
+          </part>
+          <part Id="879c335d-4dbe-4c93-8988-2c67d9954ce3" name="ConfigServer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="3b434df6-095d-40a1-9d54-185fbbfa3f37" />
+            <targetNamedElementsInternal>
+              <connector Id="97f3ed99-c389-452d-9074-629d0d6eff1c" isLeaf="false" isStatic="false">
+                <partMoniker Id="b3a728f1-2d22-491d-89b7-c02a8d1bcc0b" LastKnownName="ConfigClient" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="db64b32c-4dee-4453-b656-48a9b3eed361">
+                      <elementDefinition Id="441ddc05-a477-4929-a539-3983f02dabf3" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="73ff2f5d-c7cb-447e-a851-3300450b45ea">
+                      <elementDefinition Id="5f6af73a-09a4-4a8f-b26b-069faabfe6e0" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="7d787192-4391-44af-bf77-ce51ce4bbbbc" />
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker Id="349028e5-4547-4160-8630-7d32ae4d0099" LastKnownName="ConfigService_Server" />
+            </type_NamedElement>
+          </part>
+          <providedInterface Id="d69a1644-55ab-4fe3-9507-e35c4249049f" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="2967c589-2088-4a30-a585-c6ec98631421" />
+            <targetNamedElementsInternal>
+              <connector Id="414c0f52-3b8b-43fb-a9cf-5fc65d56c545" isLeaf="false" isStatic="false">
+                <partMoniker Id="b3a728f1-2d22-491d-89b7-c02a8d1bcc0b" LastKnownName="ConfigClient" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="a0a38f54-f9ba-438e-96e4-9ef6777dfdde">
+                      <elementDefinition Id="95558db9-94e7-43f1-bfc0-80ea6efbbeb5" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="8f44ee5a-f3b6-4985-b1ab-8e0e8d753ec6">
+                      <elementDefinition Id="7ccdcf2c-498d-4a06-8598-b88ded6116fc" />
+                      <portWithPart>
+                        <providedInterfaceMoniker Id="6e721f9f-be5f-463c-a8c2-5233ef4b28a4" LastKnownName="Port1" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="ce80acdd-fa21-40e3-96a6-3d928cac1b33" />
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="450fdbd8-5326-48dc-b75f-798e2e907d6e" LastKnownName="IConfigService" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="b7d1df06-7381-4473-a3b0-8f1eb765eac2" name="SqlServerDataAccess" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f7fc8cd6-be98-4e49-809f-87fb80db87bb" />
+        <ownedAttributesInternal>
+          <providedInterface Id="8680114f-8ed5-4ac7-bb64-6a1916c96621" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="943c4cca-c9a0-439f-8e79-e14295b37f2b" />
+            <type_NamedElement>
+              <interfaceMoniker Id="ee9757d2-57ed-421d-a7fb-250c3505e9fe" LastKnownName="IDataService" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="4e877855-37da-45b2-bb2c-1f48e5f23c32" name="MySqlDataAccess" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1ecb28c6-4f0a-4668-9074-003af75e7ea7" />
+        <ownedAttributesInternal>
+          <providedInterface Id="3799a0bd-aa9c-4a38-ba54-9c33e4c6df48" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="b293aec6-2189-4d46-a457-8a5bbe3dd272" />
+            <type_NamedElement>
+              <interfaceMoniker Id="65068e79-1e03-4769-9a1f-a0012c67e4e9" LastKnownName="IDataService" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="2b40bc88-94a7-47f8-9008-34351fbcea69" name="LogService_Client" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="05d0551b-2ba3-48e2-9df7-d6781479af58" />
+        <ownedAttributesInternal>
+          <providedInterface Id="1ca2a56f-d3af-412f-9f0a-aee457c797f6" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="71c4f57c-c1ac-422e-a620-1b1e4f406a3a" />
+            <type_NamedElement>
+              <interfaceMoniker Id="29aa6555-7930-43ec-8850-1519f2ef4fcc" LastKnownName="ILogService" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface Id="86e21b75-a14a-4179-8428-e6986570c1f4" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="4d3f4ecf-dc6d-4ff9-a66b-b829844ac392" />
+            <type_NamedElement>
+              <interfaceMoniker Id="16f057b1-43dd-49de-ab2f-edcba32f8e86" LastKnownName="IDoctorService" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="7241edf5-153e-496f-9f66-09f4674df8e4" name="ConfigService_Client" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="39f65cf6-a645-442c-ba7f-fc65f1465f79" />
+        <ownedAttributesInternal>
+          <providedInterface Id="6e721f9f-be5f-463c-a8c2-5233ef4b28a4" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="43bf2248-2fe1-4123-87d7-0690f84ac1d5" />
+            <type_NamedElement>
+              <interfaceMoniker Id="79f3d230-5586-4989-be41-0955868b98e6" LastKnownName="IConfigService" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="349028e5-4547-4160-8630-7d32ae4d0099" name="ConfigService_Server" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4d68a794-8207-47ef-901e-9f932a8d6371" />
+        <ownedAttributesInternal>
+          <providedInterface Id="179617d9-064e-4856-b3fc-443182c85364" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="cb0a7fd2-7363-43fa-87c9-8cb76a26a523" />
+            <type_NamedElement>
+              <interfaceMoniker Id="858cceec-2f7f-4bd3-99c3-e973a71de4d8" LastKnownName="IConfigService" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="c29b3c89-f176-448e-a731-0c530f976859" name="LogService_LogServer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="474a3091-54fd-4bb6-855e-4906230dde3e" />
+        <ownedAttributesInternal>
+          <providedInterface Id="cea2eb29-6b4d-47a3-ab40-76e168b13a25" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="f6471d40-51c3-46ad-8ca4-4a1a84a15be0" />
+            <type_NamedElement>
+              <interfaceMoniker Id="3512a319-6ac7-4cde-a404-9899d966c65b" LastKnownName="ILogService" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="79f3d230-5586-4989-be41-0955868b98e6" name="IConfigService" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b1a0e109-1c90-4e3b-9d07-377e842ad6b6" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="29aa6555-7930-43ec-8850-1519f2ef4fcc" name="ILogService" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6761f312-ccff-46c3-b4c7-24bd5868055c" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="3512a319-6ac7-4cde-a404-9899d966c65b" name="ILogService" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6761f312-ccff-46c3-b4c7-24bd5868055c" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="858cceec-2f7f-4bd3-99c3-e973a71de4d8" name="IConfigService" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b1a0e109-1c90-4e3b-9d07-377e842ad6b6" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="f2ccb052-4159-4d0f-af71-3a4d24563a28" name="ILogService" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6761f312-ccff-46c3-b4c7-24bd5868055c" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="450fdbd8-5326-48dc-b75f-798e2e907d6e" name="IConfigService" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b1a0e109-1c90-4e3b-9d07-377e842ad6b6" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="bfcc24fd-b24c-4c50-8925-f6ee8d735912" name="IDataService" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e3a987df-7033-4938-a8a1-44b79fe698ba" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="65068e79-1e03-4769-9a1f-a0012c67e4e9" name="IDataService" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e3a987df-7033-4938-a8a1-44b79fe698ba" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="ee9757d2-57ed-421d-a7fb-250c3505e9fe" name="IDataService" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e3a987df-7033-4938-a8a1-44b79fe698ba" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="d70c0c73-9dc6-48b6-93af-7609129dfbc3" name="mds.Cache" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a7804370-7bfc-487f-a9be-47eae4c380c7" />
+        <ownedAttributesInternal>
+          <providedInterface Id="5e280865-246e-43c7-9ec8-982d98c2708a" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="bfabca40-1222-4ec7-b556-57c34aad5ecb" />
+            <type_NamedElement>
+              <interfaceMoniker Id="cf479f27-8630-426a-8191-d795a68c320c" LastKnownName="ICacheService" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="cf479f27-8630-426a-8191-d795a68c320c" name="ICacheService" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b3cc96c2-ecdc-46ff-9f5b-4159595e6428" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="4b873536-ef95-4af7-80b9-32664c48a880" name="MaintenanceService_Server" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="81ee6612-02ec-46f0-b3d0-c46756ef11cd" />
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="16f057b1-43dd-49de-ab2f-edcba32f8e86" name="IDoctorService" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f34991c6-b022-4627-bc24-29d3caf95f65" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="a1b59ae6-7856-41a2-823b-5da73727ac46" name="IDoctorService" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f34991c6-b022-4627-bc24-29d3caf95f65" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="8027b734-3c71-4a30-a93b-3c912c4fc69d" name="DeploymentService" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6dea3cfc-f933-4971-b766-41ce7dbfdaab" />
+        <ownedAttributesInternal>
+          <part Id="aaf6061f-067c-4930-867c-6c2ae7cc3eb0" name="CodeServer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="37c9ec7b-e5e0-4833-93dd-ce7b0b5d1a9c" />
+            <type_NamedElement>
+              <componentMoniker Id="dc04b5c2-06af-49ce-91c8-c711d2689038" LastKnownName="CodeService" />
+            </type_NamedElement>
+          </part>
+          <part Id="1d2716dc-ab36-40bb-add8-fda64d807d12" name="CompileServer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="da7508fd-754e-4acc-8a39-5538b7f0ec62" />
+            <type_NamedElement>
+              <componentMoniker Id="9db384c3-efd9-48b7-87db-976898442d0a" LastKnownName="CompileService" />
+            </type_NamedElement>
+          </part>
+          <part Id="b6888e1b-9af7-4a17-8322-b1bec9fe5ec5" name="DeploymentClient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="ab1f1e46-6c2d-4dcd-8e28-3eb18d022914" />
+            <type_NamedElement>
+              <componentMoniker Id="c042dad0-25a8-4cef-914f-19916e3b6991" LastKnownName="DeploymentService_Client" />
+            </type_NamedElement>
+          </part>
+          <part Id="3122d198-0a23-49d5-99fd-219517568f4d" name="Server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="63310c94-1885-4e7d-b8ef-d54e9bb0b1a6" />
+            <type_NamedElement>
+              <componentMoniker Id="b9983391-42fb-4138-97f7-97a1342d189e" LastKnownName="DeploymentService_Server" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="dc04b5c2-06af-49ce-91c8-c711d2689038" name="CodeService" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fe6a7790-5e98-45fd-9fcc-a611b1c776b6" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="9db384c3-efd9-48b7-87db-976898442d0a" name="CompileService" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="402e251d-fcd9-4776-87fe-de1270f227c3" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="c042dad0-25a8-4cef-914f-19916e3b6991" name="DeploymentService_Client" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6f0df811-906e-4d5c-bf68-3179e46bd6f4" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="b9983391-42fb-4138-97f7-97a1342d189e" name="DeploymentService_Server" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="67937c4b-a34e-43d9-a490-a4c31a3dee16" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="b30d8746-ffe0-42b9-ab06-bf1cbee12939" name="mdsModeling">
+    <elementDefinition Id="0087d537-cd05-4da0-a767-0975b5628e3b" />
+  </package>
+</componentModel>
