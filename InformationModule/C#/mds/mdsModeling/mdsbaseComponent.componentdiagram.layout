@@ -2,10 +2,10 @@
 <componentDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.875, 8.5" name="mdsComponent">
   <componentModelMoniker Id="dfe72e9b-d3cc-432d-8359-206262b5f517" />
   <nestedChildShapes>
-    <componentShape Id="df48386c-8ff1-46cb-b9dd-a2340cc74275" absoluteBounds="0.5, 0.5, 1.8666666507720948, 3.1812500000000004" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+    <componentShape Id="df48386c-8ff1-46cb-b9dd-a2340cc74275" isExpanded="false" absoluteBounds="0.5, 0.5, 1.8666666507720948, 0.7" customColor="161, 199, 231" whiteBoxBoundsHeight="3.1812500000000004" whiteBoxBoundsWidth="1.8666666507720948" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="1.8666666507720948" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="1" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="1" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
       <componentMoniker Id="d7300930-0140-483c-837e-9d48f7cbc1b2" LastKnownName="mds.DataAccess" />
       <relativeChildShapes>
-        <providedInterfaceShape Id="18e00ffb-f36e-4bf9-b863-11dbe1ae62db" absoluteBounds="1.40625, 3.6812500000000004, 0.15625, 0.40625" blackBoxLocation="0" whiteBoxLocation="0" whiteBoxEdge="" blackBoxEdge="" whiteBoxIsOnPort="false" blackBoxIsOnPort="false">
+        <providedInterfaceShape Id="18e00ffb-f36e-4bf9-b863-11dbe1ae62db" absoluteBounds="1.40625, 1.2, 0.15625, 0.40625" blackBoxLocation="0.90625" whiteBoxLocation="0.90625" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true" whiteBoxEdge="b" blackBoxEdge="b" whiteBoxIsOnPort="false" blackBoxIsOnPort="false">
           <providedInterfaceMoniker Id="b5a3f10c-cf3e-4451-b0cd-c94afc2bf4f8" LastKnownName="DataClient" />
           <relativeChildShapes />
         </providedInterfaceShape>
@@ -29,7 +29,7 @@
             </providedInterfaceShape>
           </relativeChildShapes>
         </componentUseShape>
-        <delegationConnector edgePoints="[(1.484375 : 3.603125); (1.484375 : 3.40625); (1.328125 : 3.40625); (1.328125 : 3.10625)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+        <delegationConnector edgePoints="[(1.484375 : 1.121875); (1.484375 : 3.48125); (1.328125 : 3.48125); (1.328125 : 3.10625)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
           <connectorMoniker Id="9889bc9f-828c-4b19-8a75-d34764fc0608" />
           <relativeChildShapes />
           <nodes>
@@ -37,7 +37,7 @@
             <providedInterfaceShapeMoniker Id="644e8000-a822-4e8b-b710-ec7d81c25437" />
           </nodes>
         </delegationConnector>
-        <delegationConnector edgePoints="[(1.484375 : 3.603125); (1.484375 : 2.58124990463257); (1.28229165077209 : 2.58124990463257); (1.28229165077209 : 2.20624990463257)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+        <delegationConnector edgePoints="[(1.484375 : 1.121875); (1.484375 : 2.58124990463257); (1.28229165077209 : 2.58124990463257); (1.28229165077209 : 2.20624990463257)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
           <connectorMoniker Id="329d2c3f-1f50-404a-bf10-4c3c8f728faf" />
           <relativeChildShapes />
           <nodes>
@@ -50,14 +50,14 @@
     <componentShape Id="41acd9ff-b54f-474c-b32b-74dd4bfd6433" absoluteBounds="0.5, 4.375, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
       <componentMoniker Id="0a7d3b89-182c-41db-8ae6-22a2696dcaf7" LastKnownName="mds.Util" />
     </componentShape>
-    <componentShape Id="6b968c32-c185-40da-96f3-b17b759cb176" absoluteBounds="2.625, 0.5, 3.8499999999999996, 5.3276666666666666" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+    <componentShape Id="6b968c32-c185-40da-96f3-b17b759cb176" isExpanded="false" absoluteBounds="2.625, 0.5, 3.8499999999999996, 0.7" customColor="161, 199, 231" whiteBoxBoundsHeight="5.3276666666666666" whiteBoxBoundsWidth="3.8499999999999996" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="3.8499999999999996" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="2" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="2" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
       <componentMoniker Id="b123e914-48ef-4e48-abfe-d4cb9d720b04" LastKnownName="mds.Maintenance" />
       <relativeChildShapes>
-        <providedInterfaceShape Id="1cf98329-a0f1-4636-b59b-a0b0f34a2c54" absoluteBounds="3.03125, 5.8276666666666666, 0.15625, 0.40625" blackBoxLocation="0" whiteBoxLocation="0" whiteBoxEdge="" blackBoxEdge="" whiteBoxIsOnPort="false" blackBoxIsOnPort="false">
+        <providedInterfaceShape Id="1cf98329-a0f1-4636-b59b-a0b0f34a2c54" absoluteBounds="3.03125, 1.2, 0.15625, 0.40625" blackBoxLocation="0.40625" whiteBoxLocation="0.40625" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true" whiteBoxEdge="b" blackBoxEdge="b" whiteBoxIsOnPort="false" blackBoxIsOnPort="false">
           <providedInterfaceMoniker Id="5ff03575-17ff-4b32-a92e-3da919217703" LastKnownName="LogClient" />
           <relativeChildShapes />
         </providedInterfaceShape>
-        <providedInterfaceShape Id="646dde6a-f071-4352-97bb-b02102a49b14" absoluteBounds="3.84375, 5.8276666666666666, 0.15625, 0.40625" blackBoxLocation="0" whiteBoxLocation="0" whiteBoxEdge="" blackBoxEdge="" whiteBoxIsOnPort="false" blackBoxIsOnPort="false">
+        <providedInterfaceShape Id="646dde6a-f071-4352-97bb-b02102a49b14" absoluteBounds="3.84375, 1.2, 0.15625, 0.40625" blackBoxLocation="1.21875" whiteBoxLocation="1.21875" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true" whiteBoxEdge="b" blackBoxEdge="b" whiteBoxIsOnPort="false" blackBoxIsOnPort="false">
           <providedInterfaceMoniker Id="b318d004-fc8d-40dc-afeb-57b3dce1c60b" LastKnownName="DoctorClient" />
           <relativeChildShapes />
         </providedInterfaceShape>
@@ -85,7 +85,7 @@
             </providedInterfaceShape>
           </relativeChildShapes>
         </componentUseShape>
-        <delegationConnector edgePoints="[(3.109375 : 5.74954166666667); (3.109375 : 5.235); (4.64639563083649 : 5.235); (4.64639563083649 : 4.02125); (3.796875 : 4.02125); (3.796875 : 3.48125)]" manuallyRouted="true" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+        <delegationConnector edgePoints="[(3.109375 : 1.121875); (3.109375 : 3.85625); (3.796875 : 3.85625); (3.796875 : 3.48125)]" manuallyRouted="true" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
           <connectorMoniker Id="9fbd8955-439e-46a8-8285-645028484782" />
           <relativeChildShapes />
           <nodes>
@@ -104,7 +104,7 @@
         <componentUseShape Id="cce5fd66-2f70-4cb8-94d2-ce31a59925b3" absoluteBounds="3, 1.125, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
           <partMoniker Id="22c4f869-819b-41ef-9281-c3b5b9a0413d" LastKnownName="Server" />
         </componentUseShape>
-        <delegationConnector edgePoints="[(3.921875 : 5.74954166666667); (3.921875 : 5.425); (4.73639563083649 : 5.425); (4.73639563083649 : 3.85625); (4.265625 : 3.85625); (4.265625 : 3.48125)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+        <delegationConnector edgePoints="[(3.921875 : 1.121875); (3.921875 : 3.85625); (4.265625 : 3.85625); (4.265625 : 3.48125)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
           <connectorMoniker Id="30d474e4-c44e-4aef-9aa6-67a30152116e" />
           <relativeChildShapes />
           <nodes>

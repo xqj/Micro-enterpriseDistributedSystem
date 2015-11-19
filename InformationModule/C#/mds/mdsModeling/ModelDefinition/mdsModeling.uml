@@ -1,8 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
   dslVersion="1.0.0.0"
   Id="0087d537-cd05-4da0-a767-0975b5628e3b"
   name="mdsModeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="61193d87-3073-4972-99b8-17ae7d2e0215">
+      <body>已有本地配置文件，版本、配置方式、id，均符合</body>
+    </comment>
+    <comment
+      Id="444c501c-8b00-429f-b928-7aaaf00779c2">
+      <body>配置方案为内存或者方案id、版本不符合亦或者不是最新版本</body>
+    </comment>
+    <comment
+      Id="c2b03a2c-b46d-4e1e-a5cb-d948ececff28">
+      <body>远程配置模式：配置文件按照组件分为多个文件以及一个方案文件</body>
+    </comment>
+    <comment
+      Id="c67830ca-ebd9-4c84-9fd3-1f1f14d03c7a">
+      <body>读取本地配置文件，忽略版本与方案id.本地化配置文件只有一个方案的序列化文件</body>
+    </comment>
+  </ownedCommentsInternal>
   <appliedStereotypesInternal>
     <stereotypeInstance
       Id="54fefc0f-bdb9-4f83-871b-ac42289e4425"
@@ -1422,6 +1440,276 @@
           </property>
         </ownedAttributesInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="3f318d98-f7b4-406e-a887-71c91884b585"
+        name="mds.Config"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="63d88de1-6d6a-4281-a089-88e1844024a2"
+            name="App配置初始化"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1316c6fd-7877-4d13-949e-ac14695d3038"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a96b9122-4a4e-41e6-92ee-6f01e866a194"
+                  LastKnownName="App启动"
+                  LastKnownLocation="mdsModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="a96b9122-4a4e-41e6-92ee-6f01e866a194"
+            name="App启动"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7ca27f15-a515-4644-b855-91a3fa5430cf"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="e74df20e-a67d-4f48-865b-b5d61d330d00"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="mdsModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="1ef229a6-2301-4f95-a2df-e5d1290cbcce"
+            name="读取本地配置方案id、版本和配置方式"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0060fac3-778d-45cf-8f7d-af369253dc0b"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="74ca27bf-f090-4b7a-86c1-459cdeea5536"
+                  LastKnownName="selectConfigOption"
+                  LastKnownLocation="mdsModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="74ca27bf-f090-4b7a-86c1-459cdeea5536"
+            name="selectConfigOption"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="af4bd856-1e77-46a7-b722-f146bac8ab36"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="de1d31a5-9866-47f6-860a-e4b749f03b61"
+                  LastKnownName="读取本地配置文件"
+                  LastKnownLocation="mdsModeling.uml" />
+                <description>已有本地配置文件，版本配置方式id均符合</description>
+              </controlFlow>
+              <controlFlow
+                Id="425c4d40-ae26-4ea2-9696-e962d1649ca4"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6bba1b1c-d086-43cb-90b7-31fd671ac30e"
+                  LastKnownName="去读远程配置"
+                  LastKnownLocation="mdsModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="de1d31a5-9866-47f6-860a-e4b749f03b61"
+            name="读取本地配置文件"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2b15d971-bef2-4e1a-98f1-3b3d810e0102"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="40f74ddf-75bc-4d78-a2d0-ddb6ae2ab570"
+                  LastKnownName="载入内存"
+                  LastKnownLocation="mdsModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="6bba1b1c-d086-43cb-90b7-31fd671ac30e"
+            name="去读远程配置"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="1a600dc7-bd94-4e20-a7a2-101cef0fe723"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="579ce1af-8296-4a97-b4e8-cd33960ebd49"
+                  LastKnownName="远程配置服务器"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <objectNode
+            Id="579ce1af-8296-4a97-b4e8-cd33960ebd49"
+            name="远程配置服务器"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="e7a1d9cb-5de5-43b9-9500-dcde1fb43a58"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="40f74ddf-75bc-4d78-a2d0-ddb6ae2ab570"
+                  LastKnownName="载入内存"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="679eb6a0-c890-486e-9963-10145c368efa"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <inputPinMoniker
+                  Id="c5ec27f2-b1af-414c-a09e-a31240bdb142"
+                  LastKnownName="方案id、版本"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="936fb5f9-ba06-4406-8afc-a2ad9d5ea111"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <opaqueAction
+            Id="40f74ddf-75bc-4d78-a2d0-ddb6ae2ab570"
+            name="载入内存"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="c985f80d-a0cf-4a65-b1af-c3365c24d115"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="225a6e3c-a90b-4db3-b7b8-d5aea60134a5"
+                  LastKnownName="App"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <objectNode
+            Id="225a6e3c-a90b-4db3-b7b8-d5aea60134a5"
+            name="App"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="594b84f4-07e3-4c84-9af5-84acf3641fd3"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <activityFinalNodeMoniker
+                  Id="994f6433-1640-422e-92a6-6068f9e9eb55"
+                  LastKnownName="App启动完成"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="0694f5a7-4605-43af-98db-8611de8e1281"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <activityFinalNode
+            Id="994f6433-1640-422e-92a6-6068f9e9eb55"
+            name="App启动完成"
+            isLeaf="false" />
+          <opaqueAction
+            Id="c6fa39ef-3b4e-4741-a5bb-39a9fa3f45d8"
+            name="按照方案id获取制定版本配置"
+            isLeaf="false">
+            <pins>
+              <opaqueActionHasInputValues>
+                <inputPin
+                  Id="c5ec27f2-b1af-414c-a09e-a31240bdb142"
+                  name="方案id、版本"
+                  isLeaf="false"
+                  ordering="Unordered"
+                  isControlType="false"
+                  isControl="false">
+                  <upperBound>
+                    <literalInteger
+                      Id="246967c1-f062-49ef-adaf-7522b902cec2"
+                      name="2147483647"
+                      value="2147483647" />
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+              <opaqueActionHasOutputValues>
+                <outputPin
+                  Id="320a885f-abfb-451b-89a4-445eac18db4d"
+                  name="配置方案"
+                  isLeaf="false"
+                  ordering="Unordered"
+                  isControlType="false"
+                  isControl="false">
+                  <objectFlowTargets>
+                    <objectFlow
+                      Id="8a5a9487-b84a-4967-ba93-829a00b3f784"
+                      isLeaf="false"
+                      isMulticast="false"
+                      isMultireceive="false">
+                      <objectNodeMoniker
+                        Id="579ce1af-8296-4a97-b4e8-cd33960ebd49"
+                        LastKnownName="远程配置服务器"
+                        LastKnownLocation="mdsModeling.uml" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger
+                      Id="2d7f50f8-7dea-4f8a-95cd-7ae23cffd804"
+                      name="2147483647"
+                      value="2147483647" />
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <decisionNode
+            Id="e74df20e-a67d-4f48-865b-b5d61d330d00"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="26cbfd33-2962-4589-b5da-b24b0a007c7d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1ef229a6-2301-4f95-a2df-e5d1290cbcce"
+                  LastKnownName="读取本地配置方案id、版本和配置方式"
+                  LastKnownLocation="mdsModeling.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="bfdfa0bf-59e4-4b92-954d-7be46ca59767"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="de1d31a5-9866-47f6-860a-e4b749f03b61"
+                  LastKnownName="读取本地配置文件"
+                  LastKnownLocation="mdsModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+        </nodes>
+      </activity>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

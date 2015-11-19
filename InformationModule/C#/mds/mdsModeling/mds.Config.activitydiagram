@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="1afae63f-0c5a-4911-9925-49d038fd5c97" name="mds.Config" linkedPackageId="6f03a2e3-1d06-436c-838f-508cd1d764d6" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="a0767779-48ab-4ed9-9d66-7f7ec6e5be2d">
+      <elementDefinition Id="61193d87-3073-4972-99b8-17ae7d2e0215" />
+      <body>已有本地配置文件，版本、配置方式、id，均符合</body>
+    </comment>
+    <comment Id="c4307c2d-9b92-4ba2-b277-15ed6e3965f1">
+      <elementDefinition Id="444c501c-8b00-429f-b928-7aaaf00779c2" />
+      <body>配置方案为内存或者方案id、版本不符合亦或者不是最新版本</body>
+    </comment>
+    <comment Id="b46f91f5-7fa0-4d93-b43b-e1e5a4ecf652">
+      <elementDefinition Id="c2b03a2c-b46d-4e1e-a5cb-d948ececff28" />
+      <body>远程配置模式：配置文件按照组件分为多个文件以及一个方案文件</body>
+    </comment>
+    <comment Id="8fa53f08-4af8-452b-a1cd-b556a363348a">
+      <elementDefinition Id="c67830ca-ebd9-4c84-9fd3-1f1f14d03c7a" />
+      <body>读取本地配置文件，忽略版本与方案id.本地化配置文件只有一个方案的序列化文件</body>
+    </comment>
+  </ownedCommentsInternal>
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="826a7e24-ed55-4e6c-9275-c5cff5cbbef1" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="54fefc0f-bdb9-4f83-871b-ac42289e4425" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="65bd4c99-b5d8-42a4-b188-9a13d95db400">
+          <propertyInstance Id="5443858f-a92c-499f-b07f-67c6773f74ba" name="BaseName">
+            <elementDefinition Id="48d21179-2544-42f6-a34f-bf6b6f5f7860" />
+          </propertyInstance>
+          <elementDefinition Id="321fa1ee-eea0-4142-91b5-0a8ca717e4e4" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="1191bfc6-59a6-444e-949b-500a7fd6fbe3">
+          <propertyInstance Id="bd55972b-eb8d-4c8b-9235-540f943ccc1a" name="ClrAttributes">
+            <elementDefinition Id="b8b42e66-9b1d-4bc7-b1ec-904ac00cc60b" />
+          </propertyInstance>
+          <elementDefinition Id="93bc0659-ad44-4742-8401-3ddf38af6528" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="f2b710be-de35-45b5-b374-da6e617bf85a">
+          <propertyInstance Id="3112b66c-a6fb-47e4-84ff-b5fa8dd596b9" name="Usings">
+            <elementDefinition Id="d1c865cd-6b6e-4950-a0d8-405a221e00c9" />
+          </propertyInstance>
+          <elementDefinition Id="42fef0fc-a4b1-4584-abe8-8a5e07dd286d" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="11a61a24-bfae-4fff-9b57-9b0607af2862" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="296d11e3-3162-496c-a490-3e473b3f0222" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="10527897-455c-4a3f-a329-c5ead31c8f20">
+          <propertyInstance Id="3ffaafa7-9ea8-459c-abe8-19668610f704" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="dd7867fe-db52-4157-a40d-9758276cad19" />
+          </propertyInstance>
+          <elementDefinition Id="036ca2e9-d731-4e78-b037-3ca45f127896" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="8c266da7-652b-4630-b359-fd78e595dd1e">
+          <propertyInstance Id="6f1924e3-4f15-4d0e-95c7-1a94a314b3da" name="TemplateFilePath" value="ClassTemplate=D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="5b182fa0-8d5e-4d05-bb26-686721942696" />
+          </propertyInstance>
+          <elementDefinition Id="34aabaf4-c4ff-4568-9367-b51e323b6a69" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="26acc4eb-1305-40e2-b847-2586c13318a8">
+          <propertyInstance Id="76ea9634-077c-46a7-900a-3bc1bc6b51ee" name="ProjectPath" value="ClassTemplate=..\mds.BaseModel\mds.BaseModel.csproj|EnumTemplate=..\mdsModelingLib\mdsModelingLib.csproj|InterfaceTemplate=..\mds.Cache\mds.Cache.csproj|StructTemplate=..\mdsModelingLib\mdsModelingLib.csproj">
+            <elementDefinition Id="8fabca4b-d3b7-476d-bb51-5da01ad96003" />
+          </propertyInstance>
+          <elementDefinition Id="2b0a36f9-3a53-4e80-9f82-2e51213f6087" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="7e45eceb-cd35-4a2e-921c-6cae65c35740">
+          <propertyInstance Id="b8da1edc-3999-483b-a747-3f4bd764b57f" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="bd7fbe61-7527-4173-98ee-3532ab7dfda9" />
+          </propertyInstance>
+          <elementDefinition Id="a79c641d-6f0f-4981-a151-42780d41e78c" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="528123f3-672a-4aa8-a1cb-5ff7c165a915">
+          <propertyInstance Id="f147f12d-240d-4cd4-9682-b9ee3939babb" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="c35be463-1623-48e7-9ba2-236543faa163" />
+          </propertyInstance>
+          <elementDefinition Id="fb2d7aab-049d-4f51-a858-c4914cf5eda2" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="5ed590ec-73f4-4b56-bc9e-20be4eb9c39f">
+          <propertyInstance Id="c0aa8890-ea81-4f0b-b1f3-11a32e5a2263" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="c9eb3c52-ecbe-426c-8a41-c1e0481a0740" />
+          </propertyInstance>
+          <elementDefinition Id="164f5b18-76ee-495f-840e-72381606c52f" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="e7d86075-87e3-445e-b2d3-88b5354c867a">
+          <propertyInstance Id="c08773ca-5525-4ef5-9e31-3d7f269ae601" name="Parameters">
+            <elementDefinition Id="04a9c649-4fdb-45c3-8a6f-e2919848673f" />
+          </propertyInstance>
+          <elementDefinition Id="9920232f-7852-4f5f-a71f-60f1601aafc9" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="c6c64f3c-921e-4f75-a84a-8181c54f867a" name="mds.Config" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="3f318d98-f7b4-406e-a887-71c91884b585" />
+        <nodes>
+          <initialNode Id="0fe0eec2-8b31-453f-a154-092a38ee443a" name="App配置初始化" isLeaf="false">
+            <elementDefinition Id="63d88de1-6d6a-4281-a089-88e1844024a2" />
+            <flowNodeTargets>
+              <controlFlow Id="bf3b6360-e3c1-4073-bafa-04a9171fe450" isLeaf="false">
+                <opaqueActionMoniker Id="08492aec-848d-47f0-b8ca-21058a9a84c2" LastKnownName="App启动" />
+                <elementDefinition Id="1316c6fd-7877-4d13-949e-ac14695d3038" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="08492aec-848d-47f0-b8ca-21058a9a84c2" name="App启动" isLeaf="false">
+            <elementDefinition Id="a96b9122-4a4e-41e6-92ee-6f01e866a194" />
+            <flowNodeTargets>
+              <controlFlow Id="b832dc29-dfff-4786-80cc-4768826ce87d" isLeaf="false">
+                <decisionNodeMoniker Id="4df88ea1-628b-40ea-b8d4-c07f69f6d215" LastKnownName="Decision1" />
+                <elementDefinition Id="7ca27f15-a515-4644-b855-91a3fa5430cf" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="fcd6a493-8ee6-4401-a8fa-2138151f48b2" name="读取本地配置方案id、版本和配置方式" isLeaf="false">
+            <elementDefinition Id="1ef229a6-2301-4f95-a2df-e5d1290cbcce" />
+            <flowNodeTargets>
+              <controlFlow Id="d2956b5e-f8f3-4964-ba19-26dfa1d43d8a" isLeaf="false">
+                <decisionNodeMoniker Id="4328933b-0345-4f34-9e63-349f1386a730" LastKnownName="selectConfigOption" />
+                <elementDefinition Id="0060fac3-778d-45cf-8f7d-af369253dc0b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="4328933b-0345-4f34-9e63-349f1386a730" name="selectConfigOption" isLeaf="false">
+            <elementDefinition Id="74ca27bf-f090-4b7a-86c1-459cdeea5536" />
+            <flowNodeTargets>
+              <controlFlow Id="61811fa6-1d78-48a2-99ae-11433d5076d9" isLeaf="false">
+                <opaqueActionMoniker Id="61cfc88c-ad10-45b1-94d1-7fd366223085" LastKnownName="读取本地配置文件" />
+                <description>已有本地配置文件，版本配置方式id均符合</description>
+                <elementDefinition Id="af4bd856-1e77-46a7-b722-f146bac8ab36" />
+              </controlFlow>
+              <controlFlow Id="a1d13421-c062-4177-b9c6-a352c427137b" isLeaf="false">
+                <opaqueActionMoniker Id="40dc3a84-ecf2-40c7-8a89-8bfa39c817ab" LastKnownName="去读远程配置" />
+                <elementDefinition Id="425c4d40-ae26-4ea2-9696-e962d1649ca4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="61cfc88c-ad10-45b1-94d1-7fd366223085" name="读取本地配置文件" isLeaf="false">
+            <elementDefinition Id="de1d31a5-9866-47f6-860a-e4b749f03b61" />
+            <flowNodeTargets>
+              <controlFlow Id="7b306366-8fbe-4a1f-9d69-4451713af1f7" isLeaf="false">
+                <opaqueActionMoniker Id="d9a95604-9dd3-4dff-9eda-79f5cfa56043" LastKnownName="载入内存" />
+                <elementDefinition Id="2b15d971-bef2-4e1a-98f1-3b3d810e0102" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="40dc3a84-ecf2-40c7-8a89-8bfa39c817ab" name="去读远程配置" isLeaf="false">
+            <elementDefinition Id="6bba1b1c-d086-43cb-90b7-31fd671ac30e" />
+            <objectFlowTargets>
+              <objectFlow Id="f5974f47-4181-4b29-ab84-6765bc12be82" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="2528e200-5c9e-476a-b6be-c197daa3945b" LastKnownName="远程配置服务器" />
+                <elementDefinition Id="1a600dc7-bd94-4e20-a7a2-101cef0fe723" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <objectNode Id="2528e200-5c9e-476a-b6be-c197daa3945b" name="远程配置服务器" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="579ce1af-8296-4a97-b4e8-cd33960ebd49" />
+            <objectFlowTargets>
+              <objectFlow Id="69c15303-b955-4795-921c-f47145fa3ef8" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="d9a95604-9dd3-4dff-9eda-79f5cfa56043" LastKnownName="载入内存" />
+                <elementDefinition Id="e7a1d9cb-5de5-43b9-9500-dcde1fb43a58" />
+              </objectFlow>
+              <objectFlow Id="3091fa37-4732-4e65-9c10-09f5e9d39041" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <inputPinMoniker Id="55dc92c7-10bf-4ee1-8828-922e54ae7a03" LastKnownName="方案id、版本" />
+                <elementDefinition Id="679eb6a0-c890-486e-9963-10145c368efa" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="0db17e5f-2c83-43af-ae0c-49de6a9c60fa" name="2147483647" value="2147483647">
+                <elementDefinition Id="936fb5f9-ba06-4406-8afc-a2ad9d5ea111" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="d9a95604-9dd3-4dff-9eda-79f5cfa56043" name="载入内存" isLeaf="false">
+            <elementDefinition Id="40f74ddf-75bc-4d78-a2d0-ddb6ae2ab570" />
+            <objectFlowTargets>
+              <objectFlow Id="6c963afb-5b5f-4989-9430-25ac1e34ed31" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="ab23bee7-b591-4df5-bd35-b217168c2ee3" LastKnownName="App" />
+                <elementDefinition Id="c985f80d-a0cf-4a65-b1af-c3365c24d115" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <objectNode Id="ab23bee7-b591-4df5-bd35-b217168c2ee3" name="App" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="225a6e3c-a90b-4db3-b7b8-d5aea60134a5" />
+            <objectFlowTargets>
+              <objectFlow Id="b5aaddfc-7386-40cb-904c-50f97cd8136b" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <activityFinalNodeMoniker Id="aeed2bd8-0c7d-4781-919f-3b5370b93038" LastKnownName="App启动完成" />
+                <elementDefinition Id="594b84f4-07e3-4c84-9af5-84acf3641fd3" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="e3a6237e-8895-491b-a0d7-740d4cf23f24" name="2147483647" value="2147483647">
+                <elementDefinition Id="0694f5a7-4605-43af-98db-8611de8e1281" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <activityFinalNode Id="aeed2bd8-0c7d-4781-919f-3b5370b93038" name="App启动完成" isLeaf="false">
+            <elementDefinition Id="994f6433-1640-422e-92a6-6068f9e9eb55" />
+          </activityFinalNode>
+          <opaqueAction Id="90eb3b6a-59b8-4d77-af61-2a27be7c2bd9" name="按照方案id获取制定版本配置" isLeaf="false">
+            <elementDefinition Id="c6fa39ef-3b4e-4741-a5bb-39a9fa3f45d8" />
+            <pins>
+              <opaqueActionHasInputValues>
+                <inputPin Id="55dc92c7-10bf-4ee1-8828-922e54ae7a03" name="方案id、版本" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="c5ec27f2-b1af-414c-a09e-a31240bdb142" />
+                  <upperBound>
+                    <literalInteger Id="088adc40-76b1-475f-a7b5-47c9953b03c7" name="2147483647" value="2147483647">
+                      <elementDefinition Id="246967c1-f062-49ef-adaf-7522b902cec2" />
+                    </literalInteger>
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+              <opaqueActionHasOutputValues>
+                <outputPin Id="39d1f768-4dae-481b-b73f-0db64c4322bd" name="配置方案" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="320a885f-abfb-451b-89a4-445eac18db4d" />
+                  <objectFlowTargets>
+                    <objectFlow Id="c26e9620-ad67-4062-8297-435a9e4f8608" isLeaf="false" isMulticast="false" isMultireceive="false">
+                      <objectNodeMoniker Id="2528e200-5c9e-476a-b6be-c197daa3945b" LastKnownName="远程配置服务器" />
+                      <elementDefinition Id="8a5a9487-b84a-4967-ba93-829a00b3f784" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger Id="1202145e-5d74-4f65-a8b9-ac550b432f82" name="2147483647" value="2147483647">
+                      <elementDefinition Id="2d7f50f8-7dea-4f8a-95cd-7ae23cffd804" />
+                    </literalInteger>
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <decisionNode Id="4df88ea1-628b-40ea-b8d4-c07f69f6d215" name="Decision1" isLeaf="false">
+            <elementDefinition Id="e74df20e-a67d-4f48-865b-b5d61d330d00" />
+            <flowNodeTargets>
+              <controlFlow Id="447611d8-d148-4411-b6cc-0483d2d6b55a" isLeaf="false">
+                <opaqueActionMoniker Id="fcd6a493-8ee6-4401-a8fa-2138151f48b2" LastKnownName="读取本地配置方案id、版本和配置方式" />
+                <elementDefinition Id="26cbfd33-2962-4589-b5da-b24b0a007c7d" />
+              </controlFlow>
+              <controlFlow Id="b1d981e5-85d5-442f-bd69-6f301e0679f2" isLeaf="false">
+                <opaqueActionMoniker Id="61cfc88c-ad10-45b1-94d1-7fd366223085" LastKnownName="读取本地配置文件" />
+                <elementDefinition Id="bfdfa0bf-59e4-4b92-954d-7be46ca59767" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="6f03a2e3-1d06-436c-838f-508cd1d764d6" name="mdsModeling">
+    <elementDefinition Id="0087d537-cd05-4da0-a767-0975b5628e3b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="578d9df6-841b-4a8b-b2fc-2f962ae2e563">
+        <profileInstance Id="41aa59b3-8b1d-4e0c-999c-caf192357d66" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="0a558482-c4ca-4763-ba45-6097dc3cc975">
+        <profileInstance Id="0173775e-d2fd-4372-b13a-57752822208b" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="0541601b-68b4-4b13-b42a-bda3de40c65b">
+        <profileInstance Id="c15f5976-3804-446f-8bec-1b4598ce86b2" name="CSharpProfile">
+          <elementDefinition Id="f706b01c-3f25-4436-bfe5-e9e7049f889b" />
+        </profileInstance>
+        <elementDefinition Id="efba6404-4d90-47f2-95e2-0457a8f30bc5" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="a49652cd-8975-4beb-82d7-e9a08bd12a92">
+        <profileInstance Id="766e5604-612f-45d2-b9d3-1665e46282aa" name="TextTemplateBindings">
+          <elementDefinition Id="a20c4422-55ab-4076-aea0-06e5727213d5" />
+        </profileInstance>
+        <elementDefinition Id="b7d93019-ce2e-461f-a822-694ee7b05640" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>
