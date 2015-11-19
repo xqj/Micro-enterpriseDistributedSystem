@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="dfe72e9b-d3cc-432d-8359-206262b5f517" name="mdsComponent" linkedPackageId="b30d8746-ffe0-42b9-ab06-bf1cbee12939" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="dfe72e9b-d3cc-432d-8359-206262b5f517" name="mdsComponent" linkedPackageId="b30d8746-ffe0-42b9-ab06-bf1cbee12939" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
   <appliedStereotypesInternal>
     <stereotypeInstance Id="10d29265-9e45-4823-9142-91b8acd4e77c" name="namespace" profile="CSharpProfile">
       <elementDefinition Id="54fefc0f-bdb9-4f83-871b-ac42289e4425" />
@@ -40,7 +40,7 @@
           <elementDefinition Id="34aabaf4-c4ff-4568-9367-b51e323b6a69" />
         </stereotypeInstanceHasPropertyInstances>
         <stereotypeInstanceHasPropertyInstances Id="e9165336-8c6f-4988-a176-4418d1644dd2">
-          <propertyInstance Id="5c9c4cca-cb2d-4d99-8638-4e37506d2cbc" name="ProjectPath" value="ClassTemplate=..\mdsModelingLib\mdsModelingLib.csproj|EnumTemplate=..\mdsModelingLib\mdsModelingLib.csproj|InterfaceTemplate=..\mds.Cache\mds.Cache.csproj|StructTemplate=..\mdsModelingLib\mdsModelingLib.csproj">
+          <propertyInstance Id="5c9c4cca-cb2d-4d99-8638-4e37506d2cbc" name="ProjectPath" value="ClassTemplate=..\mds.BaseModel\mds.BaseModel.csproj|EnumTemplate=..\mdsModelingLib\mdsModelingLib.csproj|InterfaceTemplate=..\mds.Cache\mds.Cache.csproj|StructTemplate=..\mdsModelingLib\mdsModelingLib.csproj">
             <elementDefinition Id="8fabca4b-d3b7-476d-bb51-5da01ad96003" />
           </propertyInstance>
           <elementDefinition Id="2b0a36f9-3a53-4e80-9f82-2e51213f6087" />
@@ -72,20 +72,6 @@
       </propertyInstances>
     </stereotypeInstance>
   </appliedStereotypesInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="7379f253-41a6-46f9-9bf4-1ff74425187e">
-      <profileInstance Id="6573ec86-a699-4ddc-9e51-24bb0a18b2be" name="CSharpProfile">
-        <elementDefinition Id="f706b01c-3f25-4436-bfe5-e9e7049f889b" />
-      </profileInstance>
-      <elementDefinition Id="efba6404-4d90-47f2-95e2-0457a8f30bc5" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="c92b3a43-1f1e-43e1-b892-44567a7485a5">
-      <profileInstance Id="447769d9-8607-4532-8545-5f7f0d2af7e4" name="TextTemplateBindings">
-        <elementDefinition Id="a20c4422-55ab-4076-aea0-06e5727213d5" />
-      </profileInstance>
-      <elementDefinition Id="b7d93019-ce2e-461f-a822-694ee7b05640" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <componentModelHasComponents>
       <component Id="d7300930-0140-483c-837e-9d48f7cbc1b2" name="mds.DataAccess" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -279,6 +265,30 @@
               <interfaceMoniker Id="a1b59ae6-7856-41a2-823b-5da73727ac46" LastKnownName="IDoctorService" />
             </type_NamedElement>
           </providedInterface>
+          <part Id="e4f78ba7-0b94-4a69-ba59-049ed930e1db" name="ComputerDoctor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="affa4fc6-e1ce-4948-92ac-f8af07bd7d30" />
+            <targetNamedElementsInternal>
+              <connector Id="58d49a92-4781-4c30-ac64-47b0a83b1629" isLeaf="false" isStatic="false">
+                <partMoniker Id="22c4f869-819b-41ef-9281-c3b5b9a0413d" LastKnownName="Server" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="843a3a4c-df34-48bf-bbc3-46d1525db5fd">
+                      <elementDefinition Id="66ed3790-4c0c-4be6-87b0-5420605e85c4" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="db719ac0-d662-4267-aabf-8fc978c205fd">
+                      <elementDefinition Id="0ad3db4a-788a-4875-a007-6488079153e6" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="57612063-40df-4cae-939b-f79e2b4cf67c" />
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker Id="740ea446-5fb4-4a8f-ba9c-e11593b4b5e7" LastKnownName="ComputerDoctor" />
+            </type_NamedElement>
+          </part>
         </ownedAttributesInternal>
       </component>
     </componentModelHasComponents>
@@ -590,6 +600,16 @@
         <elementDefinition Id="67937c4b-a34e-43d9-a490-a4c31a3dee16" />
       </component>
     </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="740ea446-5fb4-4a8f-ba9c-e11593b4b5e7" name="ComputerDoctor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="70cd67a3-f5d6-404e-beba-132ff93bf3f9" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="568773f1-7714-4e9f-8eda-d95db79acbbe" name="mds.BaseModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="29a84f71-f9b7-4819-a006-cc0aa78155d7" />
+      </component>
+    </componentModelHasComponents>
   </packagedElements>
   <package Id="b30d8746-ffe0-42b9-ab06-bf1cbee12939" name="mdsModeling">
     <elementDefinition Id="0087d537-cd05-4da0-a767-0975b5628e3b" />
@@ -605,6 +625,18 @@
           <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
         </profileInstance>
         <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="7379f253-41a6-46f9-9bf4-1ff74425187e">
+        <profileInstance Id="6573ec86-a699-4ddc-9e51-24bb0a18b2be" name="CSharpProfile">
+          <elementDefinition Id="f706b01c-3f25-4436-bfe5-e9e7049f889b" />
+        </profileInstance>
+        <elementDefinition Id="efba6404-4d90-47f2-95e2-0457a8f30bc5" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c92b3a43-1f1e-43e1-b892-44567a7485a5">
+        <profileInstance Id="447769d9-8607-4532-8545-5f7f0d2af7e4" name="TextTemplateBindings">
+          <elementDefinition Id="a20c4422-55ab-4076-aea0-06e5727213d5" />
+        </profileInstance>
+        <elementDefinition Id="b7d93019-ce2e-461f-a822-694ee7b05640" />
       </packageHasProfileInstances>
     </profileInstances>
   </package>
