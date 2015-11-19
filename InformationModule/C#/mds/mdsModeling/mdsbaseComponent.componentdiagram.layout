@@ -93,7 +93,7 @@
             <providedInterfaceShapeMoniker Id="2c6c80d6-7796-47da-8fc3-a1aca3db4414" />
           </nodes>
         </delegationConnector>
-        <delegationConnector edgePoints="[(3.21194781541824 : 4.375); (3.21194781541824 : 3.075)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+        <delegationConnector edgePoints="[(4.16663531541824 : 4.375); (4.16663531541824 : 3.075)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
           <connectorMoniker Id="131f2a37-cdcb-4148-adde-89df0dfa94a1" />
           <relativeChildShapes />
           <nodes>
@@ -104,7 +104,7 @@
         <componentUseShape Id="cce5fd66-2f70-4cb8-94d2-ce31a59925b3" absoluteBounds="3, 1.125, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
           <partMoniker Id="22c4f869-819b-41ef-9281-c3b5b9a0413d" LastKnownName="Server" />
         </componentUseShape>
-        <delegationConnector edgePoints="[(3.921875 : 1.121875); (3.921875 : 3.85625); (4.265625 : 3.85625); (4.265625 : 3.48125)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+        <delegationConnector edgePoints="[(3.921875 : 1.121875); (3.921875 : 3.85625); (4.13330198208491 : 3.85625 : JumpStart); (4.19996864875158 : 3.85625 : JumpEnd); (4.265625 : 3.85625); (4.265625 : 3.48125)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
           <connectorMoniker Id="30d474e4-c44e-4aef-9aa6-67a30152116e" />
           <relativeChildShapes />
           <nodes>
@@ -112,7 +112,7 @@
             <providedInterfaceShapeMoniker Id="875c1b36-46d4-4ef1-9cee-688076e9938b" />
           </nodes>
         </delegationConnector>
-        <delegationConnector edgePoints="[(3.75 : 2.075); (3.75 : 2.375)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+        <delegationConnector edgePoints="[(3.515625 : 2.075); (3.515625 : 2.375)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
           <connectorMoniker Id="2c7240d9-ce13-4136-8de2-339690ccae6e" />
           <relativeChildShapes />
           <nodes>

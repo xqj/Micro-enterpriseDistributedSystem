@@ -137,6 +137,7 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <description>屏蔽分库选择、数据库通道选择、数据交互类组合，数据库连接打开和关闭</description>
         <ownedAttributesInternal>
           <part
             Id="42cbe865-5dce-424a-9b17-6e0011226a7a"

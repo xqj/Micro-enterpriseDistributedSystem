@@ -75,6 +75,7 @@
   <packagedElements>
     <componentModelHasComponents>
       <component Id="d7300930-0140-483c-837e-9d48f7cbc1b2" name="mds.DataAccess" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <description>屏蔽分库选择、数据库通道选择、数据交互类组合，数据库连接打开和关闭</description>
         <elementDefinition Id="46020a1e-3543-4ea5-8b39-353552159d3b" />
         <ownedAttributesInternal>
           <part Id="2f44360e-e135-48e7-b79a-0ef7e807177e" name="MSSqlServer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
