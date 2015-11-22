@@ -1,0 +1,9 @@
+D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.DataAccess\bin\Debug\mds.DataAccess.dll
+D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.DataAccess\bin\Debug\mds.DataAccess.pdb
+D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.DataAccess\bin\Debug\MySql.Data.dll
+D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.DataAccess\bin\Debug\MySql.Data.Entity.dll
+D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.DataAccess\bin\Debug\MySql.Data.Entity.EF6.dll
+D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.DataAccess\bin\Debug\MySql.Fabric.Plugin.dll
+D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.DataAccess\bin\Debug\MySql.Web.dll
+D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.DataAccess\obj\Debug\mds.DataAccess.dll
+D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.DataAccess\obj\Debug\mds.DataAccess.pdb

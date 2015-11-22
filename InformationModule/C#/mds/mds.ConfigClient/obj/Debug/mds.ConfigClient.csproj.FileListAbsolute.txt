@@ -1,0 +1,1 @@
+D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.ConfigClient\obj\Debug\mds.ConfigClient.csprojResolveAssemblyReference.cache

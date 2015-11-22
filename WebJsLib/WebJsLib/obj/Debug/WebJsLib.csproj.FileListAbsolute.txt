@@ -1,0 +1,6 @@
+D:\my\github\Micro-enterpriseDistributedSystem\WebJsLib\WebJsLib\bin\WebJsLib.dll.config
+D:\my\github\Micro-enterpriseDistributedSystem\WebJsLib\WebJsLib\bin\WebJsLib.dll
+D:\my\github\Micro-enterpriseDistributedSystem\WebJsLib\WebJsLib\bin\WebJsLib.pdb
+D:\my\github\Micro-enterpriseDistributedSystem\WebJsLib\WebJsLib\obj\Debug\WebJsLib.csprojResolveAssemblyReference.cache
+D:\my\github\Micro-enterpriseDistributedSystem\WebJsLib\WebJsLib\obj\Debug\WebJsLib.dll
+D:\my\github\Micro-enterpriseDistributedSystem\WebJsLib\WebJsLib\obj\Debug\WebJsLib.pdb

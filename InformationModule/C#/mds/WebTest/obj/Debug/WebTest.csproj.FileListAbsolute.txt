@@ -1,0 +1,8 @@
+D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\WebTest\bin\WebTest.dll.config
+D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\WebTest\bin\WebTest.dll
+D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\WebTest\bin\WebTest.pdb
+D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\WebTest\bin\mds.Util.dll
+D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\WebTest\bin\mds.Util.pdb
+D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\WebTest\obj\Debug\WebTest.csprojResolveAssemblyReference.cache
+D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\WebTest\obj\Debug\WebTest.dll
+D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\WebTest\obj\Debug\WebTest.pdb

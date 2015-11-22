@@ -1,0 +1,6 @@
+D:\my\github\Micro-enterpriseDistributedSystem\WebJsLib\JsTest\bin\JsTest.dll.config
+D:\my\github\Micro-enterpriseDistributedSystem\WebJsLib\JsTest\bin\JsTest.dll
+D:\my\github\Micro-enterpriseDistributedSystem\WebJsLib\JsTest\bin\JsTest.pdb
+D:\my\github\Micro-enterpriseDistributedSystem\WebJsLib\JsTest\obj\Debug\JsTest.dll
+D:\my\github\Micro-enterpriseDistributedSystem\WebJsLib\JsTest\obj\Debug\JsTest.pdb
+D:\my\github\Micro-enterpriseDistributedSystem\WebJsLib\JsTest\obj\Debug\JsTest.csprojResolveAssemblyReference.cache
