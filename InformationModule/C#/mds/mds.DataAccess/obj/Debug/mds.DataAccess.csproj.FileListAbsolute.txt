@@ -7,3 +7,12 @@ D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.Data
 D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.DataAccess\bin\Debug\MySql.Web.dll
 D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.DataAccess\obj\Debug\mds.DataAccess.dll
 D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.DataAccess\obj\Debug\mds.DataAccess.pdb
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.DataAccess\bin\Debug\mds.DataAccess.dll
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.DataAccess\bin\Debug\mds.DataAccess.pdb
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.DataAccess\bin\Debug\MySql.Data.dll
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.DataAccess\bin\Debug\MySql.Data.Entity.dll
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.DataAccess\bin\Debug\MySql.Data.Entity.EF6.dll
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.DataAccess\bin\Debug\MySql.Fabric.Plugin.dll
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.DataAccess\bin\Debug\MySql.Web.dll
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.DataAccess\obj\Debug\mds.DataAccess.dll
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.DataAccess\obj\Debug\mds.DataAccess.pdb
