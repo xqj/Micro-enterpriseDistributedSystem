@@ -59,6 +59,9 @@
     <Compile Include="Core\MSSqlDatabase.cs" />
     <Compile Include="Core\MysqlDatabase.cs" />
     <Compile Include="DataAccessService.cs" />
+    <Compile Include="IDatabaseService.cs" />
+    <Compile Include="Core\MSSqlService.cs" />
+    <Compile Include="Core\MysqlService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
