@@ -9,9 +9,14 @@ namespace mds.DataAccess
     public class DataAccessService
     {
         private DataAccessConfiguration _config;
+        private IDatabaseService _service;
         public DataAccessService(DataAccessConfiguration config) {
             config = _config;
         }
+        /// <summary>
+        /// 创建数据服务对象，非单例
+        /// </summary>
+        /// <returns></returns>
         public IDatabaseService CreateDataService() {
             switch (_config.DatabaseType)
             {
@@ -21,8 +26,16 @@ namespace mds.DataAccess
                     return new MSSqlService(_config);
                 default:
                     return null;
-            }
-            
+            }            
+        }
+        /// <summary>
+        /// 创建单例对象
+        /// </summary>
+        /// <returns></returns>
+        public IDatabaseService CreateIntance()
+        {
+            if (_service == null) _service = CreateDataService();
+            return _service;
         }
     }
 }
