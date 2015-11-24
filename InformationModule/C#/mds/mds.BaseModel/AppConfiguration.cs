@@ -10,7 +10,11 @@ namespace mds.BaseModel
 	using System.Collections.Generic;
 	using System.Linq;
 	using System.Text;
-
+    /// <summary>
+    /// 程序终节点配置
+    /// 对应exe、website对象
+    /// 配置加载对象方式和路径的承载对象
+    /// </summary>
 	public class AppConfiguration
 	{
 		/// <summary>

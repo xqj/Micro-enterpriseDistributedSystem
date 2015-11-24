@@ -33,13 +33,6 @@
       <SubType>Content</SubType>
     </Content>
     <Folder Include="ModelDefinition\" />
-    <Content Include="mds.BaseModel.classdiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="mds.BaseModel.classdiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>mds.BaseModel.classdiagram</DependentUpon>
-    </Content>
     <Content Include="mdsbaseComponent.componentdiagram">
       <SubType>Content</SubType>
     </Content>

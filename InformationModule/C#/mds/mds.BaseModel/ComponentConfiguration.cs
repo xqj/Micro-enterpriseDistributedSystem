@@ -12,7 +12,7 @@ namespace mds.BaseModel
 	using System.Text;
 
 	/// <summary>
-	/// 配置文件基础（必有）配置项目
+	/// 组件配置文件基础（必有）配置项目
 	/// </summary>
 	public class ComponentConfiguration : DataClassBase
 	{
