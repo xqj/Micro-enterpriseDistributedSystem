@@ -13,17 +13,25 @@ namespace mds.BaseModel
 
 	public class OperationMessage
 	{
-		public virtual string Message
-		{
-			get;
-			set;
-		}
+        public virtual bool ActionResult
+        {
+            get;
+            set;
+        }
 
-		public virtual int Code
-		{
-			get;
-			set;
-		}
+     
+
+        public virtual OperationMessage Message
+        {
+            get;
+            set;
+        }
+
+        public virtual OperationError Error
+        {
+            get;
+            set;
+        }
 
 	}
 }

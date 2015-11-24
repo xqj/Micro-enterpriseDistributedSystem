@@ -14,6 +14,8 @@ namespace mds.BaseModel
     /// 程序终节点配置
     /// 对应exe、website对象
     /// 配置加载对象方式和路径的承载对象
+    /// 此对象存储在程序对象本地
+    /// 不做远程数据配置
     /// </summary>
 	public class AppConfiguration
 	{
@@ -40,7 +42,9 @@ namespace mds.BaseModel
 			get;
 			set;
 		}
-
+        /// <summary>
+        /// 解决方案版本
+        /// </summary>
 		public virtual int Version
 		{
 			get;
