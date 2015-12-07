@@ -24,17 +24,19 @@ namespace mds.BaseModel
 			get;
 			set;
 		}
-
+        /// <summary>
+        /// 为0时就一直取最新的版本，配置版本号，改变一次配置内容自动递增
+        /// </summary>
 		public virtual int Version
 		{
 			get;
 			set;
 		}
-
-		/// <summary>
-		/// 是否将文件静态化储存
-		/// </summary>
-		public virtual bool IsFile
+ 
+        /// <summary>
+        /// 是否将文件静态化储存
+        /// </summary>
+        public virtual bool IsFile
 		{
 			get;
 			set;
