@@ -19,6 +19,7 @@ namespace mds.BaseModel
     /// </summary>
 	public class AppConfiguration
 	{
+        public int AppID { set; get; }
 		/// <summary>
 		/// 是否文件方式加载配置，不是则以内存方式加载
 		/// </summary>
