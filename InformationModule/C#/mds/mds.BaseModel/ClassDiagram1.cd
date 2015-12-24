@@ -10,7 +10,7 @@
   <Class Name="mds.BaseModel.ComponentConfiguration">
     <Position X="2.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>IAAAAAACAgAAAAAAAAAACAAABAAAAAAAAAAACAAAAAA=</HashCode>
+      <HashCode>IAAAAAACAgAAAAAAAAAQCAAABAAAAAAAAAAACAAAAAE=</HashCode>
       <FileName>ComponentConfiguration.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -31,7 +31,7 @@
   <Class Name="mds.BaseModel.OperationMessage" Collapsed="true">
     <Position X="5.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <HashCode>AAAAAAAEAAAAAQAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
       <FileName>OperationMessage.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -54,6 +54,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAAEAAAAAI=</HashCode>
       <FileName>GridPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mds.BaseModel.Component">
+    <Position X="3" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Component.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="微软雅黑" Size="9" />

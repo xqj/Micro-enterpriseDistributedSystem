@@ -42,6 +42,7 @@
     <Compile Include="AppConfiguration.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Component.cs" />
     <Compile Include="ComponentConfiguration.cs">
       <SubType>Code</SubType>
     </Compile>

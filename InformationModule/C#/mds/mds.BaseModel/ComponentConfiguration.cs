@@ -33,13 +33,22 @@ namespace mds.BaseModel
 			get;
 			set;
 		}
-
+        /// <summary>
+        /// 组件ID
+        /// </summary>
 		public virtual int ComponentId
 		{
 			get;
 			set;
 		}
-
+        /// <summary>
+        /// 组件配置ID
+        /// </summary>
+        public virtual int ComponentConfigId
+        {
+            get;
+            set;
+        }
 		
 
 		public virtual string Content 
