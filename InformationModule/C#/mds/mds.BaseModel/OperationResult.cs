@@ -13,6 +13,9 @@ namespace mds.BaseModel
 
 	public class OperationResult<T>
 	{
+        public OperationResult(){
+            this.ActionResult = false;
+        }
 		public virtual bool ActionResult
 		{
 			get;
