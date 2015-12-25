@@ -33,20 +33,25 @@ namespace mds.BaseModel
 			get;
 			set;
 		}
-
-		public virtual uint ComponentId
+        /// <summary>
+        /// 组件ID
+        /// </summary>
+		public virtual int ComponentId
 		{
 			get;
 			set;
 		}
+        /// <summary>
+        /// 组件配置ID
+        /// </summary>
+        public virtual int ComponentConfigId
+        {
+            get;
+            set;
+        }
+		
 
-		public virtual int Version
-		{
-			get;
-			set;
-		}
-
-		public virtual string Content
+		public virtual string Content 
 		{
 			get;
 			set;
@@ -57,7 +62,19 @@ namespace mds.BaseModel
 			get;
 			set;
 		}
+        /// <summary>
+        /// 为0时就一直取最新的版本， 配置版本号，改变一次配置内容自动递增
+        /// </summary>
+        public virtual int Version
+        {
+            get;
+            set;
+        }
+        /// <summary>
+        /// 软件签名
+        /// </summary>
+        public virtual string Signature { set; get; }
 
-	}
+    }
 }
 

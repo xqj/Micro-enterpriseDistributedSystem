@@ -40,6 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConfigServer.cs" />
+    <Compile Include="Core\ComponentConfigurationDal.cs" />
+    <Compile Include="Core\SolutionConfigurationDal.cs" />
     <Compile Include="IConfigServer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -55,9 +57,12 @@
       <Project>{36e7e9a3-72bf-4643-9eaf-b2fc75aafa8f}</Project>
       <Name>mds.DataAccess</Name>
     </ProjectReference>
+    <ProjectReference Include="..\mds.Util\mds.Util.csproj">
+      <Project>{f47a677a-08b1-46c4-95d8-4a505c4a075b}</Project>
+      <Name>mds.Util</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Core\" />
     <Folder Include="Model\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
