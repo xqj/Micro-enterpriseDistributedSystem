@@ -29,6 +29,20 @@
       <SubType>Content</SubType>
       <DependentUpon>mds.Config.activitydiagram</DependentUpon>
     </Content>
+    <Content Include="mdsApp启动组件活动图.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="mdsApp启动组件活动图.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>mdsApp启动组件活动图.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="mdsApp运行组件活动图.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="mdsApp运行组件活动图.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>mdsApp运行组件活动图.activitydiagram</DependentUpon>
+    </Content>
     <Content Include="ModelDefinition\Package_1336.uml">
       <SubType>Content</SubType>
     </Content>

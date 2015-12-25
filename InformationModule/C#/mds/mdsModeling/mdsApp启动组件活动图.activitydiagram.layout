@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="mds组件活动图">
+  <activityRootModelMoniker Id="c2a1c05b-7199-44a7-a01d-af6aa40958dd" />
+  <nestedChildShapes>
+    <initialNodeShape Id="87c9c83f-1590-4ec6-a564-b4a0ef9aeae3" absoluteBounds="0.5, 1.625, 0.125, 0.125" customColor="89, 89, 89">
+      <initialNodeMoniker Id="437bb561-4de2-461f-b4a1-01364800bbd1" LastKnownName="App实例启动" />
+    </initialNodeShape>
+    <actionShape Id="6ffa31c8-122d-443f-8041-c4301c6dda90" absoluteBounds="3.25, 0.625, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="a631e27c-eabb-47ff-8549-da5d993fa361" LastKnownName="App实例获取配置" />
+    </actionShape>
+    <objectNodeShape Id="0c52bd5b-141e-4429-96ae-aae899710ec3" absoluteBounds="5.625, 0.625, 1.125, 0.375" customColor="White">
+      <objectNodeMoniker Id="ece4197c-f2e8-4827-a876-10e1a5696003" LastKnownName="Config组件" />
+    </objectNodeShape>
+    <objectFlowConnector edgePoints="[(4.375 : 0.8125); (5.625 : 0.8125)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <objectFlowMoniker Id="6069135d-8ebe-4070-83a7-efc41c7c762b" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="6ffa31c8-122d-443f-8041-c4301c6dda90" />
+        <objectNodeShapeMoniker Id="0c52bd5b-141e-4429-96ae-aae899710ec3" />
+      </nodes>
+    </objectFlowConnector>
+    <objectNodeShape Id="e856994c-524d-4ebf-9ba4-cde6e2651f7a" absoluteBounds="1, 1.5, 1.125, 0.375" customColor="White">
+      <objectNodeMoniker Id="064b65eb-2e82-4e23-8689-3e4dfaf7b014" LastKnownName="App实例" />
+    </objectNodeShape>
+    <objectFlowConnector edgePoints="[(0.625 : 1.6875); (1 : 1.6875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <objectFlowMoniker Id="968d1754-bf3f-47d7-92be-f413d3703f5b" />
+      <relativeChildShapes />
+      <nodes>
+        <initialNodeShapeMoniker Id="87c9c83f-1590-4ec6-a564-b4a0ef9aeae3" />
+        <objectNodeShapeMoniker Id="e856994c-524d-4ebf-9ba4-cde6e2651f7a" />
+      </nodes>
+    </objectFlowConnector>
+    <objectFlowConnector edgePoints="[(2.125 : 1.53125); (2.5065625 : 1.53125); (2.5065625 : 1); (3.25 : 1)]" manuallyRouted="true" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <objectFlowMoniker Id="b1af3c5b-eef6-41ae-8035-26a39e0464e4" />
+      <relativeChildShapes />
+      <nodes>
+        <objectNodeShapeMoniker Id="e856994c-524d-4ebf-9ba4-cde6e2651f7a" />
+        <actionShapeMoniker Id="6ffa31c8-122d-443f-8041-c4301c6dda90" />
+      </nodes>
+    </objectFlowConnector>
+    <sendSignalActionShape Id="6cc9bfd8-aff0-4dac-a6ed-1434dd5165e4" absoluteBounds="3.375, 2.125, 1.125, 0.375" customColor="185, 212, 238">
+      <sendSignalActionMoniker Id="4c4fcc55-4f80-48b0-9c02-6dc5a20d5040" LastKnownName="App发送启动信号" />
+      <relativeChildShapes />
+    </sendSignalActionShape>
+    <objectFlowConnector edgePoints="[(2.125 : 1.78125); (3.84375 : 1.78125); (3.84375 : 2.125)]" manuallyRouted="true" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <objectFlowMoniker Id="102e3774-8c6e-4b89-b84e-7d5cc064a3ce" />
+      <relativeChildShapes />
+      <nodes>
+        <objectNodeShapeMoniker Id="e856994c-524d-4ebf-9ba4-cde6e2651f7a" />
+        <sendSignalActionShapeMoniker Id="6cc9bfd8-aff0-4dac-a6ed-1434dd5165e4" />
+      </nodes>
+    </objectFlowConnector>
+    <objectNodeShape Id="70d7b613-e734-41f9-a5e1-01482caeef1b" absoluteBounds="6.25, 2, 1.125, 0.375" customColor="White">
+      <objectNodeMoniker Id="5e793866-8363-43d2-a4c5-54fa8ecafe48" LastKnownName="Guard组件" />
+    </objectNodeShape>
+    <objectFlowConnector edgePoints="[(4.46391560817565 : 2.25); (6.25 : 2.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <objectFlowMoniker Id="26644642-3d0a-4151-898a-60571c46b293" />
+      <relativeChildShapes />
+      <nodes>
+        <sendSignalActionShapeMoniker Id="6cc9bfd8-aff0-4dac-a6ed-1434dd5165e4" />
+        <objectNodeShapeMoniker Id="70d7b613-e734-41f9-a5e1-01482caeef1b" />
+      </nodes>
+    </objectFlowConnector>
+    <actionShape Id="0d7ec80b-bb54-4d96-9056-ccb1f179f1e0" absoluteBounds="4.375, 1.25, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="c905d1d7-4ab6-4bd9-82a0-b7a5a0ac6a8e" LastKnownName="构建制定版本逻辑实例服务" />
+    </actionShape>
+    <objectFlowConnector edgePoints="[(2.125 : 1.65625); (2.75 : 1.65625); (2.75 : 1.3906255); (4.375 : 1.3906255)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <objectFlowMoniker Id="a8cf42fa-30e0-4b9f-9594-eccd1787da60" />
+      <relativeChildShapes />
+      <nodes>
+        <objectNodeShapeMoniker Id="e856994c-524d-4ebf-9ba4-cde6e2651f7a" />
+        <actionShapeMoniker Id="0d7ec80b-bb54-4d96-9056-ccb1f179f1e0" />
+      </nodes>
+    </objectFlowConnector>
+    <objectNodeShape Id="a201795f-bd4b-4be6-9d30-31e800d3d394" absoluteBounds="6.125, 1.375, 1.125, 0.375" customColor="White">
+      <objectNodeMoniker Id="f13f5c9d-479a-43bd-b7aa-43cc06b62784" LastKnownName="App用户管理组件" />
+    </objectNodeShape>
+    <objectFlowConnector edgePoints="[(5.5 : 1.5); (6.125 : 1.5)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <objectFlowMoniker Id="c28b7d87-ee5a-4d81-8d19-d6196f91cca4" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="0d7ec80b-bb54-4d96-9056-ccb1f179f1e0" />
+        <objectNodeShapeMoniker Id="a201795f-bd4b-4be6-9d30-31e800d3d394" />
+      </nodes>
+    </objectFlowConnector>
+  </nestedChildShapes>
+</activityDiagram>

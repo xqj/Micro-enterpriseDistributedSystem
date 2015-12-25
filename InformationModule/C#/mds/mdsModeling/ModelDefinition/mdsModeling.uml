@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="0087d537-cd05-4da0-a767-0975b5628e3b"
   name="mdsModeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -259,254 +259,6 @@
     </packageHasNamedElement>
     <packageHasNamedElement>
       <component
-        Id="71f993bb-822f-46d8-bd04-16e862732d29"
-        name="mds.Maintenance"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <ownedAttributesInternal>
-          <part
-            Id="80b1984f-5e41-4060-be05-77fb1a018f1f"
-            name="MaintenanceClient"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="Composite"
-            isComposite="true">
-            <type_NamedElement>
-              <componentMoniker
-                Id="05d0551b-2ba3-48e2-9df7-d6781479af58"
-                LastKnownName="LogService_Client"
-                LastKnownLocation="mdsModeling.uml" />
-            </type_NamedElement>
-          </part>
-          <part
-            Id="3b0139a2-8d4d-4453-bec8-fc8fa2ab50df"
-            name="LogServer"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="Composite"
-            isComposite="true">
-            <targetNamedElementsInternal>
-              <connector
-                Id="c9dd707f-3fd2-4a46-8889-7e38d3d2405d"
-                isLeaf="false"
-                isStatic="false">
-                <partMoniker
-                  Id="80b1984f-5e41-4060-be05-77fb1a018f1f"
-                  LastKnownName="MaintenanceClient"
-                  LastKnownLocation="mdsModeling.uml" />
-                <relationshipOwnedElementsInternal>
-                  <connectorHasConnectorEnds>
-                    <connectorEnd
-                      Id="45a28d26-2e52-4556-8d9d-f18f87f93ea4" />
-                  </connectorHasConnectorEnds>
-                  <connectorHasConnectorEnds>
-                    <connectorEnd
-                      Id="bff5d7a6-acc1-4a79-ac4f-a01c160bbc4d" />
-                  </connectorHasConnectorEnds>
-                </relationshipOwnedElementsInternal>
-              </connector>
-            </targetNamedElementsInternal>
-            <type_NamedElement>
-              <componentMoniker
-                Id="474a3091-54fd-4bb6-855e-4906230dde3e"
-                LastKnownName="LogService_LogServer"
-                LastKnownLocation="mdsModeling.uml" />
-            </type_NamedElement>
-          </part>
-          <providedInterface
-            Id="4924843b-8adc-4601-b1fb-413451b37de5"
-            name="LogClient"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false"
-            isService="false"
-            isBehavior="false">
-            <lowerValueInternal>
-              <literalString
-                Id="f10850ea-0445-4a6f-bebc-3e770ad74b73"
-                name="Lower"
-                value="1" />
-            </lowerValueInternal>
-            <upperValueInternal>
-              <literalString
-                Id="6a76636f-f63f-4706-9acc-893b69cf3625"
-                name="Upper"
-                value="1" />
-            </upperValueInternal>
-            <targetNamedElementsInternal>
-              <connector
-                Id="79cfd626-fa5a-49a6-9c29-493cedf7c29b"
-                isLeaf="false"
-                isStatic="false">
-                <partMoniker
-                  Id="80b1984f-5e41-4060-be05-77fb1a018f1f"
-                  LastKnownName="MaintenanceClient"
-                  LastKnownLocation="mdsModeling.uml" />
-                <relationshipOwnedElementsInternal>
-                  <connectorHasConnectorEnds>
-                    <connectorEnd
-                      Id="4f0a0c5d-fdde-4524-987d-83904179561d" />
-                  </connectorHasConnectorEnds>
-                  <connectorHasConnectorEnds>
-                    <connectorEnd
-                      Id="661f5adc-0a76-49d5-be01-af96313156b8">
-                      <portWithPart>
-                        <providedInterfaceMoniker
-                          Id="71c4f57c-c1ac-422e-a620-1b1e4f406a3a"
-                          LastKnownName="Port1"
-                          LastKnownLocation="mdsModeling.uml" />
-                      </portWithPart>
-                    </connectorEnd>
-                  </connectorHasConnectorEnds>
-                </relationshipOwnedElementsInternal>
-              </connector>
-            </targetNamedElementsInternal>
-            <type_NamedElement>
-              <interfaceMoniker
-                Id="6761f312-ccff-46c3-b4c7-24bd5868055c"
-                LastKnownName="ILogService"
-                LastKnownLocation="mdsModeling.uml" />
-            </type_NamedElement>
-          </providedInterface>
-          <part
-            Id="0bb5a925-3366-48dd-b0a5-b72c5e01446b"
-            name="Server"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="Composite"
-            isComposite="true">
-            <targetNamedElementsInternal>
-              <connector
-                Id="beb5c3a7-2ff7-411e-82c7-c42715745ccb"
-                isLeaf="false"
-                isStatic="false">
-                <partMoniker
-                  Id="80b1984f-5e41-4060-be05-77fb1a018f1f"
-                  LastKnownName="MaintenanceClient"
-                  LastKnownLocation="mdsModeling.uml" />
-                <relationshipOwnedElementsInternal>
-                  <connectorHasConnectorEnds>
-                    <connectorEnd
-                      Id="62eb3547-e097-4931-a905-8974f733b656" />
-                  </connectorHasConnectorEnds>
-                  <connectorHasConnectorEnds>
-                    <connectorEnd
-                      Id="a9029575-b2cb-4d1a-8626-623fc511cd58" />
-                  </connectorHasConnectorEnds>
-                </relationshipOwnedElementsInternal>
-              </connector>
-            </targetNamedElementsInternal>
-            <type_NamedElement>
-              <componentMoniker
-                Id="81ee6612-02ec-46f0-b3d0-c46756ef11cd"
-                LastKnownName="MaintenanceService_Server"
-                LastKnownLocation="mdsModeling.uml" />
-            </type_NamedElement>
-          </part>
-          <providedInterface
-            Id="8f81141a-050c-4eb9-a497-06b1cd4688de"
-            name="DoctorClient"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false"
-            isService="false"
-            isBehavior="false">
-            <targetNamedElementsInternal>
-              <connector
-                Id="ae0704ac-6374-40cb-bed6-238ab2eb10b1"
-                isLeaf="false"
-                isStatic="false">
-                <partMoniker
-                  Id="80b1984f-5e41-4060-be05-77fb1a018f1f"
-                  LastKnownName="MaintenanceClient"
-                  LastKnownLocation="mdsModeling.uml" />
-                <relationshipOwnedElementsInternal>
-                  <connectorHasConnectorEnds>
-                    <connectorEnd
-                      Id="9a97c2a5-2370-47ae-b693-61b88e6bc4f2" />
-                  </connectorHasConnectorEnds>
-                  <connectorHasConnectorEnds>
-                    <connectorEnd
-                      Id="7f13babc-4ab9-4059-ae40-1037e6f3fc9f">
-                      <portWithPart>
-                        <providedInterfaceMoniker
-                          Id="4d3f4ecf-dc6d-4ff9-a66b-b829844ac392"
-                          LastKnownName="Port2"
-                          LastKnownLocation="mdsModeling.uml" />
-                      </portWithPart>
-                    </connectorEnd>
-                  </connectorHasConnectorEnds>
-                </relationshipOwnedElementsInternal>
-              </connector>
-            </targetNamedElementsInternal>
-            <type_NamedElement>
-              <interfaceMoniker
-                Id="f34991c6-b022-4627-bc24-29d3caf95f65"
-                LastKnownName="IDoctorService"
-                LastKnownLocation="mdsModeling.uml" />
-            </type_NamedElement>
-          </providedInterface>
-          <part
-            Id="affa4fc6-e1ce-4948-92ac-f8af07bd7d30"
-            name="ComputerDoctor"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="Composite"
-            isComposite="true">
-            <targetNamedElementsInternal>
-              <connector
-                Id="57612063-40df-4cae-939b-f79e2b4cf67c"
-                isLeaf="false"
-                isStatic="false">
-                <partMoniker
-                  Id="0bb5a925-3366-48dd-b0a5-b72c5e01446b"
-                  LastKnownName="Server"
-                  LastKnownLocation="mdsModeling.uml" />
-                <relationshipOwnedElementsInternal>
-                  <connectorHasConnectorEnds>
-                    <connectorEnd
-                      Id="66ed3790-4c0c-4be6-87b0-5420605e85c4" />
-                  </connectorHasConnectorEnds>
-                  <connectorHasConnectorEnds>
-                    <connectorEnd
-                      Id="0ad3db4a-788a-4875-a007-6488079153e6" />
-                  </connectorHasConnectorEnds>
-                </relationshipOwnedElementsInternal>
-              </connector>
-            </targetNamedElementsInternal>
-            <type_NamedElement>
-              <componentMoniker
-                Id="70cd67a3-f5d6-404e-beba-132ff93bf3f9"
-                LastKnownName="ComputerDoctor"
-                LastKnownLocation="mdsModeling.uml" />
-            </type_NamedElement>
-          </part>
-        </ownedAttributesInternal>
-      </component>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <component
         Id="6b67332b-ff51-4cbc-8f09-3beb6810a1d4"
         name="mds.Config"
         isAbstract="false"
@@ -702,25 +454,6 @@
               <interfaceMoniker
                 Id="6761f312-ccff-46c3-b4c7-24bd5868055c"
                 LastKnownName="ILogService"
-                LastKnownLocation="mdsModeling.uml" />
-            </type_NamedElement>
-          </providedInterface>
-          <providedInterface
-            Id="4d3f4ecf-dc6d-4ff9-a66b-b829844ac392"
-            name="Port2"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false"
-            isService="false"
-            isBehavior="false">
-            <type_NamedElement>
-              <interfaceMoniker
-                Id="f34991c6-b022-4627-bc24-29d3caf95f65"
-                LastKnownName="IDoctorService"
                 LastKnownLocation="mdsModeling.uml" />
             </type_NamedElement>
           </providedInterface>
@@ -927,13 +660,6 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <Interface
-        Id="f34991c6-b022-4627-bc24-29d3caf95f65"
-        name="IDoctorService"
-        isAbstract="false"
-        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <component
@@ -1709,6 +1435,561 @@
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="2aa93dfd-99d2-4db7-a0e4-35a1f239a847"
+        name="mds.Guard"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <part
+            Id="94c04ab9-dfed-461b-a25f-758627fc113e"
+            name="GuardClient"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="2a4303a6-d86c-4450-9da0-f2d73f167b0f"
+                LastKnownName="mds.GuardClient"
+                LastKnownLocation="mdsModeling.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="c610bcb9-148a-4d4f-aa5a-4a9aae74d897"
+            name="GuardService"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="f57bb158-00ea-4093-a44f-3a9b46360cea"
+                LastKnownName="mds.GuardService"
+                LastKnownLocation="mdsModeling.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="630011fc-8c2d-48f1-a386-d4af109b477d"
+            name="LogService"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="bee3b7e7-4ff6-4d8f-b5d5-3d2cca3000ae"
+                LastKnownName="mds.LogService"
+                LastKnownLocation="mdsModeling.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="ae0dd06c-576c-4009-9c7b-8defc9ccf6c5"
+            name="LogClient"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="fef7007b-c10c-4afe-9a4c-56af24b3cd35"
+                LastKnownName="mds.LogClient"
+                LastKnownLocation="mdsModeling.uml" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="2a4303a6-d86c-4450-9da0-f2d73f167b0f"
+        name="mds.GuardClient"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="f57bb158-00ea-4093-a44f-3a9b46360cea"
+        name="mds.GuardService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="dc344a79-f8b5-4fe0-81d4-d0a38a0da099"
+            name="80"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="0c340cd4-175e-45f5-894f-1347a18c5875"
+                LastKnownName="IGuardService"
+                LastKnownLocation="mdsModeling.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="bee3b7e7-4ff6-4d8f-b5d5-3d2cca3000ae"
+        name="mds.LogService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="a46512ef-130c-4890-a265-936c78ad607e"
+            name="80"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="6761f312-ccff-46c3-b4c7-24bd5868055c"
+                LastKnownName="ILogService"
+                LastKnownLocation="mdsModeling.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="fef7007b-c10c-4afe-9a4c-56af24b3cd35"
+        name="mds.LogClient"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="0c340cd4-175e-45f5-894f-1347a18c5875"
+        name="IGuardService"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="4ec26dca-9b89-40a5-8a95-82a923db67fb"
+        name="mds组件活动图"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="55190a5c-e49e-438e-8fea-321958804bde"
+            name="App实例启动"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="5e70a382-560e-45ce-b16e-1e44c4df19fb"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="f1df37b4-6c9b-49ad-8ec0-3d4958e71543"
+                  LastKnownName="App实例"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </initialNode>
+          <opaqueAction
+            Id="480c6656-9fc9-401d-beb8-7f64dbfb5f3a"
+            name="App实例获取配置"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="9b43c806-e9df-4255-84f8-e6b0b1fcdfbb"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="85d4ccc1-d5fa-4755-9888-e38968869df6"
+                  LastKnownName="Config组件"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <objectNode
+            Id="85d4ccc1-d5fa-4755-9888-e38968869df6"
+            name="Config组件"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="09e80131-d2b4-47f9-997b-01bd1676d6b0"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="f1df37b4-6c9b-49ad-8ec0-3d4958e71543"
+            name="App实例"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="427d42d6-e185-4c3f-a28c-10b04e4dccf1"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="480c6656-9fc9-401d-beb8-7f64dbfb5f3a"
+                  LastKnownName="App实例获取配置"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="0cc42019-4a4b-48b0-934e-f14e3aa92ab5"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <sendSignalActionMoniker
+                  Id="46d87d44-1493-491f-ab3b-cc229dca48c8"
+                  LastKnownName="App发送启动信号"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="4220289b-f050-4441-9886-e2a2904b68b0"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="cc682231-5698-4f65-9476-fdb03c36173d"
+                  LastKnownName="构建制定版本逻辑实例服务"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="3170b53d-d968-4d45-80ef-2d29754d3642"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <sendSignalAction
+            Id="46d87d44-1493-491f-ab3b-cc229dca48c8"
+            name="App发送启动信号"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="050742ed-bac4-4c8f-abe4-25cb09d2d000"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="7d16c2ea-b625-42bc-ade5-c7d6887e6831"
+                  LastKnownName="Guard组件"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <objectNode
+            Id="7d16c2ea-b625-42bc-ade5-c7d6887e6831"
+            name="Guard组件"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="35e0026f-590e-4c2a-a896-abb5a0b108eb"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <opaqueAction
+            Id="cc682231-5698-4f65-9476-fdb03c36173d"
+            name="构建制定版本逻辑实例服务"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="56a3b0fd-73f5-443a-8d5f-3203dbb9d5c3"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="4d7f9585-5774-4cb7-92b2-69c44a723470"
+                  LastKnownName="App用户管理组件"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <objectNode
+            Id="4d7f9585-5774-4cb7-92b2-69c44a723470"
+            name="App用户管理组件"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="0beab605-682d-4cbf-ab19-fc79cbaab226"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="febbf9ac-1bc5-4b6d-8005-e5d695abecdb"
+        name="mds.AppUser"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <part
+            Id="333ffb74-67f1-4fc1-8c14-9c1a3861a2ae"
+            name="AppUserService"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="c4c643c6-c180-41fe-a7f1-4f943c1e2a77"
+                LastKnownName="mds.AppUserService"
+                LastKnownLocation="mdsModeling.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="fb5da54a-ddf9-4be2-a468-6b1dbb419994"
+            name="AppUserClient"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="deb49ac0-bd54-413d-b828-750be603df40"
+                LastKnownName="mds.AppUserClient"
+                LastKnownLocation="mdsModeling.uml" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="c4c643c6-c180-41fe-a7f1-4f943c1e2a77"
+        name="mds.AppUserService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="deb49ac0-bd54-413d-b828-750be603df40"
+        name="mds.AppUserClient"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="24aa3185-29ce-4df0-9f81-b798acc15d8c"
+        name="mdsApp运行组件活动图"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <objectNode
+            Id="76828b0a-db8b-49c0-92f8-c7f89fb77b55"
+            name="App实例"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="9e7841c5-8668-4554-839e-9254e1a97b89"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="711ecc3e-4007-43a9-96be-27131e0b8da4"
+                  LastKnownName="日志记录"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="160f7fd5-f0a8-4c4a-aaa5-1233be45c30f"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="be07fb28-b166-4f13-99ed-0fa4a423e599"
+                  LastKnownName="配置更改"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="82d971aa-bcad-4057-b50c-41b71284fbd9"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <opaqueAction
+            Id="711ecc3e-4007-43a9-96be-27131e0b8da4"
+            name="日志记录"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="7112eafe-4165-423a-8343-86cf800b47bc"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="edb634de-0530-4602-b91a-89363fda89e1"
+                  LastKnownName="Guard组件"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="be07fb28-b166-4f13-99ed-0fa4a423e599"
+            name="配置更改"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="a80b939b-9219-4661-b148-01d6ad4d3b23"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="495174da-5def-462a-885e-0f495ece0825"
+                  LastKnownName="Config组件"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <objectNode
+            Id="edb634de-0530-4602-b91a-89363fda89e1"
+            name="Guard组件"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="fa29c4fe-7ec8-4a22-af2d-24e79af38d86"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <acceptEventActionMoniker
+                  Id="fc8af1cd-fd05-492a-9021-85a732e9115e"
+                  LastKnownName="配置更改"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="c7c993af-04e0-45a0-986a-aad816ef1199"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="7c64fee9-d4d2-4fcd-a959-86cba8bd3941"
+                  LastKnownName="健康与完整性监测"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="ce30c173-6b00-4e09-9910-7d05f761c762"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="495174da-5def-462a-885e-0f495ece0825"
+            name="Config组件"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="d32b7681-fe24-41d5-b75c-99d730f3525f"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <acceptEventAction
+            Id="fc8af1cd-fd05-492a-9021-85a732e9115e"
+            name="配置更改"
+            isLeaf="false"
+            isUnmarshall="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="ed7e4e1e-39a7-4e40-9eb6-19f52dac3717"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="76828b0a-db8b-49c0-92f8-c7f89fb77b55"
+                  LastKnownName="App实例"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </acceptEventAction>
+          <opaqueAction
+            Id="7c64fee9-d4d2-4fcd-a959-86cba8bd3941"
+            name="健康与完整性监测"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="79cdcd85-d19b-472a-8958-86dd1f4f0d11"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="76828b0a-db8b-49c0-92f8-c7f89fb77b55"
+                  LastKnownName="App实例"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
         </nodes>
       </activity>
     </packageHasNamedElement>

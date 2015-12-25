@@ -41,6 +41,8 @@
   <ItemGroup>
     <Compile Include="GuardService.cs" />
     <Compile Include="IGuardService.cs" />
+    <Compile Include="ILogService.cs" />
+    <Compile Include="LogService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
