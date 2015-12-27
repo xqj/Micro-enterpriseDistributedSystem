@@ -140,7 +140,7 @@ namespace mds.ConfigService.Core
         /// <summary>
         /// 得到一个对象实体
         /// </summary>
-        public SolutionConfiguration Get(int ID)
+        public SolutionConfiguration Get(Guid ID)
         {
 
             StringBuilder strSql = new StringBuilder();

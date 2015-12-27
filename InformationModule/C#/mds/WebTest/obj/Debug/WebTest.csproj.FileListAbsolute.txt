@@ -6,3 +6,11 @@ D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\WebTest\
 D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\WebTest\obj\Debug\WebTest.csprojResolveAssemblyReference.cache
 D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\WebTest\obj\Debug\WebTest.dll
 D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\WebTest\obj\Debug\WebTest.pdb
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\WebTest\bin\WebTest.dll.config
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\WebTest\bin\WebTest.dll
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\WebTest\bin\WebTest.pdb
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\WebTest\bin\mds.Util.dll
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\WebTest\bin\mds.Util.pdb
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\WebTest\obj\Debug\WebTest.csprojResolveAssemblyReference.cache
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\WebTest\obj\Debug\WebTest.dll
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\WebTest\obj\Debug\WebTest.pdb
