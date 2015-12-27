@@ -10,6 +10,7 @@ namespace mds.DataAccess.Config
     /// </summary>
    public class DataAccessConfiguration
     {
+        public string ConnectionName { set; get; }
        /// <summary>
        /// 数据库类型
        /// </summary>

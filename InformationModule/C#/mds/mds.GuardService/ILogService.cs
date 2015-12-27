@@ -5,7 +5,7 @@ using System.Text;
 
 namespace mds.GuardService
 {
-   public interface ILogService
+   public interface ILogServer
     {
     }
 }

@@ -3,3 +3,8 @@ D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.Util
 D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.Util\obj\Debug\mds.Util.dll
 D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.Util\obj\Debug\mds.Util.pdb
 D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.Util\obj\Debug\mds.Util.csprojResolveAssemblyReference.cache
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.Util\bin\Debug\mds.Util.dll
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.Util\bin\Debug\mds.Util.pdb
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.Util\obj\Debug\mds.Util.csprojResolveAssemblyReference.cache
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.Util\obj\Debug\mds.Util.dll
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.Util\obj\Debug\mds.Util.pdb

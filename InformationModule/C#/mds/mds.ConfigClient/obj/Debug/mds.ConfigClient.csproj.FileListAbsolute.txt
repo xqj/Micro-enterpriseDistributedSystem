@@ -1,1 +1,10 @@
 D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.ConfigClient\obj\Debug\mds.ConfigClient.csprojResolveAssemblyReference.cache
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.ConfigClient\bin\Debug\mds.ConfigClient.dll
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.ConfigClient\bin\Debug\mds.ConfigClient.pdb
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.ConfigClient\bin\Debug\mds.BaseModel.dll
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.ConfigClient\bin\Debug\mds.Util.dll
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.ConfigClient\bin\Debug\mds.BaseModel.pdb
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.ConfigClient\bin\Debug\mds.Util.pdb
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.ConfigClient\obj\Debug\mds.ConfigClient.csprojResolveAssemblyReference.cache
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.ConfigClient\obj\Debug\mds.ConfigClient.dll
+D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.ConfigClient\obj\Debug\mds.ConfigClient.pdb

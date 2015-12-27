@@ -31,7 +31,11 @@ namespace mds.ConfigClient
 
             };//构造函数默认对象内属性数值，默认为本地模式参数
         }
-        public InitResult Init()
+        /// <summary>
+        /// 在程序第一次运行时运行此方法获取配置
+        /// </summary>
+        /// <returns></returns>
+        public InitResult RunInAppStartInit()
         {
             var r = new InitResult() { Result = true };
             AppConfiguration appConfig = null;
@@ -54,6 +58,11 @@ namespace mds.ConfigClient
                 ReadLocal(appConfig,r);//读取本地配置
             }
             return r;
+        }
+        public ComponentConfiguration GetComponentConfig(int componetID)
+        {
+            //构造函数完成无null初始化设置
+            return _solutionConfig.Components.Find(c => c.ComponentId == componetID);
         }
         /// <summary>
         /// 本地配置模式下只有一个方案序列化文件
@@ -89,7 +98,10 @@ namespace mds.ConfigClient
 
             if (appConfig.IsFileLoad)
             { //非内存加载模式
-
+                //判断配置文件是否已经存在
+                //判断配置文件的新鲜程度
+                //远程拉取配置文件
+                //固化指定目录下
             }
 
         }

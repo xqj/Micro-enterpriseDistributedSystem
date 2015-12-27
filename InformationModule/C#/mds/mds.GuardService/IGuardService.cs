@@ -6,7 +6,7 @@ using System.Text;
 
 namespace mds.GuardService
 {
-   public interface IGuardService
+   public interface IGuardServer
     {
        /// <summary>
        /// 通知程序重新载入配置

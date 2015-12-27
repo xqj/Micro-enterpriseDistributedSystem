@@ -32,6 +32,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,9 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConfigServer.cs" />
+    <Compile Include="Config\ConfigHelper.cs" />
+    <Compile Include="Config\DefineTable.cs" />
     <Compile Include="Core\ComponentConfigurationDal.cs" />
     <Compile Include="Core\SolutionConfigurationDal.cs" />
     <Compile Include="IConfigServer.cs" />
+    <Compile Include="Model\Config.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -53,6 +58,10 @@
       <Project>{c615dd45-7d57-4deb-832d-c3d5862c33c0}</Project>
       <Name>mds.BaseModel</Name>
     </ProjectReference>
+    <ProjectReference Include="..\mds.ConfigClient\mds.ConfigClient.csproj">
+      <Project>{577fa034-fce1-481f-bb98-1492123ebb99}</Project>
+      <Name>mds.ConfigClient</Name>
+    </ProjectReference>
     <ProjectReference Include="..\mds.DataAccess\mds.DataAccess.csproj">
       <Project>{36e7e9a3-72bf-4643-9eaf-b2fc75aafa8f}</Project>
       <Name>mds.DataAccess</Name>
@@ -62,9 +71,7 @@
       <Name>mds.Util</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DeploymentServiceClient.cs" />
     <Compile Include="GuardServiceClient.cs" />
     <Compile Include="LogServiceClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

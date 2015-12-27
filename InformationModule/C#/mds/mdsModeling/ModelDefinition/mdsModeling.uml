@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
   dslVersion="1.0.0.0"
   Id="0087d537-cd05-4da0-a767-0975b5628e3b"
   name="mdsModeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -704,23 +704,6 @@
             </type_NamedElement>
           </part>
           <part
-            Id="ab1f1e46-6c2d-4dcd-8e28-3eb18d022914"
-            name="DeploymentClient"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="Composite"
-            isComposite="true">
-            <type_NamedElement>
-              <componentMoniker
-                Id="6f0df811-906e-4d5c-bf68-3179e46bd6f4"
-                LastKnownName="DeploymentService_Client"
-                LastKnownLocation="mdsModeling.uml" />
-            </type_NamedElement>
-          </part>
-          <part
             Id="63310c94-1885-4e7d-b8ef-d54e9bb0b1a6"
             name="Server"
             isLeaf="false"
@@ -734,6 +717,23 @@
               <componentMoniker
                 Id="67937c4b-a34e-43d9-a490-a4c31a3dee16"
                 LastKnownName="DeploymentService_Server"
+                LastKnownLocation="mdsModeling.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="2d4e7cd7-cbe7-4cbe-9477-5bc29cbb6ec7"
+            name="DeploymentService"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="9483232f-d051-4adf-b44b-403e62de8665"
+                LastKnownName="mds.DeploymentService"
                 LastKnownLocation="mdsModeling.uml" />
             </type_NamedElement>
           </part>
@@ -1514,6 +1514,23 @@
                 LastKnownLocation="mdsModeling.uml" />
             </type_NamedElement>
           </part>
+          <part
+            Id="d636e882-c330-4b5b-b27a-7ccf6f6a8f95"
+            name="DeploymentServiceClient"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="6e6ce702-dfca-4c94-b402-9f039107fc19"
+                LastKnownName="DeploymentServiceClient"
+                LastKnownLocation="mdsModeling.uml" />
+            </type_NamedElement>
+          </part>
         </ownedAttributesInternal>
       </component>
     </packageHasNamedElement>
@@ -1808,6 +1825,23 @@
                 LastKnownLocation="mdsModeling.uml" />
             </type_NamedElement>
           </part>
+          <part
+            Id="44bc35b5-2d0e-4f3b-9adb-d8346387286d"
+            name="SystemSecurityService"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="dc4adb94-1130-424d-bab1-7008a1874d13"
+                LastKnownName="mds.SystemSecurityService"
+                LastKnownLocation="mdsModeling.uml" />
+            </type_NamedElement>
+          </part>
         </ownedAttributesInternal>
       </component>
     </packageHasNamedElement>
@@ -1992,6 +2026,30 @@
           </opaqueAction>
         </nodes>
       </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="6e6ce702-dfca-4c94-b402-9f039107fc19"
+        name="DeploymentServiceClient"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="9483232f-d051-4adf-b44b-403e62de8665"
+        name="mds.DeploymentService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="dc4adb94-1130-424d-bab1-7008a1874d13"
+        name="mds.SystemSecurityService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

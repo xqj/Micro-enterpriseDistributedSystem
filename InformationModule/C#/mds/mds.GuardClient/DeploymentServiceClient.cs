@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace mds.GuardService
+namespace mds.GuardClient
 {
-    public class LogService : ILogServer
+   public class DeploymentServiceClient
     {
     }
 }
