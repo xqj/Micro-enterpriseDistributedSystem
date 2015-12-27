@@ -5,6 +5,5 @@ D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.Base
 D:\my\github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.BaseModel\obj\Debug\mds.BaseModel.pdb
 D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.BaseModel\bin\Debug\mds.BaseModel.dll
 D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.BaseModel\bin\Debug\mds.BaseModel.pdb
-D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.BaseModel\obj\Debug\mds.BaseModel.csprojResolveAssemblyReference.cache
 D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.BaseModel\obj\Debug\mds.BaseModel.dll
 D:\Github\Micro-enterpriseDistributedSystem\InformationModule\C#\mds\mds.BaseModel\obj\Debug\mds.BaseModel.pdb

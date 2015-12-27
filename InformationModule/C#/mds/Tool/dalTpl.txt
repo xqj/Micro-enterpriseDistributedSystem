@@ -1,0 +1,205 @@
+<#@ template language="c#" HostSpecific="True" #>
+<#@ output extension= ".cs" #>
+<#
+	TableHost host = (TableHost)(Host);	
+	string DbParaHead=host.DbParaHead;
+	string DbParaDbType=host.DbParaDbType;
+	string preParameter=host.preParameter;
+	string ModelSpace = host.TableName;
+	ColumnInfo identityKey=host.IdentityKey;
+	string returnValue = "void";
+    if (identityKey!=null)
+    {         
+         returnValue = CodeCommon.DbTypeToCS(identityKey.TypeName);              
+    }
+#>
+using mds.BaseModel;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using mds.DataAccess;
+using mds.ConfigService.Config;
+using System.Data.Common;
+using mds.DataAccess.Model;
+using System.Data;
+
+namespace mds.XXXXX.Core
+<# if( host.Folder.Length > 0){ #>
+	.<#= host.Folder #>
+<# } #>
+{
+	<# if( host.TableDescription.Length > 0) {#>
+ 	//<#= host.TableDescription #>
+	<# } #>
+	internal partial class <#= host.GetDALClass(host.TableName) #>Dal
+	{
+   		 private static IDatabaseService _dalService;
+   		  static <#= host.GetDALClass(host.TableName) #>Dal() {
+            var obj = new DataAccessService(ConfigHelper.GetDalConfig(DefineTable.<#= host.GetDALClass(host.TableName) #>ConnectionName));
+            _dalService = obj.CreateIntance();
+        }
+		/// <summary>
+		/// 增加一条数据
+		/// </summary>
+		internal static <#= returnValue #> Create(<#= ModelSpace #> model)
+		{
+			StringBuilder strSql=new StringBuilder();
+			strSql.Append("insert into <#= host.TableName #>(");			
+            strSql.Append("<# for(int i=0;i< host.Fieldlist.Count;i++) {   ColumnInfo c = host.Fieldlist[i]; if (!c.IsIdentity) {#><#= c.ColumnName#><# if (i< host.Fieldlist.Count-1 ) {#>,<#}#><#}}#>");
+			strSql.Append(") values (");
+            strSql.Append("<# for(int i=0;i< host.Fieldlist.Count;i++) {   ColumnInfo c = host.Fieldlist[i]; if (!c.IsIdentity) {#><#=preParameter#><#= c.ColumnName#><# if (i< host.Fieldlist.Count-1 ) {#>,<#}#><#}}#>");            
+            strSql.Append(") ");            
+            <#if (identityKey!=null) {#>strSql.Append(";select @@IDENTITY");<#}#>	
+            List<DbParameter> parameters=new List<DbParameter>();
+			
+			<# for(int i=0;i< host.Fieldlist.Count;i++)
+            {   
+            ColumnInfo c = host.Fieldlist[i];
+            if(c.IsIdentity) continue;
+            #>
+             parameters.Add(new MdsDbParameter("<#=preParameter#><#=c.ColumnName#>", DbType.<#=CodeCommon.DbTypeLength(host.DbType, c.TypeName, c.Length)#>));
+            <# }#>  
+           
+			<# foreach (ColumnInfo c in host.Fieldlist) { if(c.IsIdentity) continue;#>            
+            parameters[<#= n #>].Value = <# if ("uniqueidentifier" == c.TypeName.ToLower()){#>Guid.NewGuid();<#} else {#>model.<#=c.ColumnName#>;<#} n=n+1; #>
+            <# }#>
+            
+			return _dalService.GetPrimarykey(parameters,strSql.ToString());	
+		}
+		
+		
+		/// <summary>
+		/// 更新一条数据
+		/// </summary>
+		internal static int Edit(<#= ModelSpace #> model)
+		{
+			StringBuilder strSql=new StringBuilder();
+			strSql.Append("update <#= host.TableName #> set ");
+			<# for(int i=0;i< host.Fieldlist.Count;i++)
+            {   ColumnInfo c = host.Fieldlist[i]; #>
+            <# if (!c.IsIdentity) {#>            
+            strSql.Append(" <#= c.ColumnName #> = <#=preParameter#><#=c.ColumnName#> <# if (i< host.Fieldlist.Count-1 ) {#>,<#}#> ");<# }#>
+            <# }#>			
+			strSql.Append(" where <#= CodeCommon.GetWhereParameterExpression(host.Keys, true ,host.DbType) #> ");
+						
+             List<DbParameter> parameters=new List<DbParameter>();
+				
+			<# for(int i=0;i< host.Fieldlist.Count;i++)
+            {   ColumnInfo c = host.Fieldlist[i]; #>
+             parameters.Add(new MdsDbParameter("<#=preParameter#><#=c.ColumnName#>", DbType.<#=CodeCommon.DbTypeLength(host.DbType, c.TypeName, c.Length)#>));
+            
+            <# }#>  
+            );		
+			<# foreach (ColumnInfo c in host.Fieldlist) { #>            
+            parameters[<#= n #>].Value = model.<#=c.ColumnName#>;<# n=n+1; #>
+            <# }#>
+            
+            return _dalService.ExecuteNonQuery(parameters, strSql.ToString());
+		}
+		
+		/// <summary>
+		/// 得到一个对象实体
+		/// </summary>
+		public <#= ModelSpace #> Get(<#= CodeCommon.GetInParameter(host.Keys,true) #>)
+		{
+			
+			StringBuilder strSql=new StringBuilder();
+			strSql.Append("select <# for(int i=0;i< host.Fieldlist.Count;i++) { #><#= host.Fieldlist[i].ColumnName #><# if(i< host.Fieldlist.Count-1 ) {#>,<# } #> <#}#> ");			
+			strSql.Append("  from <#= host.TableName #> ");
+			strSql.Append(" where <#= CodeCommon.GetWhereParameterExpression(host.Keys, true, host.DbType) #>");
+			 List<DbParameter> parameters=new List<DbParameter>();
+			 
+			<#=ModelSpace#> r=new <#=ModelSpace#>();
+			r= _dalService.GetDataByReader<SolutionConfiguration>(parameters, strSql.ToString(), delegate(DbDataReader dr) {
+                r = null;
+                if (dr.Read()) {
+                    r = new <#=ModelSpace#>() {
+						<# foreach (ColumnInfo c in host.Fieldlist) { #>
+				<# if(CodeCommon.DbTypeToCS(c.TypeName)=="int"||
+				CodeCommon.DbTypeToCS(c.TypeName)=="long"||
+				CodeCommon.DbTypeToCS(c.TypeName)=="float"||
+				CodeCommon.DbTypeToCS(c.TypeName)=="DateTime"||
+				CodeCommon.DbTypeToCS(c.TypeName)=="decimal")
+				{#>
+				<#=c.ColumnName#>=<#=CodeCommon.DbTypeToCS(c.TypeName)#>.Parse(dr["<#=c.ColumnName#>"].ToString()),
+				<# } #>
+				<# if(CodeCommon.DbTypeToCS(c.TypeName)=="string") {#>
+				<#=c.ColumnName#>= dr["<#=c.ColumnName#>"].ToString(),
+				<# } #>				
+				<# if(CodeCommon.DbTypeToCS(c.TypeName)=="Guid") {#>
+				<#=c.ColumnName#>= ds.Tables[0].Rows[0]["<#=c.ColumnName#>"].ToString(),
+				<# } #>
+				<# if(CodeCommon.DbTypeToCS(c.TypeName)=="bool") {#>
+				
+					if((dr["<#=c.ColumnName#>"].ToString()=="1")||(dr["<#=c.ColumnName#>"].ToString().ToLower()=="true"))
+					{
+					<#=c.ColumnName#>= true,
+					}
+					else
+					{
+					<#=c.ColumnName#>= false,
+					}
+				
+				<# } #>
+				<# } #>				
+                    };
+                }
+                return r;
+            });
+            return r;
+			
+		}
+		/// <summary>
+		/// 获得数据列表
+		/// </summary>
+		public List<<#= ModelSpace #>> GetList()
+		{
+			StringBuilder strSql=new StringBuilder();
+			strSql.Append("select * ");
+			strSql.Append(" FROM <#= host.TableName #> ");			
+			  List<DbParameter> parameters=new List<DbParameter>();
+			 return  _dalService.GetListByReader<SolutionConfiguration>(parameters, strSql.ToString(), delegate (DbDataReader dr, List<SolutionConfiguration> list) {
+                r = new List<SolutionConfiguration>();
+                while (dr.Read())
+                {
+                    r.Add(new <#=ModelSpace#>() {
+							<# foreach (ColumnInfo c in host.Fieldlist) { #>
+				<# if(CodeCommon.DbTypeToCS(c.TypeName)=="int"||
+				CodeCommon.DbTypeToCS(c.TypeName)=="long"||
+				CodeCommon.DbTypeToCS(c.TypeName)=="float"||
+				CodeCommon.DbTypeToCS(c.TypeName)=="DateTime"||
+				CodeCommon.DbTypeToCS(c.TypeName)=="decimal")
+				{#>
+				<#=c.ColumnName#>=<#=CodeCommon.DbTypeToCS(c.TypeName)#>.Parse(dr["<#=c.ColumnName#>"].ToString()),
+				<# } #>
+				<# if(CodeCommon.DbTypeToCS(c.TypeName)=="string") {#>
+				<#=c.ColumnName#>= dr["<#=c.ColumnName#>"].ToString(),
+				<# } #>				
+				<# if(CodeCommon.DbTypeToCS(c.TypeName)=="Guid") {#>
+				<#=c.ColumnName#>= ds.Tables[0].Rows[0]["<#=c.ColumnName#>"].ToString(),
+				<# } #>
+				<# if(CodeCommon.DbTypeToCS(c.TypeName)=="bool") {#>
+				
+					if((dr["<#=c.ColumnName#>"].ToString()=="1")||(dr["<#=c.ColumnName#>"].ToString().ToLower()=="true"))
+					{
+					<#=c.ColumnName#>= true,
+					}
+					else
+					{
+					<#=c.ColumnName#>= false,
+					}
+				
+				<# } #>
+				<# } #>		
+                    });
+                }
+                if (r.Count == 0) r = null;
+               
+            });
+		}
+	}
+}
+<#+
+int n=0;
+#>

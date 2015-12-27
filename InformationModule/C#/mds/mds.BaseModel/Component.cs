@@ -8,7 +8,7 @@ namespace mds.BaseModel
     /// <summary>
     /// 组件类
     /// </summary>
-    public class Component
+    public class Component:DataClassBase
     {
         /// <summary>
         /// 组件ID

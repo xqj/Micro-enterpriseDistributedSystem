@@ -9,5 +9,7 @@ namespace mds.ConfigService.Config
     {
         public readonly static int ComponentID = 1001;
         public readonly static string SolutionConfigurationConnectionName = "SolutionConfiguration";
+        internal static readonly object ComponentConfigurationConnectionName;
+        internal static object ComponentConnectionName = "Component";
     }
 }

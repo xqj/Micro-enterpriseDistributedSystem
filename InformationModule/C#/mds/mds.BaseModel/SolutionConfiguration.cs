@@ -13,7 +13,9 @@ namespace mds.BaseModel
 
 	public class SolutionConfiguration : DataClassBase
 	{
-		public virtual Guid SolutionId
+        public int ID { set; get; }
+
+        public virtual Guid SolutionId
 		{
 			get;
 			set;

@@ -18,14 +18,16 @@ namespace mds.BaseModel
 			get;
 			set;
 		}
+        public int CreateBy { set; get; }
 
-		public virtual DateTime ModifyTime
+
+        public virtual DateTime ModifyTime
 		{
 			get;
 			set;
 		}
-
-		public virtual bool IsDelete
+        public int ModifyBy { set; get; }
+        public virtual bool IsDelete
 		{
 			get;
 			set;

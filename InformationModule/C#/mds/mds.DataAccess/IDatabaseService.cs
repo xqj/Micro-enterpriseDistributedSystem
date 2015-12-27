@@ -11,8 +11,8 @@ namespace mds.DataAccess
     public delegate void InitList<T>(DbDataReader dataReader, List<T> result);
     public interface IDatabaseService
     {
-        T GetDataByReader<T>( List<DbParameter> parameters, string cmdText, InitData<T> dataAction, CommandType cmdType);
-        List<T> GetListByReader<T>( List<DbParameter> parameters, string cmdText, InitList<T> dataAction, CommandType cmdType);
+        T GetDataByReader<T>( List<DbParameter> parameters, string cmdText, InitData<T> dataAction, CommandType cmdType = CommandType.Text);
+        List<T> GetListByReader<T>( List<DbParameter> parameters, string cmdText, InitList<T> dataAction, CommandType cmdType = CommandType.Text);
         int GetPrimarykey( List<DbParameter> parameters, string cmdText, CommandType cmdType= CommandType.Text);
         int ExecuteNonQuery( List<DbParameter> parameters, string cmdText, CommandType cmdType = CommandType.Text);
     }
