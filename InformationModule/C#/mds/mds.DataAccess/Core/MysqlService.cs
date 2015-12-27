@@ -23,24 +23,24 @@ namespace mds.DataAccess
             });
             return list;
         }
-        public T GetDataByReader<T>(List<System.Data.Common.DbParameter> parameters, string cmdText, System.Data.CommandType cmdType, InitData<T> dataAction)
+        public T GetDataByReader<T>(List<System.Data.Common.DbParameter> parameters, string cmdText, InitData<T> dataAction, System.Data.CommandType cmdType = System.Data.CommandType.Text)
         {
             return MysqlDatabaseFactory.GetDataByReader<T>(_config.DatabaseConnection, ParseParameter(parameters), cmdText, cmdType, dataAction);
         }
 
 
 
-        public List<T> GetListByReader<T>(List<System.Data.Common.DbParameter> parameters, string cmdText, System.Data.CommandType cmdType, InitList<T> dataAction)
+        public List<T> GetListByReader<T>(List<System.Data.Common.DbParameter> parameters, string cmdText, InitList<T> dataAction, System.Data.CommandType cmdType = System.Data.CommandType.Text)
         {
             return MysqlDatabaseFactory.GetListByReader<T>(_config.DatabaseConnection, ParseParameter(parameters), cmdText, cmdType, dataAction);
         }
 
-        public int GetPrimarykey(List<System.Data.Common.DbParameter> parameters, string cmdText, System.Data.CommandType cmdType)
+        public int GetPrimarykey(List<System.Data.Common.DbParameter> parameters, string cmdText, System.Data.CommandType cmdType = System.Data.CommandType.Text)
         {
             return MysqlDatabaseFactory.GetPrimarykey(_config.DatabaseConnection, ParseParameter(parameters), cmdText, cmdType);
         }
 
-        public int ExecuteNonQuery(List<System.Data.Common.DbParameter> parameters, string cmdText, System.Data.CommandType cmdType)
+        public int ExecuteNonQuery(List<System.Data.Common.DbParameter> parameters, string cmdText, System.Data.CommandType cmdType = System.Data.CommandType.Text)
         {
             return MysqlDatabaseFactory.ExecuteNonQuery(_config.DatabaseConnection, ParseParameter(parameters), cmdText, cmdType);
         }

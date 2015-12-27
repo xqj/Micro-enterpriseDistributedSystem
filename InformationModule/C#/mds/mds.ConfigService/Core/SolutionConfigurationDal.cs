@@ -17,7 +17,8 @@ namespace mds.ConfigService.Core
         }
         internal static int Create(BaseModel.SolutionConfiguration solution)
         {
-            throw new NotImplementedException();
+            string sql = "";
+            return _dalService.GetPrimarykey(null,sql);
         }
 
         internal static int Edit(BaseModel.SolutionConfiguration solution)
