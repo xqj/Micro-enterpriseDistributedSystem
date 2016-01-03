@@ -52,11 +52,8 @@ namespace mds.ConfigClient
             if (appConfig.IsRemote)//判断是否读取远程配置模式
             {
                 ReadRemote(appConfig);//读取远程配置
-            }
-            else
-            {
-                ReadLocal(appConfig,r);//读取本地配置
-            }
+            }            
+            ReadLocal(appConfig,r);//读取本地配置 
             return r;
         }
         public ComponentConfiguration GetComponentConfig(int componetID)
@@ -92,20 +89,66 @@ namespace mds.ConfigClient
             }
 
         }
-
+        private SolutionConfiguration ReadLocal(AppConfiguration appConfig)
+        {
+            if (string.IsNullOrEmpty(appConfig.LocalConfigFilePath))//如果没有默认路径不读取
+            {               
+                return null;//构造函数里默认数值
+            }
+            try
+            {
+                var temp = XmlConfigSerializer.Instance.DeserializeSingle<SolutionConfiguration>(appConfig.LocalConfigFilePath);
+                return temp;
+            }
+            catch (Exception ex)//预期异常：格式错误，错误内容
+            {              
+                
+            }
+            return null;
+        }
         private void ReadRemote(AppConfiguration appConfig)
         {
 
             if (appConfig.IsFileLoad)
-            { 
+            {
+                SolutionConfiguration localconfig = null;
                 //判断配置文件是否已经存在
-                //判断配置文件的新鲜程度
+                if (File.Exists(appConfig.LocalConfigFilePath))
+                {                   
+                    localconfig = ReadLocal(appConfig);
+                }
                 //远程拉取配置文件
-                //固化指定目录下制定的文件
+                var remoteConfig = GetRemote(appConfig.RemoteConfigServer, appConfig.SolutionId, appConfig.Version);
+               //判断配置文件的新鲜程度
+                if (remoteConfig != null)//无法获取远程配置时不更新本地
+                {
+                    if(remoteConfig.Version==0)//永远最新
+                    {
+                        File.Delete(appConfig.LocalConfigFilePath);
+                        //固化指定目录下制定的文件
+                        File.AppendAllText(appConfig.LocalConfigFilePath, XmlConfigSerializer.Instance.ToXml(remoteConfig));
+                    }
+                    if ((remoteConfig.Version> 0)&&(localconfig == null))//本地没有配置文件并且不是永远更新
+                    {
+                        File.AppendAllText(appConfig.LocalConfigFilePath, XmlConfigSerializer.Instance.ToXml(remoteConfig));
+                    }
+                }               
             }
-
         }
-
+        private SolutionConfiguration GetRemote(string url,Guid solutionID,int version)
+        {
+            var dic = new Dictionary<string, string>();
+            dic.Add(DefineTable.SolutionIDParam, solutionID.ToString());
+            dic.Add(DefineTable.VersionParam, version.ToString());
+            string str = "";
+            try {
+                str = HttpRequestHelper.Instance.GetNormalRequestResult(url, dic);
+            }catch(Exception ex)
+            {
+                return null; 
+            }
+            return XmlConfigSerializer.Instance.FromXml<SolutionConfiguration>(str);
+        }
         private AppConfiguration ReadAppConfig()
         {
             return new AppConfiguration()

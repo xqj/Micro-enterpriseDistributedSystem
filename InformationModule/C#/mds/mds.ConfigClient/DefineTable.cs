@@ -14,5 +14,7 @@ namespace mds.ConfigClient
         public static readonly string RemoteConfigServerUrl = "RemoteConfigServerUrl";
         internal static readonly string LocalConfigFilePath= "LocalConfigFilePath";
         internal static readonly string AppID= "AppID";
+        internal static readonly string SolutionIDParam= " solutionid";
+        internal static readonly string VersionParam= "version";
     }
 }
