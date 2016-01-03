@@ -97,11 +97,11 @@ namespace mds.ConfigClient
         {
 
             if (appConfig.IsFileLoad)
-            { //非内存加载模式
+            { 
                 //判断配置文件是否已经存在
                 //判断配置文件的新鲜程度
                 //远程拉取配置文件
-                //固化指定目录下
+                //固化指定目录下制定的文件
             }
 
         }
@@ -114,7 +114,9 @@ namespace mds.ConfigClient
                 IsRemote = bool.Parse(ConfigurationManager.AppSettings[DefineTable.IsRemote]),
                 SolutionId = Guid.Parse(ConfigurationManager.AppSettings[DefineTable.SolutionId]),
                 Version = int.Parse(ConfigurationManager.AppSettings[DefineTable.SolutionVersion]),
-                RemoteConfigServer = ConfigurationManager.AppSettings[DefineTable.RemoteConfigServerUrl]
+                RemoteConfigServer = ConfigurationManager.AppSettings[DefineTable.RemoteConfigServerUrl],
+                 LocalConfigFilePath = ConfigurationManager.AppSettings[DefineTable.LocalConfigFilePath],
+                  AppID=int.Parse(ConfigurationManager.AppSettings[DefineTable.AppID])
             };
         }
 

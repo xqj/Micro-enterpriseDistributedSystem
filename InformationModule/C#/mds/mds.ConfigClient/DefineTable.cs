@@ -12,5 +12,7 @@ namespace mds.ConfigClient
         public static readonly string SolutionId = "SolutionId";
         public static readonly string SolutionVersion = "SolutionVersion";
         public static readonly string RemoteConfigServerUrl = "RemoteConfigServerUrl";
+        internal static readonly string LocalConfigFilePath= "LocalConfigFilePath";
+        internal static readonly string AppID= "AppID";
     }
 }

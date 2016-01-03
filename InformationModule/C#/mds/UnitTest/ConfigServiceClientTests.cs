@@ -10,14 +10,18 @@ namespace mds.ConfigClient.Tests
     [TestClass()]
     public class ConfigServiceClientTests
     {
+       
         [TestMethod()]
-        public void ConfigServiceClientTest()
+        public void RunInAppStartInitTest()
         {
-
+            ConfigServiceClient ci = new ConfigServiceClient();
+            var r = ci.RunInAppStartInit();
+            Assert.IsTrue(r != null);
+            Assert.IsTrue(r.Result);
         }
 
         [TestMethod()]
-        public void InitTest()
+        public void GetComponentConfigTest()
         {
 
         }

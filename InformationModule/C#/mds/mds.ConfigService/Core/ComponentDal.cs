@@ -26,9 +26,9 @@ namespace mds.ConfigService.Core
         {
             StringBuilder strSql = new StringBuilder();
             strSql.Append("insert into Component(");
-            strSql.Append("ComponentName,CreateTime,CreateBy,ModifyTime,ModifyBy,IsDelete");
+            strSql.Append("ComponentName,CreateTime,CreateBy,ModifyTime,ModifyBy,IsDelete,ComponentID");
             strSql.Append(") values (");
-            strSql.Append("@ComponentName,@CreateTime,@CreateBy,@ModifyTime,@ModifyBy,@IsDelete");
+            strSql.Append("@ComponentName,@CreateTime,@CreateBy,@ModifyTime,@ModifyBy,@IsDelete,@ComponentID");
             strSql.Append(") ");
             strSql.Append(";select @@IDENTITY");
             List<DbParameter> parameters = new List<DbParameter>();
@@ -39,14 +39,15 @@ namespace mds.ConfigService.Core
             parameters.Add(new MdsDbParameter("@ModifyTime", DbType.DateTime));
             parameters.Add(new MdsDbParameter("@ModifyBy", DbType.Int32, 11));
             parameters.Add(new MdsDbParameter("@IsDelete", DbType.Boolean));
-
+            parameters.Add(new MdsDbParameter("@ComponentID", DbType.Int32, 11));
 
             parameters[0].Value = model.ComponentName;
-            parameters[1].Value = model.CreateTime;
+            parameters[1].Value =DateTime.Now;
             parameters[2].Value = model.CreateBy;
-            parameters[3].Value = model.ModifyTime;
-            parameters[4].Value = model.ModifyBy;
-            parameters[5].Value = model.IsDelete;
+            parameters[3].Value = DateTime.Now;
+            parameters[4].Value =0;
+            parameters[5].Value = false;
+            parameters[6].Value = model.ComponentID;
             return _dalService.GetPrimarykey(parameters, strSql.ToString());
         }
 

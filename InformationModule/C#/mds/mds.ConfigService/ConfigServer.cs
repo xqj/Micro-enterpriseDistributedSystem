@@ -10,7 +10,7 @@ namespace mds.ConfigService
 {
     public class ConfigServer : IConfigServer
     {
-
+       
         public BaseModel.OperationResult<int> CreateSolution(BaseModel.SolutionConfiguration solution)
         {
             return FunctionResultProxy.GetResult<OperationResult<int>>(delegate(OperationResult<int> r) {
@@ -48,7 +48,7 @@ namespace mds.ConfigService
                 var sc = SolutionConfigurationDal.Get(solutionId);
                 if (sc != null)
                 {
-                    sc.Components = ComponentConfigurationDal.Gets(solutionId, version);
+                    sc.Components = ComponentConfigurationDal.GetList(solutionId, version);
                     r.Data = sc;
                 }
                 r.ActionResult = (r.Data != null);
@@ -63,7 +63,11 @@ namespace mds.ConfigService
 
         public BaseModel.OperationResult<int> CreateComponent(BaseModel.Component component)
         {
-            throw new NotImplementedException();
+            return FunctionResultProxy.GetResult<OperationResult<int>>(delegate (OperationResult<int> r) {
+                r.Data = ComponentDal.Create(component);
+                r.ActionResult = (r.Data > 0);
+                return r;
+            });
         }
 
         public BaseModel.OperationMessage EditComponent(BaseModel.Component component)
@@ -78,7 +82,11 @@ namespace mds.ConfigService
 
         public BaseModel.OperationResult<int> CreateComponentConfig(BaseModel.ComponentConfiguration componentConfig)
         {
-            throw new NotImplementedException();
+            return FunctionResultProxy.GetResult<OperationResult<int>>(delegate (OperationResult<int> r) {
+                r.Data = ComponentConfigurationDal.Create(componentConfig);
+                r.ActionResult = (r.Data > 0);
+                return r;
+            });
         }
 
         public BaseModel.OperationMessage ChangeComponentConfig(BaseModel.ComponentConfiguration componentConfig)

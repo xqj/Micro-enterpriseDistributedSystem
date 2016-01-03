@@ -48,17 +48,17 @@ namespace mds.ConfigService.Core
 
 
             parameters[0].Value = model.CreateBy;
-            parameters[1].Value = model.ModifyTime;
-            parameters[2].Value = model.ModifyBy;
-            parameters[3].Value = model.IsDelete;
+            parameters[1].Value =DateTime.Now;
+            parameters[2].Value = model.CreateBy;
+            parameters[3].Value = false;
             parameters[4].Value = model.ComponentId;
-            parameters[5].Value = model.IsDebug;
+            parameters[5].Value = false;
             parameters[6].Value = model.Environment;
             parameters[7].Value = model.Content;
             parameters[8].Value = model.Enable;
             parameters[9].Value = model.Signature;
-            parameters[10].Value = model.Version;
-            parameters[11].Value = model.CreateTime;
+            parameters[10].Value = 1;
+            parameters[11].Value = DateTime.Now;
             return _dalService.GetPrimarykey(parameters, strSql.ToString());
         }
 
@@ -134,7 +134,7 @@ namespace mds.ConfigService.Core
         /// <summary>
         /// 得到一个对象实体
         /// </summary>
-        public ComponentConfiguration Get(int ComponentConfigId)
+        internal static ComponentConfiguration Get(int ComponentConfigId)
         {
 
             StringBuilder strSql = new StringBuilder();
@@ -187,7 +187,7 @@ namespace mds.ConfigService.Core
         /// <summary>
         /// 获得数据列表
         /// </summary>
-        public List<ComponentConfiguration> GetList()
+        internal static List<ComponentConfiguration> GetList(Guid id,int version)
         {
             StringBuilder strSql = new StringBuilder();
             strSql.Append("select * ");

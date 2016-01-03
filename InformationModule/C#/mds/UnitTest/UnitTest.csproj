@@ -53,15 +53,30 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="ConfigServerTests.cs" />
     <Compile Include="ConfigServiceClientTests.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\mds.BaseModel\mds.BaseModel.csproj">
+      <Project>{C615DD45-7D57-4DEB-832D-C3D5862C33C0}</Project>
+      <Name>mds.BaseModel</Name>
+    </ProjectReference>
     <ProjectReference Include="..\mds.ConfigClient\mds.ConfigClient.csproj">
       <Project>{577FA034-FCE1-481F-BB98-1492123EBB99}</Project>
       <Name>mds.ConfigClient</Name>
     </ProjectReference>
+    <ProjectReference Include="..\mds.ConfigService\mds.ConfigService.csproj">
+      <Project>{44D9D4BD-5942-4BC3-933E-7B839B191FF4}</Project>
+      <Name>mds.ConfigService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

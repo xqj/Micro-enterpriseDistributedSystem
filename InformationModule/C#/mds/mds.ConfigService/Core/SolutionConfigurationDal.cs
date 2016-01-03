@@ -48,11 +48,11 @@ namespace mds.ConfigService.Core
             parameters.Add(new MdsDbParameter("@IsRemote", DbType.Boolean));
 
 
-            parameters[0].Value = model.CreateTime;
+            parameters[0].Value =DateTime.Now;
             parameters[1].Value = model.CreateBy;
-            parameters[2].Value = model.ModifyTime;
+            parameters[2].Value = DateTime.Now;
             parameters[3].Value = model.ModifyBy;
-            parameters[4].Value = model.IsDelete;
+            parameters[4].Value = false;
             parameters[5].Value = model.SolutionId;
             parameters[6].Value = model.SolutionName;
             parameters[7].Value = model.Version;
@@ -140,7 +140,7 @@ namespace mds.ConfigService.Core
         /// <summary>
         /// 得到一个对象实体
         /// </summary>
-        public SolutionConfiguration Get(Guid ID)
+        internal static SolutionConfiguration Get(Guid ID)
         {
 
             StringBuilder strSql = new StringBuilder();
@@ -195,7 +195,7 @@ namespace mds.ConfigService.Core
         /// <summary>
         /// 获得数据列表
         /// </summary>
-        public List<SolutionConfiguration> GetList()
+        internal static List<SolutionConfiguration> GetList()
         {
             StringBuilder strSql = new StringBuilder();
             strSql.Append("select * ");

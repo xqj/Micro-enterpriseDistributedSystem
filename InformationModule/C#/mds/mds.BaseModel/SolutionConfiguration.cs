@@ -6,22 +6,24 @@
 //------------------------------------------------------------------------------
 namespace mds.BaseModel
 {
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Text;
-
-	public class SolutionConfiguration : DataClassBase
-	{
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Runtime.Serialization;
+    using System.Text;
+    [DataContract]
+    public class SolutionConfiguration : DataClassBase
+    {
+        [DataMember]
         public int ID { set; get; }
-
+        [DataMember]
         public virtual Guid SolutionId
 		{
 			get;
 			set;
 		}
-
-		public virtual string SolutionName
+        [DataMember]
+        public virtual string SolutionName
 		{
 			get;
 			set;
@@ -29,52 +31,56 @@ namespace mds.BaseModel
         /// <summary>
         /// 为0时就一直取最新的版本，配置版本号，改变一次配置内容自动递增
         /// </summary>
-		public virtual int Version
+        [DataMember]
+        public virtual int Version
 		{
 			get;
 			set;
 		}
- 
+
         /// <summary>
         /// 是否将文件静态化储存
         /// </summary>
+        [DataMember]
         public virtual bool IsFile
 		{
 			get;
 			set;
 		}
-
-		public virtual string Content
+        [DataMember]
+        public virtual string Content
+		{
+			get;
+			set;
+		}
+        [DataMember]
+        public virtual bool Enable
 		{
 			get;
 			set;
 		}
 
-		public virtual bool Enable
+        /// <summary>
+        /// 运行环境
+        /// </summary>
+        [DataMember]
+        public virtual int Environment
+		{
+			get;
+			set;
+		}
+        [DataMember]
+        public virtual List<ComponentConfiguration> Components
 		{
 			get;
 			set;
 		}
 
-		/// <summary>
-		/// 运行环境
-		/// </summary>
-		public virtual int Environment
-		{
-			get;
-			set;
-		}
-
-		public virtual List<ComponentConfiguration> Components
-		{
-			get;
-			set;
-		}
-
-		/// <summary>
-		/// 配置模式是否远程化
-		/// </summary>
-		public virtual bool IsRemote
+        /// <summary>
+        /// 配置模式是否远程化
+        /// </summary>
+        [DataMember]
+        public virtual bool IsRemote
 		{
 			get;
 			set;
