@@ -36,8 +36,7 @@ namespace mds.DataAccess
             cmd.CommandType = cmdType;
             con.Open();
             var dataReader = cmd.ExecuteReader();
-            List<T> data = new List<T>();
-            dataAction(dataReader, data);
+            List<T> data =dataAction(dataReader);
             dataReader.Close();
             con.Close();
             return data;

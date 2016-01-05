@@ -11,5 +11,6 @@ namespace mds.ConfigService.Config
         public readonly static string SolutionConfigurationConnectionName = "SolutionConfiguration";
         internal static readonly string ComponentConfigurationConnectionName= "ComponentConfiguration";
         internal static readonly string ComponentConnectionName = "ComponentConnection";
+        internal static readonly string SolutionComponentRelationConnectionName= "SolutionConfiguration";
     }
 }

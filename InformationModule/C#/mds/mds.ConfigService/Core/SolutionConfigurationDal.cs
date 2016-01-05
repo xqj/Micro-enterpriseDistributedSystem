@@ -144,11 +144,13 @@ namespace mds.ConfigService.Core
         {
 
             StringBuilder strSql = new StringBuilder();
-            strSql.Append("select ID, CreateTime, CreateBy, ModifyTime, ModifyBy, IsDelete, SolutionId, SolutionName, Version, IsFile, Content, Enable, Environment, IsRemote  ");
+            strSql.Append("select ID, SolutionId, SolutionName, Version, IsFile, Content, Enable, Environment, IsRemote  ");
             strSql.Append("  from SolutionConfiguration ");
-            strSql.Append(" where ID=@ID");
+            strSql.Append(" where SolutionId=@ID");
             List<DbParameter> parameters = new List<DbParameter>();
-
+            parameters.Add(new MdsDbParameter("@ID",DbType.String) { 
+                  Value=ID.ToString()
+            });
             SolutionConfiguration r = new SolutionConfiguration();
             r = _dalService.GetDataByReader<SolutionConfiguration>(parameters, strSql.ToString(), delegate (DbDataReader dr) {
                 r = null;
@@ -157,33 +159,14 @@ namespace mds.ConfigService.Core
                     r = new SolutionConfiguration()
                     {
                         ID = int.Parse(dr["ID"].ToString()),
-
-                        CreateTime = DateTime.Parse(dr["CreateTime"].ToString()),
-
-                        CreateBy = int.Parse(dr["CreateBy"].ToString()),
-
-                        ModifyTime = DateTime.Parse(dr["ModifyTime"].ToString()),
-
-                        ModifyBy = int.Parse(dr["ModifyBy"].ToString()),
-
-
-                        IsDelete = Boolean.Parse(dr["IsDelete"].ToString()),
                         SolutionId = Guid.Parse(dr["SolutionId"].ToString()),
-
                         SolutionName = dr["SolutionName"].ToString(),
-
                         Version = int.Parse(dr["Version"].ToString()),
-
-
-                        IsFile = Boolean.Parse(dr["IsFile"].ToString()),
+                        IsFile =Convert.ToBoolean(int.Parse(dr["IsFile"].ToString())),
                         Content = dr["Content"].ToString(),
-
-
-                        Enable = Boolean.Parse(dr["Enable"].ToString()),
+                         Enable = Convert.ToBoolean(int.Parse(dr["Enable"].ToString())),
                         Environment = int.Parse(dr["Environment"].ToString()),
-
-
-                        IsRemote = Boolean.Parse(dr["IsRemote"].ToString()),
+                         IsRemote = Convert.ToBoolean(int.Parse(dr["IsRemote"].ToString())),
 
                     };
                 }
@@ -201,9 +184,9 @@ namespace mds.ConfigService.Core
             strSql.Append("select * ");
             strSql.Append(" FROM SolutionConfiguration ");
             List<DbParameter> parameters = new List<DbParameter>();
-            List<SolutionConfiguration> r;
-            return _dalService.GetListByReader<SolutionConfiguration>(parameters, strSql.ToString(), delegate (DbDataReader dr, List<SolutionConfiguration> list) {
-                r = new List<SolutionConfiguration>();
+            
+            return _dalService.GetListByReader<SolutionConfiguration>(parameters, strSql.ToString(), delegate (DbDataReader dr) {
+                List<SolutionConfiguration> r = new List<SolutionConfiguration>();
                 while (dr.Read())
                 {
                     r.Add(new SolutionConfiguration()
@@ -240,7 +223,7 @@ namespace mds.ConfigService.Core
                     });
                 }
                 if (r.Count == 0) r = null;
-
+                return r;
             });
         }
     }

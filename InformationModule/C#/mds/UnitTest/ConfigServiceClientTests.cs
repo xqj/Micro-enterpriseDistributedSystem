@@ -23,7 +23,11 @@ namespace mds.ConfigClient.Tests
         [TestMethod()]
         public void GetComponentConfigTest()
         {
-
+            ConfigServiceClient ci = new ConfigServiceClient();
+            ci.RunInAppStartInit();
+            var r = ci.GetComponentConfig(1001);
+            Assert.IsTrue(r != null);
+            Assert.IsTrue(r.ComponentId==1001);
         }
     }
 }

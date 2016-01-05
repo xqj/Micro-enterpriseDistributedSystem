@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using mds.BaseModel;
 using mds.ConfigClient;
+using mds.ConfigService.Model;
 using mds.DataAccess.Config;
 using mds.Util;
 
@@ -20,12 +21,6 @@ namespace mds.ConfigService.Config
             _compoentConfig = _configService.GetComponentConfig(DefineTable.ComponentID);//不进行null检查保证配置初始化出现问题时爆出异常
             _config= XmlConfigSerializer.Instance.FromXml<ConfigServerConfig>(_compoentConfig.Content);//不进行null检查保证配置初始化出现问题时爆出异常
         }
-
-        internal static DataAccessConfiguration GetDalConfig(object componentConnectionName)
-        {
-            throw new NotImplementedException();
-        }
-
         public static ConfigServerConfig GetConfig()
         {
             return _config;

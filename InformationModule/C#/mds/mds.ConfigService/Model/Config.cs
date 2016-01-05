@@ -4,10 +4,13 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 using mds.DataAccess.Config;
-
-[DataContract]
-public class ConfigServerConfig
+namespace mds.ConfigService.Model
 {
-    [DataMember]
-    public List<DataAccessConfiguration> DalConfigs { set; get; }
+    [DataContract]
+    public class ConfigServerConfig
+    {
+        [DataMember]
+        public List<DataAccessConfiguration> DalConfigs { set; get; }
+    }
+
 }

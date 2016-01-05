@@ -16,7 +16,7 @@ namespace mds.ConfigClient
                 return _instance;
             }
 
-        }
+        }        
         private ConfigClientFactory() {
             _gobalConfigClient = null;
         }
@@ -24,7 +24,10 @@ namespace mds.ConfigClient
         public ConfigServiceClient GetConfigClient()
         {
             if (_gobalConfigClient == null)
+            {
                 _gobalConfigClient = new ConfigServiceClient();
+                _gobalConfigClient.RunInAppStartInit();
+            }
             return _gobalConfigClient;
         }
     }

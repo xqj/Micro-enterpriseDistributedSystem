@@ -26,27 +26,44 @@ namespace ConfigFileCreate
                 SolutionName = "方案名称",
                 Version = 1
             };
-            ConfigServerConfig csc = new ConfigServerConfig() {
+            ConfigServerConfig csc = new ConfigServerConfig()
+            {
                 DalConfigs = new List<DataAccessConfiguration>()
             };
-            csc.DalConfigs.Add(new DataAccessConfiguration() {
-                 ConnectionName="systembase",
-                  DatabaseConnection= "Data Source=192.168.100.4;Initial Catalog=socialsite;Persist Security Info=True;User ID=dbuss;password=123456",
-                   DatabaseType=EnumDatabaseType.MySql,
-                    Multiple=false
+            csc.DalConfigs.Add(new DataAccessConfiguration()
+            {
+                ConnectionName = "SolutionConfiguration",
+                DatabaseConnection = "Data Source=192.168.100.4;Initial Catalog=systembase;Persist Security Info=True;User ID=webuser;password=123456",
+                DatabaseType = EnumDatabaseType.MySql,
+                Multiple = false
             });
-            sc.Components.Add(new ComponentConfiguration() {
-                 Version=1,
-                  Status=1,
-                   ComponentConfigId=1,
-                    ComponentId=1001,
-                     Content= XmlConfigSerializer.Instance.ToXml<ConfigServerConfig>(csc),
-                      Enable=true,
-                       Environment=1,
-                        IsDebug=false,
-                         Signature="软件签名"
+            csc.DalConfigs.Add(new DataAccessConfiguration()
+            {
+                ConnectionName = "ComponentConnection",
+                DatabaseConnection = "Data Source=192.168.100.4;Initial Catalog=systembase;Persist Security Info=True;User ID=webuser;password=123456",
+                DatabaseType = EnumDatabaseType.MySql,
+                Multiple = false
             });
-            XmlConfigSerializer.Instance.Serializer(path + "\\RemoteConfig.xml",sc);
+            csc.DalConfigs.Add(new DataAccessConfiguration()
+            {
+                ConnectionName = "ComponentConfiguration",
+                DatabaseConnection = "Data Source=192.168.100.4;Initial Catalog=systembase;Persist Security Info=True;User ID=webuser;password=123456",
+                DatabaseType = EnumDatabaseType.MySql,
+                Multiple = false
+            });
+            sc.Components.Add(new ComponentConfiguration()
+            {
+                Version = 1,
+                Status = 1,
+                ComponentConfigId = 1,
+                ComponentId = 1001,
+                Content = XmlConfigSerializer.Instance.ToXml<ConfigServerConfig>(csc),
+                Enable = true,
+                Environment = 1,
+                IsDebug = false,
+                Signature = "软件签名"
+            });
+            XmlConfigSerializer.Instance.Serializer(path + "\\RemoteConfig.xml", sc);
         }
     }
 }

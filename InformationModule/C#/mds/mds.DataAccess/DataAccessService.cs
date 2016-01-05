@@ -11,7 +11,7 @@ namespace mds.DataAccess
         private DataAccessConfiguration _config;
         private IDatabaseService _service;
         public DataAccessService(DataAccessConfiguration config) {
-            config = _config;
+             _config= config;
         }
         /// <summary>
         /// 创建数据服务对象，非单例

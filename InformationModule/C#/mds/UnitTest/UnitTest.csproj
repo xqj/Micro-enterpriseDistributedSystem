@@ -54,7 +54,10 @@
   </Choose>
   <ItemGroup>
     <Compile Include="ConfigServerTests.cs" />
+    <Compile Include="ConfigServerTests1.cs" />
+    <Compile Include="ConfigServerTests2.cs" />
     <Compile Include="ConfigServiceClientTests.cs" />
+    <Compile Include="ConfigHelperTests.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -71,12 +74,21 @@
       <Project>{44D9D4BD-5942-4BC3-933E-7B839B191FF4}</Project>
       <Name>mds.ConfigService</Name>
     </ProjectReference>
+    <ProjectReference Include="..\mds.DataAccess\mds.DataAccess.csproj">
+      <Project>{36e7e9a3-72bf-4643-9eaf-b2fc75aafa8f}</Project>
+      <Name>mds.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mds.Util\mds.Util.csproj">
+      <Project>{f47a677a-08b1-46c4-95d8-4a505c4a075b}</Project>
+      <Name>mds.Util</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Config\" />
+    <Content Include="Config\RemoteConfig.xml" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

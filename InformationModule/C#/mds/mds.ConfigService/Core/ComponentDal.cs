@@ -146,9 +146,9 @@ namespace mds.ConfigService.Core
             strSql.Append("select * ");
             strSql.Append(" FROM Component ");
             List<DbParameter> parameters = new List<DbParameter>();
-            List<Component> r;
-            return _dalService.GetListByReader<Component>(parameters, strSql.ToString(), delegate (DbDataReader dr, List<Component> list) {
-                r = new List<Component>();
+            
+            return _dalService.GetListByReader<Component>(parameters, strSql.ToString(), delegate (DbDataReader dr) {
+                List<Component> r = new List<Component>();
                 while (dr.Read())
                 {
                     r.Add(new Component()
@@ -171,7 +171,7 @@ namespace mds.ConfigService.Core
                     });
                 }
                 if (r.Count == 0) r = null;
-
+                return r;
             });
         }
     }

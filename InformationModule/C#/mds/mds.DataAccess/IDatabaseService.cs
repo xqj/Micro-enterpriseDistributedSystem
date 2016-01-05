@@ -8,7 +8,7 @@ using System.Text;
 namespace mds.DataAccess
 {
     public delegate T InitData<T>(DbDataReader dataReader);
-    public delegate void InitList<T>(DbDataReader dataReader, List<T> result);
+    public delegate List<T> InitList<T>(DbDataReader dataReader);
     public interface IDatabaseService
     {
         T GetDataByReader<T>( List<DbParameter> parameters, string cmdText, InitData<T> dataAction, CommandType cmdType = CommandType.Text);

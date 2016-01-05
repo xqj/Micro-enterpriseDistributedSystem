@@ -33,7 +33,7 @@ namespace mds.ConfigService
         /// <param name="solutionId"></param>
         /// <param name="version"></param>
         /// <returns></returns>
-        OperationResult<SolutionConfiguration> GetCompleteSolution(Guid solutionId, int version);
+        OperationResult<SolutionConfiguration> GetCompleteSolution(Guid solutionId);
         /// <summary>
         /// 改变解决方案的启用状态
         /// </summary>

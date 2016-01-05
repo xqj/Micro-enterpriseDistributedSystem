@@ -187,50 +187,32 @@ namespace mds.ConfigService.Core
         /// <summary>
         /// 获得数据列表
         /// </summary>
-        internal static List<ComponentConfiguration> GetList(Guid id,int version)
+        internal static List<ComponentConfiguration> GetList(Guid solutionId)
         {
             StringBuilder strSql = new StringBuilder();
-            strSql.Append("select * ");
-            strSql.Append(" FROM ComponentConfiguration ");
+            strSql.Append("select cc.* FROM Solution_Component_Relation scr INNER JOIN ComponentConfiguration cc on scr.ComponentConfigId=cc.ComponentConfigId and scr.Version=cc.Version and cc.IsDelete=0 where scr.SolutionId='");
+            strSql.Append(solutionId.ToString());
+            strSql.Append("'");
             List<DbParameter> parameters = new List<DbParameter>();
             List<ComponentConfiguration> r;
-            return _dalService.GetListByReader<ComponentConfiguration>(parameters, strSql.ToString(), delegate (DbDataReader dr, List<ComponentConfiguration> list) {
+            return _dalService.GetListByReader<ComponentConfiguration>(parameters, strSql.ToString(), delegate (DbDataReader dr) {
                 r = new List<ComponentConfiguration>();
                 while (dr.Read())
                 {
                     r.Add(new ComponentConfiguration()
                     {
                         ComponentConfigId = int.Parse(dr["ComponentConfigId"].ToString()),
-
-                        CreateBy = int.Parse(dr["CreateBy"].ToString()),
-
-                        ModifyTime = DateTime.Parse(dr["ModifyTime"].ToString()),
-
-                        ModifyBy = int.Parse(dr["ModifyBy"].ToString()),
-
-
-                        IsDelete = Boolean.Parse(dr["IsDelete"].ToString()),
                         ComponentId = int.Parse(dr["ComponentId"].ToString()),
-
-
-                        IsDebug = Boolean.Parse(dr["IsDebug"].ToString()),
+                        IsDebug = Convert.ToBoolean(int.Parse(dr["IsDebug"].ToString())),
                         Environment = int.Parse(dr["Environment"].ToString()),
-
                         Content = dr["Content"].ToString(),
-
-
-                        Enable = Boolean.Parse(dr["Enable"].ToString()),
+                        Enable = Convert.ToBoolean(int.Parse(dr["Enable"].ToString())),
                         Signature = dr["Signature"].ToString(),
-
-                        Version = int.Parse(dr["Version"].ToString()),
-
-                        CreateTime = DateTime.Parse(dr["CreateTime"].ToString()),
-
-
+                        Version = int.Parse(dr["Version"].ToString())
                     });
                 }
                 if (r.Count == 0) r = null;
-
+                return r;             
             });
         }
     }
