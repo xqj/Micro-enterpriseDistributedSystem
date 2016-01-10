@@ -21,6 +21,12 @@ namespace mds.AppUserService.Config
             _compoentConfig = _configService.GetComponentConfig(DefineTable.ComponentID);//不进行null检查保证配置初始化出现问题时爆出异常
             _config = XmlConfigSerializer.Instance.FromXml<AppUserServerConfig>(_compoentConfig.Content);//不进行null检查保证配置初始化出现问题时爆出异常
         }
+
+        internal static DataAccessConfiguration GetDalConfig(object appUserConnectionName)
+        {
+            throw new NotImplementedException();
+        }
+
         public static AppUserServerConfig GetConfig()
         {
             return _config;

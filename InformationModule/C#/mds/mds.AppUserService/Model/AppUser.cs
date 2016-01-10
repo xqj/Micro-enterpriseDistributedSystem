@@ -8,22 +8,66 @@ namespace mds.AppUserService.Model
 {
    public class AppUser: DataClassBase
     {
+        /// <summary>
+        /// auto_increment
+        /// </summary>		
         public int AppUserID
         {
             set; get;
         }
-
-        public int AppUserName
+        /// <summary>
+        /// AppUserLogin
+        /// </summary>		
+        public string AppUserLogin
         {
             set; get;
         }
-
-        public int LoginName
+        /// <summary>
+        /// AppUserName
+        /// </summary>		
+        public string AppUserName
         {
             set; get;
         }
-
-        public int LoginPwd
+        /// <summary>
+        /// AppUserPwd
+        /// </summary>		
+        public string AppUserPwd
+        {
+            set; get;
+        }
+        /// <summary>
+        /// CreateTime
+        /// </summary>		
+        public DateTime CreateTime
+        {
+            set; get;
+        }
+        /// <summary>
+        /// CreateBy
+        /// </summary>		
+        public int CreateBy
+        {
+            set; get;
+        }
+        /// <summary>
+        /// ModifyTime
+        /// </summary>		
+        public DateTime ModifyTime
+        {
+            set; get;
+        }
+        /// <summary>
+        /// ModifyBy
+        /// </summary>		
+        public int ModifyBy
+        {
+            set; get;
+        }
+        /// <summary>
+        /// IsDelete
+        /// </summary>		
+        public bool IsDelete
         {
             set; get;
         }

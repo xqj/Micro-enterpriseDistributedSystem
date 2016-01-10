@@ -7,6 +7,8 @@ namespace mds.AppUserService.Config
 {
     internal class DefineTable
     {
-        internal static readonly int ComponentID=1002;
+        internal static readonly int ComponentID = 1002;
+        internal static readonly String AppUserConnectionName= "AppUserConnection";
+       
     }
 }

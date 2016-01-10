@@ -41,8 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppUserServer.cs" />
     <Compile Include="Config\ConfigHelper.cs" />
     <Compile Include="Config\DefineTable.cs" />
+    <Compile Include="Core\AppUserDal.cs" />
+    <Compile Include="IAppUserServer.cs" />
     <Compile Include="Model\AppUser.cs" />
     <Compile Include="Model\Config.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
