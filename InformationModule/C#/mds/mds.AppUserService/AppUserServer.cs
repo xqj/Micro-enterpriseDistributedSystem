@@ -19,7 +19,7 @@ namespace mds.AppUserService
                 return r;
             });
         }
-        public BaseModel.OperationMessage EditSolution(AppUser info)
+        public BaseModel.OperationMessage EditAppUser(AppUser info)
         {
             return FunctionResultProxy.GetResult<OperationMessage>(delegate (OperationMessage r)
             {
@@ -28,7 +28,7 @@ namespace mds.AppUserService
             });
         }
 
-        public BaseModel.OperationResult<AppUser> GetSolution(int AppUserID)
+        public BaseModel.OperationResult<AppUser> GetAppUser(int AppUserID)
         {
             return FunctionResultProxy.GetResult<OperationResult<AppUser>>(delegate (OperationResult<AppUser> r)
             {

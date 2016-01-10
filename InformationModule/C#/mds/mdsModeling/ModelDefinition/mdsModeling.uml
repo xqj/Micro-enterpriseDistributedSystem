@@ -2051,6 +2051,128 @@
         isLeaf="false"
         isActiveClass="false" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="66752096-1d7b-4a76-b045-ffe6d2796b05"
+        name="mds服务工厂流程"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="6940fd1b-b14e-45e1-b054-8d0f605faf1d"
+            name="App启动"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d47e4e1f-23ec-436f-a9e0-7030b0309f49"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="983c69f8-229c-433f-9403-7acd7efdabdf"
+                  LastKnownName="传入解决方案ID和AppUserID"
+                  LastKnownLocation="mdsModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="983c69f8-229c-433f-9403-7acd7efdabdf"
+            name="传入解决方案ID和AppUserID"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c7cf95d9-4cd3-4097-9b68-b68fea0a0098"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="21bebbbe-fb2b-4481-b025-8adf23ec592d"
+                  LastKnownName="获取组件列表"
+                  LastKnownLocation="mdsModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="21bebbbe-fb2b-4481-b025-8adf23ec592d"
+            name="获取组件列表"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="521f5ab1-a303-4c35-ac96-573db81a81a6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="33504559-a092-488c-b7f8-8979299ff17d"
+                  LastKnownName="为不同用户生成组件服务实例列表"
+                  LastKnownLocation="mdsModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="33504559-a092-488c-b7f8-8979299ff17d"
+            name="为不同用户生成组件服务实例列表"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="2eede610-cbf4-4428-8942-fac717c6ff84"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="4a5491c7-ffd2-4c72-97b0-96dcc944a253"
+                  LastKnownName="服务组件"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <sendSignalAction
+            Id="3e13f05d-f7d7-4c14-a408-f41807d1773a"
+            name="AppUser调用服务"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="55aa820a-aa71-48cf-a636-01eb80e4c04e"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="4a5491c7-ffd2-4c72-97b0-96dcc944a253"
+                  LastKnownName="服务组件"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <objectNode
+            Id="4a5491c7-ffd2-4c72-97b0-96dcc944a253"
+            name="服务组件"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="18f8ea4c-3cef-4044-b519-03a2f7ae3b17"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="f19b7f8e-0beb-49ec-a057-10de3843802d"
+                  LastKnownName="按照AppUserID调用不同服务实例"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="acd9d688-b222-43a8-a5ae-0555b59303f2"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <opaqueAction
+            Id="f19b7f8e-0beb-49ec-a057-10de3843802d"
+            name="按照AppUserID调用不同服务实例"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

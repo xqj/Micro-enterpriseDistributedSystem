@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A51561CD-741F-4AF4-A135-9F6A78EA708A}</ProjectGuid>
+    <ProjectGuid>{E00520AF-AE45-4E8D-9B7F-CF6B1F175D2E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>mds.AppUserService</RootNamespace>
-    <AssemblyName>mds.AppUserService</AssemblyName>
+    <AssemblyName>mds.AppUserService.ServiceInterface</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -32,8 +32,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,37 +39,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppUserServer.cs" />
-    <Compile Include="Config\ConfigHelper.cs" />
-    <Compile Include="Config\DefineTable.cs" />
-    <Compile Include="Core\AppUserDal.cs" />
-    <Compile Include="Model\Config.cs" />
+    <Compile Include="IAppUserServer.cs" />
+    <Compile Include="Model\AppUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\mds.AppUserService.ServiceInterface\mds.AppUserService.ServiceInterface.csproj">
-      <Project>{e00520af-ae45-4e8d-9b7f-cf6b1f175d2e}</Project>
-      <Name>mds.AppUserService.ServiceInterface</Name>
-    </ProjectReference>
     <ProjectReference Include="..\mds.BaseModel\mds.BaseModel.csproj">
       <Project>{c615dd45-7d57-4deb-832d-c3d5862c33c0}</Project>
       <Name>mds.BaseModel</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\mds.ConfigClient\mds.ConfigClient.csproj">
-      <Project>{577fa034-fce1-481f-bb98-1492123ebb99}</Project>
-      <Name>mds.ConfigClient</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\mds.DataAccess\mds.DataAccess.csproj">
-      <Project>{36e7e9a3-72bf-4643-9eaf-b2fc75aafa8f}</Project>
-      <Name>mds.DataAccess</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\mds.Util\mds.Util.csproj">
-      <Project>{f47a677a-08b1-46c4-95d8-4a505c4a075b}</Project>
-      <Name>mds.Util</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

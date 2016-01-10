@@ -43,6 +43,13 @@
       <SubType>Content</SubType>
       <DependentUpon>mdsApp运行组件活动图.activitydiagram</DependentUpon>
     </Content>
+    <Content Include="mds服务工厂流程.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="mds服务工厂流程.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>mds服务工厂流程.activitydiagram</DependentUpon>
+    </Content>
     <Content Include="ModelDefinition\Package_1336.uml">
       <SubType>Content</SubType>
     </Content>

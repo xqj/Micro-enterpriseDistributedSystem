@@ -1,30 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using mds.AppUserService.Model;
 using mds.BaseModel;
 using mds.ConfigClient;
 using mds.DataAccess.Config;
+using mds.SecurityService.Model;
 using mds.Util;
 
-namespace mds.AppUserService.Config
+namespace mds.SecurityService.Config
 {
     internal class ConfigHelper
     {
         private static ComponentConfiguration _compoentConfig;
         private static ConfigServiceClient _configService;
-        private static AppUserServerConfig _config;
+        private static SecurityServerConfig _config;
         static ConfigHelper()
         {
             _configService = ConfigClientFactory.Instance.GetConfigClient();
             _compoentConfig = _configService.GetComponentConfig(DefineTable.ComponentID);//不进行null检查保证配置初始化出现问题时爆出异常
-            _config = XmlConfigSerializer.Instance.FromXml<AppUserServerConfig>(_compoentConfig.Content);//不进行null检查保证配置初始化出现问题时爆出异常
+            _config = XmlConfigSerializer.Instance.FromXml<SecurityServerConfig>(_compoentConfig.Content);//不进行null检查保证配置初始化出现问题时爆出异常
         }
 
        
 
-        public static AppUserServerConfig GetConfig()
+        public static SecurityServerConfig GetConfig()
         {
             return _config;
         }

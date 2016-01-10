@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="8b8016ea-771b-4adf-a609-5eb37f266833" name="mds服务工厂流程" linkedPackageId="271f71fc-7d45-439d-a50e-b2336d8872fb" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="614c2b1d-d67f-4f29-8c91-dedc745209a1" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="54fefc0f-bdb9-4f83-871b-ac42289e4425" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="ab06fa9b-67a2-4a0a-afc4-c5ed78c80aa1">
+          <propertyInstance Id="3ad8f544-a177-43ff-a317-08c822f5eeda" name="BaseName">
+            <elementDefinition Id="48d21179-2544-42f6-a34f-bf6b6f5f7860" />
+          </propertyInstance>
+          <elementDefinition Id="321fa1ee-eea0-4142-91b5-0a8ca717e4e4" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="69a22227-979b-4710-becc-c49b7bc03954">
+          <propertyInstance Id="4fec6d12-6b52-40b5-bd4c-2b30f9d0da92" name="ClrAttributes">
+            <elementDefinition Id="b8b42e66-9b1d-4bc7-b1ec-904ac00cc60b" />
+          </propertyInstance>
+          <elementDefinition Id="93bc0659-ad44-4742-8401-3ddf38af6528" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="b79f56b1-d8f1-4bca-8431-224fddce6502">
+          <propertyInstance Id="020e59f1-c8ee-4cab-8e99-b8d209ef2c2f" name="Usings">
+            <elementDefinition Id="d1c865cd-6b6e-4950-a0d8-405a221e00c9" />
+          </propertyInstance>
+          <elementDefinition Id="42fef0fc-a4b1-4584-abe8-8a5e07dd286d" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="6d1e4171-7672-4fc7-84e4-4f85a3dac505" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="296d11e3-3162-496c-a490-3e473b3f0222" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="088171ab-47c8-49d9-8dfa-f5a3e15f0b55">
+          <propertyInstance Id="d5644d6f-689a-4acc-8ee7-557eaa5e52e4" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="dd7867fe-db52-4157-a40d-9758276cad19" />
+          </propertyInstance>
+          <elementDefinition Id="036ca2e9-d731-4e78-b037-3ca45f127896" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="d20da906-3945-4be3-88ae-4e0d791b4bf2">
+          <propertyInstance Id="0cae9d2a-c7c2-4985-9b49-c97af8f6a09c" name="TemplateFilePath" value="ClassTemplate=D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="5b182fa0-8d5e-4d05-bb26-686721942696" />
+          </propertyInstance>
+          <elementDefinition Id="34aabaf4-c4ff-4568-9367-b51e323b6a69" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="d0bad6d8-a4f5-4661-bbf2-cc46eb10b0ce">
+          <propertyInstance Id="fd4e15f9-f057-400b-bcdb-f09f9fd23c8b" name="ProjectPath" value="ClassTemplate=..\mds.BaseModel\mds.BaseModel.csproj|EnumTemplate=..\mdsModelingLib\mdsModelingLib.csproj|InterfaceTemplate=..\mds.Cache\mds.Cache.csproj|StructTemplate=..\mdsModelingLib\mdsModelingLib.csproj">
+            <elementDefinition Id="8fabca4b-d3b7-476d-bb51-5da01ad96003" />
+          </propertyInstance>
+          <elementDefinition Id="2b0a36f9-3a53-4e80-9f82-2e51213f6087" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="e4f6f713-a74f-4dd1-85ec-e7bcc8c9837a">
+          <propertyInstance Id="65d2fcac-0c20-4e46-9735-7668c6ede6c8" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="bd7fbe61-7527-4173-98ee-3532ab7dfda9" />
+          </propertyInstance>
+          <elementDefinition Id="a79c641d-6f0f-4981-a151-42780d41e78c" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="f0c10312-0bc1-43e3-8598-9d059cf49073">
+          <propertyInstance Id="2d67a64e-9319-4e42-9b97-412f3a92fd66" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="c35be463-1623-48e7-9ba2-236543faa163" />
+          </propertyInstance>
+          <elementDefinition Id="fb2d7aab-049d-4f51-a858-c4914cf5eda2" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="17de1b2e-bfdf-4db3-a2aa-0df13d7ad512">
+          <propertyInstance Id="de03c504-a432-44f2-8f93-aa5f04cf2785" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="c9eb3c52-ecbe-426c-8a41-c1e0481a0740" />
+          </propertyInstance>
+          <elementDefinition Id="164f5b18-76ee-495f-840e-72381606c52f" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="2356beb0-7b43-4520-b429-dbccd7b43326">
+          <propertyInstance Id="5ec5854d-38d9-4c93-91e1-74388937413a" name="Parameters">
+            <elementDefinition Id="04a9c649-4fdb-45c3-8a6f-e2919848673f" />
+          </propertyInstance>
+          <elementDefinition Id="9920232f-7852-4f5f-a71f-60f1601aafc9" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="7733955e-1471-47f4-879c-915a5d074b52">
+      <profileInstance Id="8d3d8fc9-9d18-4126-8058-7d236f007bcf" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c07dc27f-7edc-4de9-840a-e13f80fccf12">
+      <profileInstance Id="10268f3b-a10f-44dc-8a52-1200e03011bd" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="fb664fa6-159c-4e1f-aa72-44c2c9646ae9">
+      <profileInstance Id="67a85055-8f58-4638-bc07-eaf23c5ee95f" name="CSharpProfile">
+        <elementDefinition Id="f706b01c-3f25-4436-bfe5-e9e7049f889b" />
+      </profileInstance>
+      <elementDefinition Id="efba6404-4d90-47f2-95e2-0457a8f30bc5" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="d21a8fb0-548b-444f-bfb7-66c450601974">
+      <profileInstance Id="d43a14d7-bedb-49d5-bc97-2c83df748d09" name="TextTemplateBindings">
+        <elementDefinition Id="a20c4422-55ab-4076-aea0-06e5727213d5" />
+      </profileInstance>
+      <elementDefinition Id="b7d93019-ce2e-461f-a822-694ee7b05640" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="14f25c3b-0e70-4b5e-b63f-95efc6da0a73" name="mds服务工厂流程" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="66752096-1d7b-4a76-b045-ffe6d2796b05" />
+        <nodes>
+          <initialNode Id="d110f4cb-144f-4295-91ae-b1a0b3b523ca" name="App启动" isLeaf="false">
+            <elementDefinition Id="6940fd1b-b14e-45e1-b054-8d0f605faf1d" />
+            <flowNodeTargets>
+              <controlFlow Id="e26ef4e7-9d92-4714-afd5-b8994f3eb87a" isLeaf="false">
+                <opaqueActionMoniker Id="88e9464e-82cb-4605-ba12-54c375a8c26d" LastKnownName="传入解决方案ID和AppUserID" />
+                <elementDefinition Id="d47e4e1f-23ec-436f-a9e0-7030b0309f49" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="88e9464e-82cb-4605-ba12-54c375a8c26d" name="传入解决方案ID和AppUserID" isLeaf="false">
+            <elementDefinition Id="983c69f8-229c-433f-9403-7acd7efdabdf" />
+            <flowNodeTargets>
+              <controlFlow Id="5dadd66a-2bb9-4c25-b706-3607e518b337" isLeaf="false">
+                <opaqueActionMoniker Id="7b620e3c-2038-4937-b958-3b0e89138dd6" LastKnownName="获取组件列表" />
+                <elementDefinition Id="c7cf95d9-4cd3-4097-9b68-b68fea0a0098" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="7b620e3c-2038-4937-b958-3b0e89138dd6" name="获取组件列表" isLeaf="false">
+            <elementDefinition Id="21bebbbe-fb2b-4481-b025-8adf23ec592d" />
+            <flowNodeTargets>
+              <controlFlow Id="0049d7ca-c37c-41c7-bbb9-d01c436a0160" isLeaf="false">
+                <opaqueActionMoniker Id="8152eb0b-fe16-4ad7-b11a-31957cbdff25" LastKnownName="为不同用户生成组件服务实例列表" />
+                <elementDefinition Id="521f5ab1-a303-4c35-ac96-573db81a81a6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="8152eb0b-fe16-4ad7-b11a-31957cbdff25" name="为不同用户生成组件服务实例列表" isLeaf="false">
+            <elementDefinition Id="33504559-a092-488c-b7f8-8979299ff17d" />
+            <objectFlowTargets>
+              <objectFlow Id="ba67c3eb-fcbe-4d8a-aae7-a09de80fb2f6" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="98124c49-10d6-4021-aa16-d9a284559ebe" LastKnownName="服务组件" />
+                <elementDefinition Id="2eede610-cbf4-4428-8942-fac717c6ff84" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <sendSignalAction Id="09bb38bb-04f1-4776-9930-b330aab1b749" name="AppUser调用服务" isLeaf="false">
+            <elementDefinition Id="3e13f05d-f7d7-4c14-a408-f41807d1773a" />
+            <objectFlowTargets>
+              <objectFlow Id="c1c4d5dc-867a-4f96-91f5-6674c60d52d5" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="98124c49-10d6-4021-aa16-d9a284559ebe" LastKnownName="服务组件" />
+                <elementDefinition Id="55aa820a-aa71-48cf-a636-01eb80e4c04e" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <objectNode Id="98124c49-10d6-4021-aa16-d9a284559ebe" name="服务组件" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="4a5491c7-ffd2-4c72-97b0-96dcc944a253" />
+            <objectFlowTargets>
+              <objectFlow Id="4a506a58-3d15-43ea-881f-8d3ebd89b9b2" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="29c7b211-edb3-4482-813b-346540c1985e" LastKnownName="按照AppUserID调用不同服务实例" />
+                <elementDefinition Id="18f8ea4c-3cef-4044-b519-03a2f7ae3b17" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="10d99c6b-0b44-4281-b0f2-941073d99b24" name="2147483647" value="2147483647">
+                <elementDefinition Id="acd9d688-b222-43a8-a5ae-0555b59303f2" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="29c7b211-edb3-4482-813b-346540c1985e" name="按照AppUserID调用不同服务实例" isLeaf="false">
+            <elementDefinition Id="f19b7f8e-0beb-49ec-a057-10de3843802d" />
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="271f71fc-7d45-439d-a50e-b2336d8872fb" name="mdsModeling">
+    <elementDefinition Id="0087d537-cd05-4da0-a767-0975b5628e3b" />
+  </package>
+</activityRootModel>

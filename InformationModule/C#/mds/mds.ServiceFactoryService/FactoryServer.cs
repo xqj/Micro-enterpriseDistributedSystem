@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace mds.DeploymentService
+namespace mds.ServiceFactoryService
 {
-  public  class DeploymentServer
+    public class FactoryServer : IFactoryServer
     {
     }
 }

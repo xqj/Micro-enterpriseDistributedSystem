@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A51561CD-741F-4AF4-A135-9F6A78EA708A}</ProjectGuid>
+    <ProjectGuid>{5D4655B1-2EAF-40C2-85B5-A562FBCDD974}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>mds.AppUserService</RootNamespace>
-    <AssemblyName>mds.AppUserService</AssemblyName>
+    <RootNamespace>mds.ServiceFactoryService</RootNamespace>
+    <AssemblyName>mds.ServiceFactoryService</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,22 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppUserServer.cs" />
     <Compile Include="Config\ConfigHelper.cs" />
     <Compile Include="Config\DefineTable.cs" />
-    <Compile Include="Core\AppUserDal.cs" />
+    <Compile Include="Core\PlatformServiceFactory.cs" />
+    <Compile Include="Core\SolutionServiceFactoryDal.cs" />
+    <Compile Include="FactoryServer.cs" />
+    <Compile Include="IFactoryServer.cs" />
     <Compile Include="Model\Config.cs" />
+    <Compile Include="Model\SolutionServiceFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\mds.AppUserService.ServiceInterface\mds.AppUserService.ServiceInterface.csproj">
-      <Project>{e00520af-ae45-4e8d-9b7f-cf6b1f175d2e}</Project>
-      <Name>mds.AppUserService.ServiceInterface</Name>
-    </ProjectReference>
     <ProjectReference Include="..\mds.BaseModel\mds.BaseModel.csproj">
       <Project>{c615dd45-7d57-4deb-832d-c3d5862c33c0}</Project>
       <Name>mds.BaseModel</Name>
@@ -73,6 +68,9 @@
       <Project>{f47a677a-08b1-46c4-95d8-4a505c4a075b}</Project>
       <Name>mds.Util</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

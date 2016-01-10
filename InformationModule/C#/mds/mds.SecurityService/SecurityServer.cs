@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace mds.AppUserService
+namespace mds.SecurityService
 {
-    public interface IAppUserServer
+    public class SecurityServer : ISecurityServer
     {
     }
 }

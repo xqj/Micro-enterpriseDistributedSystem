@@ -5,7 +5,7 @@ using System.Text;
 
 namespace mds.DeploymentService
 {
-   public interface IDeploymentService
+   public interface IDeploymentServer
     {
     }
 }

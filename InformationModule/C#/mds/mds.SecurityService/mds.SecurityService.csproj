@@ -32,6 +32,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -39,7 +41,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Config\ConfigHelper.cs" />
+    <Compile Include="Config\DefineTable.cs" />
+    <Compile Include="ISecurityServer.cs" />
+    <Compile Include="Model\Config.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecurityServer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mds.AppUserService.ServiceInterface\mds.AppUserService.ServiceInterface.csproj">
+      <Project>{e00520af-ae45-4e8d-9b7f-cf6b1f175d2e}</Project>
+      <Name>mds.AppUserService.ServiceInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mds.BaseModel\mds.BaseModel.csproj">
+      <Project>{c615dd45-7d57-4deb-832d-c3d5862c33c0}</Project>
+      <Name>mds.BaseModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mds.ConfigClient\mds.ConfigClient.csproj">
+      <Project>{577fa034-fce1-481f-bb98-1492123ebb99}</Project>
+      <Name>mds.ConfigClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mds.DataAccess\mds.DataAccess.csproj">
+      <Project>{36e7e9a3-72bf-4643-9eaf-b2fc75aafa8f}</Project>
+      <Name>mds.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mds.Util\mds.Util.csproj">
+      <Project>{f47a677a-08b1-46c4-95d8-4a505c4a075b}</Project>
+      <Name>mds.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core\" />
+    <Folder Include="Gateway\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
