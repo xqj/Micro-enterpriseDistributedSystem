@@ -64,6 +64,19 @@ namespace mds.ServiceFactoryService.Core
             return _dalService.GetPrimarykey(parameters, strSql.ToString());
         }
 
+        internal static bool BatchInsert(List<SolutionServiceFactory> serviceObjs)
+        {
+            var count = 0;
+            serviceObjs.ForEach(s => {
+                count=Create(s)>0? (count++):0;
+            });
+            return (count == serviceObjs.Count);
+        }
+
+
+
+
+
 
         /// <summary>
         /// 更新一条数据
@@ -176,11 +189,11 @@ namespace mds.ServiceFactoryService.Core
             });
             return r;
 
-        }
+        }       
         /// <summary>
         /// 获得数据列表
         /// </summary>
-        internal static List<SolutionServiceFactory> GetList()
+        internal static List<SolutionServiceFactory> Get(Guid solutionID, int appUserID)
         {
             StringBuilder strSql = new StringBuilder();
             strSql.Append("select * ");
@@ -193,36 +206,32 @@ namespace mds.ServiceFactoryService.Core
                 {
                     r.Add(new SolutionServiceFactory()
                     {
-                        ID = int.Parse(dr["ID"].ToString()),
-
-                        CreateTime = DateTime.Parse(dr["CreateTime"].ToString()),
-
-                        ModifyBy = int.Parse(dr["ModifyBy"].ToString()),
-
-                        ModifyTime = DateTime.Parse(dr["ModifyTime"].ToString()),
-
-
-                        IsActive = Boolean.Parse(dr["IsActive"].ToString()),
-
-                        IsDelete = Boolean.Parse(dr["IsDelete"].ToString()),
                         AppUserID = int.Parse(dr["AppUserID"].ToString()),
-
                         SolutionID = dr["SolutionID"].ToString(),
-
                         CompentID = int.Parse(dr["CompentID"].ToString()),
-
                         CompentAssemblyName = dr["CompentAssemblyName"].ToString(),
-
                         CompentAssemblyFileName = dr["CompentAssemblyFileName"].ToString(),
-
                         CompentServiceName = dr["CompentServiceName"].ToString(),
-
-                        InterfaceName = dr["InterfaceName"].ToString(),
-
-                        CreateBy = int.Parse(dr["CreateBy"].ToString()),
-
-
+                        InterfaceName = dr["InterfaceName"].ToString()
                     });
+                }
+                if (r.Count == 0) r = null;
+                return r;
+            });
+        }
+        internal static List<int> GetCompentIDList(Guid solutionID)
+        {
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append("SELECT cc.ComponentId,sct.SolutionId FROM ComponentConfiguration AS cc INNER JOIN Solution_Component_Relation AS sct ON sct.ComponentConfigId = cc.ComponentConfigId WHERE sct.IsDelete = 0 AND sct.IsActive = 1 and sct.SolutionId=@SolutionId;");
+            List<DbParameter> parameters = new List<DbParameter>();
+            parameters.Add(new MdsDbParameter("@SolutionId",DbType.Guid));
+            parameters[0].Value = solutionID;
+            return _dalService.GetListByReader<int>(parameters, strSql.ToString(), delegate (DbDataReader dr)
+            {
+                List<int> r = new List<int>();
+                while (dr.Read())
+                {
+                    r.Add(dr.GetInt32(0));
                 }
                 if (r.Count == 0) r = null;
                 return r;
