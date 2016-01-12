@@ -55,6 +55,7 @@
     <Compile Include="GridPage.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="KeyVal.cs" />
     <Compile Include="OperationError.cs">
       <SubType>Code</SubType>
     </Compile>

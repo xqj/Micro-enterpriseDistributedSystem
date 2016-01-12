@@ -56,7 +56,7 @@ namespace mds.ServiceFactoryService
             return FunctionResultProxy.GetResult<OperationMessage>(delegate (OperationMessage r)
             {
                 r.ActionResult = false;
-                List<int> compentIDs = SolutionServiceFactoryDal.GetCompentIDList(solutionID);
+                List<KeyVal<int, string>> compentIDs = SolutionServiceFactoryDal.GetCompentIDList(solutionID);
                 if (compentIDs != null)
                 {
                     List<SolutionServiceFactory> serviceObjs = new List<SolutionServiceFactory>();
@@ -64,7 +64,9 @@ namespace mds.ServiceFactoryService
                         serviceObjs.Add(new SolutionServiceFactory()
                         {
                             AppUserID = appUserID,
-                            SolutionID = solutionID.ToString()
+                            SolutionID = solutionID.ToString(),
+                             CompentID=c.Key,
+                              CompentAssemblyName=c.Val
                         });
                     });
                     r.ActionResult = SolutionServiceFactoryDal.BatchInsert(serviceObjs);

@@ -3,7 +3,7 @@
   <Class Name="mds.BaseModel.AppConfiguration">
     <Position X="4.75" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>IEAAAAAAAAEAAAAAAAAAAAAAAAAAAIAAAAAIAAAAQAA=</HashCode>
+      <HashCode>IEAAAAAAAAEAAAAAAAAAAAQAAAAAAIAAAAAIAAAAQAA=</HashCode>
       <FileName>AppConfiguration.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -17,7 +17,7 @@
   <Class Name="mds.BaseModel.DataClassBase" Collapsed="true">
     <Position X="1.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAEAAAAAAAAEAAAAAAAgAEAAAAAAAAAAQAAAAA=</HashCode>
+      <HashCode>AAAAAAAEAAAAAAAAkAAAAAAAgAEAEAAAAAAAAQAAAAA=</HashCode>
       <FileName>DataClassBase.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -45,7 +45,7 @@
   <Class Name="mds.BaseModel.SolutionConfiguration">
     <Position X="0.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>IAAAAAACAgEEAIAAAAAACAAAAACAAAAAAAAIAAAAAAA=</HashCode>
+      <HashCode>IAAAAAACAgEEgIAAAAAACAAAAACAAAAAAAAIAAAAAAA=</HashCode>
       <FileName>SolutionConfiguration.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -59,8 +59,15 @@
   <Class Name="mds.BaseModel.Component">
     <Position X="3" Y="6.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AABAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Component.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mds.BaseModel.KeyVal&lt;K, V&gt;">
+    <Position X="6.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>KeyVal.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="微软雅黑" Size="9" />

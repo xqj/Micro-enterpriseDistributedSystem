@@ -4,6 +4,7 @@ using System.Data;
 using System.Data.Common;
 using System.Linq;
 using System.Text;
+using mds.BaseModel;
 using mds.DataAccess;
 using mds.DataAccess.Model;
 using mds.ServiceFactoryService.Config;
@@ -219,19 +220,22 @@ namespace mds.ServiceFactoryService.Core
                 return r;
             });
         }
-        internal static List<int> GetCompentIDList(Guid solutionID)
+        internal static List<KeyVal<int,string>> GetCompentIDList(Guid solutionID)
         {
             StringBuilder strSql = new StringBuilder();
-            strSql.Append("SELECT cc.ComponentId,sct.SolutionId FROM ComponentConfiguration AS cc INNER JOIN Solution_Component_Relation AS sct ON sct.ComponentConfigId = cc.ComponentConfigId WHERE sct.IsDelete = 0 AND sct.IsActive = 1 and sct.SolutionId=@SolutionId;");
+            strSql.Append("SELECT c.ComponentID,c.CompentAssemblyName FROM ComponentConfiguration AS cc INNER JOIN Solution_Component_Relation AS sct ON sct.ComponentConfigId = cc.ComponentConfigId INNER JOIN Component AS c ON cc.ComponentId = c.ComponentID WHERE sct.IsDelete = 0 AND sct.IsActive = 1 and sct.SolutionId=@SolutionId;");
             List<DbParameter> parameters = new List<DbParameter>();
             parameters.Add(new MdsDbParameter("@SolutionId",DbType.Guid));
             parameters[0].Value = solutionID;
-            return _dalService.GetListByReader<int>(parameters, strSql.ToString(), delegate (DbDataReader dr)
+            return _dalService.GetListByReader<KeyVal<int, string>>(parameters, strSql.ToString(), delegate (DbDataReader dr)
             {
-                List<int> r = new List<int>();
+                var r = new List<KeyVal<int, string>>();
                 while (dr.Read())
                 {
-                    r.Add(dr.GetInt32(0));
+                    r.Add(new KeyVal<int, string>() {
+                         Key=dr.GetInt32(0),
+                         Val=dr.GetString(1)
+                    });
                 }
                 if (r.Count == 0) r = null;
                 return r;
