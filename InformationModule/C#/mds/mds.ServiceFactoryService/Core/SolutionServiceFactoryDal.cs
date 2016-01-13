@@ -69,7 +69,8 @@ namespace mds.ServiceFactoryService.Core
         {
             var count = 0;
             serviceObjs.ForEach(s => {
-                count=Create(s)>0? (count++):0;
+                if (Create(s) > 0)
+                    count++;
             });
             return (count == serviceObjs.Count);
         }
@@ -234,7 +235,7 @@ namespace mds.ServiceFactoryService.Core
                 {
                     r.Add(new KeyVal<int, string>() {
                          Key=dr.GetInt32(0),
-                         Val=dr.GetString(1)
+                         Val=dr["CompentAssemblyName"].ToString()
                     });
                 }
                 if (r.Count == 0) r = null;

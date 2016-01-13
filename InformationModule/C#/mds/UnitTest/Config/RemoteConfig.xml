@@ -8,7 +8,7 @@
   <Status>0</Status>
   <IsActive>false</IsActive>
   <ID>1</ID>
-  <SolutionId>87d70c62-6e84-4127-b9b1-984b530ffd61</SolutionId>
+  <SolutionId>21c012db-5bf8-43b6-b68d-14d57067bcd1</SolutionId>
   <SolutionName>方案名称</SolutionName>
   <Version>1</Version>
   <IsFile>true</IsFile>
@@ -29,6 +29,23 @@
       <ComponentId>1001</ComponentId>
       <ComponentConfigId>1</ComponentConfigId>
       <Content>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;ConfigServerConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;DalConfigs&gt;&lt;DataAccessConfiguration&gt;&lt;ConnectionName&gt;SolutionConfiguration&lt;/ConnectionName&gt;&lt;DatabaseType&gt;MySql&lt;/DatabaseType&gt;&lt;DatabaseConnection&gt;Data Source=192.168.100.4;Initial Catalog=systembase;Persist Security Info=True;User ID=webuser;password=123456&lt;/DatabaseConnection&gt;&lt;Multiple&gt;false&lt;/Multiple&gt;&lt;/DataAccessConfiguration&gt;&lt;DataAccessConfiguration&gt;&lt;ConnectionName&gt;ComponentConnection&lt;/ConnectionName&gt;&lt;DatabaseType&gt;MySql&lt;/DatabaseType&gt;&lt;DatabaseConnection&gt;Data Source=192.168.100.4;Initial Catalog=systembase;Persist Security Info=True;User ID=webuser;password=123456&lt;/DatabaseConnection&gt;&lt;Multiple&gt;false&lt;/Multiple&gt;&lt;/DataAccessConfiguration&gt;&lt;DataAccessConfiguration&gt;&lt;ConnectionName&gt;ComponentConfiguration&lt;/ConnectionName&gt;&lt;DatabaseType&gt;MySql&lt;/DatabaseType&gt;&lt;DatabaseConnection&gt;Data Source=192.168.100.4;Initial Catalog=systembase;Persist Security Info=True;User ID=webuser;password=123456&lt;/DatabaseConnection&gt;&lt;Multiple&gt;false&lt;/Multiple&gt;&lt;/DataAccessConfiguration&gt;&lt;/DalConfigs&gt;&lt;/ConfigServerConfig&gt;</Content>
+      <Enable>true</Enable>
+      <Version>1</Version>
+      <Signature>软件签名</Signature>
+    </ComponentConfiguration>
+    <ComponentConfiguration>
+      <CreateTime>0001-01-01T00:00:00</CreateTime>
+      <CreateBy>0</CreateBy>
+      <ModifyTime>0001-01-01T00:00:00</ModifyTime>
+      <ModifyBy>0</ModifyBy>
+      <IsDelete>false</IsDelete>
+      <Status>1</Status>
+      <IsActive>false</IsActive>
+      <IsDebug>false</IsDebug>
+      <Environment>1</Environment>
+      <ComponentId>1003</ComponentId>
+      <ComponentConfigId>2</ComponentConfigId>
+      <Content>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;ServiceFactoryServerConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;DalConfigs&gt;&lt;DataAccessConfiguration&gt;&lt;ConnectionName&gt;SolutionServiceFactoryConnection&lt;/ConnectionName&gt;&lt;DatabaseType&gt;MySql&lt;/DatabaseType&gt;&lt;DatabaseConnection&gt;Data Source=192.168.100.4;Initial Catalog=systembase;Persist Security Info=True;User ID=webuser;password=123456&lt;/DatabaseConnection&gt;&lt;Multiple&gt;false&lt;/Multiple&gt;&lt;/DataAccessConfiguration&gt;&lt;/DalConfigs&gt;&lt;/ServiceFactoryServerConfig&gt;</Content>
       <Enable>true</Enable>
       <Version>1</Version>
       <Signature>软件签名</Signature>

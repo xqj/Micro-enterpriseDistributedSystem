@@ -57,6 +57,10 @@
       <Project>{36e7e9a3-72bf-4643-9eaf-b2fc75aafa8f}</Project>
       <Name>mds.DataAccess</Name>
     </ProjectReference>
+    <ProjectReference Include="..\mds.ServiceFactoryService\mds.ServiceFactoryService.csproj">
+      <Project>{5d4655b1-2eaf-40c2-85b5-a562fbcdd974}</Project>
+      <Name>mds.ServiceFactoryService</Name>
+    </ProjectReference>
     <ProjectReference Include="..\mds.Util\mds.Util.csproj">
       <Project>{f47a677a-08b1-46c4-95d8-4a505c4a075b}</Project>
       <Name>mds.Util</Name>

@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using mds.BaseModel;
+using mds.ConfigService.Model;
 using mds.DataAccess.Config;
+using mds.ServiceFactoryService.Model;
 using mds.Util;
 
 namespace ConfigFileCreate
@@ -50,7 +52,7 @@ namespace ConfigFileCreate
                 DatabaseConnection = "Data Source=192.168.100.4;Initial Catalog=systembase;Persist Security Info=True;User ID=webuser;password=123456",
                 DatabaseType = EnumDatabaseType.MySql,
                 Multiple = false
-            });
+            });           
             sc.Components.Add(new ComponentConfiguration()
             {
                 Version = 1,
@@ -58,6 +60,30 @@ namespace ConfigFileCreate
                 ComponentConfigId = 1,
                 ComponentId = 1001,
                 Content = XmlConfigSerializer.Instance.ToXml<ConfigServerConfig>(csc),
+                Enable = true,
+                Environment = 1,
+                IsDebug = false,
+                Signature = "软件签名"
+            });
+            ServiceFactoryServerConfig sfs = new ServiceFactoryServerConfig()
+            {
+                DalConfigs = new List<DataAccessConfiguration>()
+            };
+            sfs.DalConfigs = new List<DataAccessConfiguration>();
+            sfs.DalConfigs.Add(new DataAccessConfiguration()
+            {
+                ConnectionName = "SolutionServiceFactoryConnection",
+                DatabaseConnection = "Data Source=192.168.100.4;Initial Catalog=systembase;Persist Security Info=True;User ID=webuser;password=123456",
+                DatabaseType = EnumDatabaseType.MySql,
+                Multiple = false
+            });
+            sc.Components.Add(new ComponentConfiguration()
+            {
+                Version = 1,
+                Status = 1,
+                ComponentConfigId = 2,
+                ComponentId = 1003,
+                Content = XmlConfigSerializer.Instance.ToXml<ServiceFactoryServerConfig>(sfs),
                 Enable = true,
                 Environment = 1,
                 IsDebug = false,

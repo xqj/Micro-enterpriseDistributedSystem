@@ -58,6 +58,7 @@
     <Compile Include="ConfigServerTests2.cs" />
     <Compile Include="ConfigServiceClientTests.cs" />
     <Compile Include="ConfigHelperTests.cs" />
+    <Compile Include="FactoryServerTests.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -77,6 +78,10 @@
     <ProjectReference Include="..\mds.DataAccess\mds.DataAccess.csproj">
       <Project>{36e7e9a3-72bf-4643-9eaf-b2fc75aafa8f}</Project>
       <Name>mds.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mds.ServiceFactoryService\mds.ServiceFactoryService.csproj">
+      <Project>{5D4655B1-2EAF-40C2-85B5-A562FBCDD974}</Project>
+      <Name>mds.ServiceFactoryService</Name>
     </ProjectReference>
     <ProjectReference Include="..\mds.Util\mds.Util.csproj">
       <Project>{f47a677a-08b1-46c4-95d8-4a505c4a075b}</Project>

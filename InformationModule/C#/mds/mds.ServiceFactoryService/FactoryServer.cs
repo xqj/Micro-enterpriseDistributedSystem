@@ -43,7 +43,7 @@ namespace mds.ServiceFactoryService
         public BaseModel.OperationResult<List<SolutionServiceFactory>> GetServices(Guid SolutionID,int appUserID)
         {
             return FunctionResultProxy.GetResult<OperationResult<List<SolutionServiceFactory>>>(delegate (OperationResult<List<SolutionServiceFactory>> r)
-            {
+            { 
                 var sc = SolutionServiceFactoryDal.Get(SolutionID, appUserID);
                 r.Data = sc;
                 r.ActionResult = (r.Data != null);
