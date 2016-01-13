@@ -43,13 +43,14 @@
   <ItemGroup>
     <Compile Include="Config\ConfigHelper.cs" />
     <Compile Include="Config\DefineTable.cs" />
-    <Compile Include="Core\PlatformServiceFactory.cs" />
     <Compile Include="Core\SolutionServiceFactoryDal.cs" />
     <Compile Include="FactoryServer.cs" />
     <Compile Include="IFactoryServer.cs" />
     <Compile Include="Model\Config.cs" />
     <Compile Include="Model\SolutionServiceFactory.cs" />
+    <Compile Include="PlatformServiceFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\mds.BaseModel\mds.BaseModel.csproj">

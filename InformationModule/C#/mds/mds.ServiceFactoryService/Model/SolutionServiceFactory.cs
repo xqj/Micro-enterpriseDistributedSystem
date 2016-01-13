@@ -64,6 +64,10 @@ namespace mds.ServiceFactoryService.Model
         {
             set; get;
         }
+        public string AssemblyVersion
+        {
+            set;get;
+        }
         /// <summary>
         /// CreateBy
         /// </summary>		

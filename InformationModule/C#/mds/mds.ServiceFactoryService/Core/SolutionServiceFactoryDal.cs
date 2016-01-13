@@ -47,7 +47,7 @@ namespace mds.ServiceFactoryService.Core
             parameters.Add(new MdsDbParameter("@CompentServiceName", DbType.String, 300));
             parameters.Add(new MdsDbParameter("@InterfaceName", DbType.String, 300));
             parameters.Add(new MdsDbParameter("@CreateBy", DbType.Int32, 11));
-
+            parameters.Add(new MdsDbParameter("@AssemblyVersion", DbType.String, 10));
 
             parameters[0].Value = model.CreateTime;
             parameters[1].Value = model.ModifyBy;
@@ -62,6 +62,7 @@ namespace mds.ServiceFactoryService.Core
             parameters[10].Value = model.CompentServiceName;
             parameters[11].Value = model.InterfaceName;
             parameters[12].Value = model.CreateBy;
+            parameters[13].Value = model.AssemblyVersion;
             return _dalService.GetPrimarykey(parameters, strSql.ToString());
         }
 
@@ -118,7 +119,7 @@ namespace mds.ServiceFactoryService.Core
             parameters.Add(new MdsDbParameter("@CompentServiceName", DbType.String, 300));
             parameters.Add(new MdsDbParameter("@InterfaceName", DbType.String, 300));
             parameters.Add(new MdsDbParameter("@CreateBy", DbType.Int32, 11));
-
+            parameters.Add(new MdsDbParameter("@AssemblyVersion", DbType.String, 10));
             parameters[0].Value = model.ID;
             parameters[1].Value = model.CreateTime;
             parameters[2].Value = model.ModifyBy;
@@ -133,6 +134,7 @@ namespace mds.ServiceFactoryService.Core
             parameters[11].Value = model.CompentServiceName;
             parameters[12].Value = model.InterfaceName;
             parameters[13].Value = model.CreateBy;
+            parameters[14].Value = model.AssemblyVersion;
             return _dalService.ExecuteNonQuery(parameters, strSql.ToString());
         }
 
@@ -157,33 +159,20 @@ namespace mds.ServiceFactoryService.Core
                     r = new SolutionServiceFactory()
                     {
                         ID = int.Parse(dr["ID"].ToString()),
-
                         CreateTime = DateTime.Parse(dr["CreateTime"].ToString()),
-
                         ModifyBy = int.Parse(dr["ModifyBy"].ToString()),
-
                         ModifyTime = DateTime.Parse(dr["ModifyTime"].ToString()),
-
-
                         IsActive = Boolean.Parse(dr["IsActive"].ToString()),
-
                         IsDelete = Boolean.Parse(dr["IsDelete"].ToString()),
                         AppUserID = int.Parse(dr["AppUserID"].ToString()),
-
                         SolutionID = dr["SolutionID"].ToString(),
-
                         CompentID = int.Parse(dr["CompentID"].ToString()),
-
                         CompentAssemblyName = dr["CompentAssemblyName"].ToString(),
-
                         CompentAssemblyFileName = dr["CompentAssemblyFileName"].ToString(),
-
                         CompentServiceName = dr["CompentServiceName"].ToString(),
-
                         InterfaceName = dr["InterfaceName"].ToString(),
-
                         CreateBy = int.Parse(dr["CreateBy"].ToString()),
-
+                         AssemblyVersion = dr["AssemblyVersion"].ToString()
 
                     };
                 }
