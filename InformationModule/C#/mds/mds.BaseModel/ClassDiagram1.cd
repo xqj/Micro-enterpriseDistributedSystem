@@ -14,7 +14,7 @@
       <FileName>AppConfiguration.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="mds.BaseModel.Component" Collapsed="true">
+  <Class Name="mds.BaseModel.Component">
     <Position X="3" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AABAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
