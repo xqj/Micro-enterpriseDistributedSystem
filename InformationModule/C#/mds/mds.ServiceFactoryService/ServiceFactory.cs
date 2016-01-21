@@ -28,7 +28,7 @@ namespace mds.ConfigClient
         {
             T tobj = default(T);
             tobj = PlatformServiceFactory.Instance.GetService<T>(appUserID);
-            if (!tobj.Equals(default(T))) return tobj;
+            if (!default(T).Equals(tobj)) return tobj;     
             if (!_serviceData.ContainsKey(appUserID))            
             {
                 var tr = FactoryServer.Intance.GetServices(solutionID, appUserID);
