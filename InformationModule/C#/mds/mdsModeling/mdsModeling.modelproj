@@ -22,47 +22,98 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
-    <Content Include="mds.Config.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="mds.Config.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>mds.Config.activitydiagram</DependentUpon>
-    </Content>
-    <Content Include="mdsApp启动组件活动图.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="mdsApp启动组件活动图.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>mdsApp启动组件活动图.activitydiagram</DependentUpon>
-    </Content>
-    <Content Include="mdsApp运行组件活动图.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="mdsApp运行组件活动图.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>mdsApp运行组件活动图.activitydiagram</DependentUpon>
-    </Content>
-    <Content Include="mds服务工厂流程.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="mds服务工厂流程.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>mds服务工厂流程.activitydiagram</DependentUpon>
-    </Content>
     <Content Include="ModelDefinition\Package_1336.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="基础服务构件\mds.Config.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="基础服务构件\mds.Config.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>基础服务构件\mds.Config.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="基础服务构件\mdsApp启动组件活动图.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="基础服务构件\mdsApp启动组件活动图.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>基础服务构件\mdsApp启动组件活动图.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="基础服务构件\mdsApp运行组件活动图.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="基础服务构件\mdsApp运行组件活动图.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>基础服务构件\mdsApp运行组件活动图.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="基础服务构件\mdsbaseComponent.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="基础服务构件\mdsbaseComponent.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>基础服务构件\mdsbaseComponent.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="基础服务构件\mds服务工厂流程.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="基础服务构件\mds服务工厂流程.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>基础服务构件\mds服务工厂流程.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="运维管理后台\停用组件配置.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="运维管理后台\停用组件配置.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>运维管理后台\停用组件配置.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="运维管理后台\停用配置方案.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="运维管理后台\停用配置方案.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>运维管理后台\停用配置方案.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="运维管理后台\程序用户管理.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="运维管理后台\程序用户管理.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>运维管理后台\程序用户管理.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="运维管理后台\组件管理.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="运维管理后台\组件管理.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>运维管理后台\组件管理.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="运维管理后台\编辑方案组件构成.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="运维管理后台\编辑方案组件构成.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>运维管理后台\编辑方案组件构成.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="运维管理后台\编辑组件配置.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="运维管理后台\编辑组件配置.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>运维管理后台\编辑组件配置.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="运维管理后台\配置方案管理.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="运维管理后台\配置方案管理.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>运维管理后台\配置方案管理.usecasediagram</DependentUpon>
+    </Content>
     <Folder Include="ModelDefinition\" />
-    <Content Include="mdsbaseComponent.componentdiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="mdsbaseComponent.componentdiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>mdsbaseComponent.componentdiagram</DependentUpon>
-    </Content>
     <Content Include="ModelDefinition\mdsModeling.uml">
       <SubType>Content</SubType>
     </Content>
+    <Folder Include="基础服务构件" />
+    <Folder Include="运维管理后台" />
   </ItemGroup>
 </Project>
