@@ -72,32 +72,6 @@
       </propertyInstances>
     </stereotypeInstance>
   </appliedStereotypesInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="774f0f9d-6415-47a3-bbbf-69779827616b">
-      <profileInstance Id="2d99ddfe-569a-4438-97d9-f79ea07582de" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="f32ee8c0-0729-43ae-aefc-6ba47c6de35d">
-      <profileInstance Id="d1e8caf0-9d60-4c50-95d6-d2140b0be281" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="740d66c3-fbc0-4ba2-b8d4-6e84e8f17d1c">
-      <profileInstance Id="343b782f-6e15-49c2-83fe-10cfc30f5239" name="CSharpProfile">
-        <elementDefinition Id="f706b01c-3f25-4436-bfe5-e9e7049f889b" />
-      </profileInstance>
-      <elementDefinition Id="efba6404-4d90-47f2-95e2-0457a8f30bc5" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="65e615e2-f2d9-4f8c-9222-6a45df4ab29a">
-      <profileInstance Id="2dd3b580-0ce1-4c5c-b835-c15541c6f1d1" name="TextTemplateBindings">
-        <elementDefinition Id="a20c4422-55ab-4076-aea0-06e5727213d5" />
-      </profileInstance>
-      <elementDefinition Id="b7d93019-ce2e-461f-a822-694ee7b05640" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="e021b01e-2256-4165-87f6-538cba2becab" name="运维人员" isAbstract="false" isLeaf="false">
@@ -311,6 +285,12 @@
             <elementDefinition Id="7ff73d89-a88c-472f-a11b-41d570caea8a" />
           </dependency>
         </suppliersInternal>
+        <additions>
+          <include Id="07cff910-16bf-4f6e-a844-c106ed8756d8">
+            <useCaseMoniker Id="adfb0f78-564b-48b0-889c-592670c62b48" LastKnownName="获取组件配置列表" />
+            <elementDefinition Id="2a14f533-2236-4961-9a3d-9e3de4912cc0" />
+          </include>
+        </additions>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
@@ -371,8 +351,50 @@
         <elementDefinition Id="d9c1dd02-f688-44de-9771-255a6c2559b3" />
       </artifact>
     </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="adfb0f78-564b-48b0-889c-592670c62b48" name="获取组件配置列表" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0f61e605-983c-4cdc-851e-804fc2f13d1f" />
+        <additions>
+          <include Id="acee4451-21e5-4270-890a-45e739a013b9">
+            <useCaseMoniker Id="76dd042b-bb56-425a-a00e-416f246a1f7e" LastKnownName="选中/取消组件，添加/移除方案" />
+            <elementDefinition Id="b0a1c232-4f17-4c7b-9100-ed835e5af0e8" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="76dd042b-bb56-425a-a00e-416f246a1f7e" name="选中/取消组件，添加/移除方案" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a67c66d3-8e59-4f3f-96d1-a2b5e57981f2" />
+      </useCase>
+    </useCaseModelRootHasTypes>
   </packagedElements>
   <package Id="ead8a88a-57ec-407a-bc69-1581c577c99c" name="mdsModeling">
     <elementDefinition Id="0087d537-cd05-4da0-a767-0975b5628e3b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="774f0f9d-6415-47a3-bbbf-69779827616b">
+        <profileInstance Id="2d99ddfe-569a-4438-97d9-f79ea07582de" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="f32ee8c0-0729-43ae-aefc-6ba47c6de35d">
+        <profileInstance Id="d1e8caf0-9d60-4c50-95d6-d2140b0be281" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="740d66c3-fbc0-4ba2-b8d4-6e84e8f17d1c">
+        <profileInstance Id="343b782f-6e15-49c2-83fe-10cfc30f5239" name="CSharpProfile">
+          <elementDefinition Id="f706b01c-3f25-4436-bfe5-e9e7049f889b" />
+        </profileInstance>
+        <elementDefinition Id="efba6404-4d90-47f2-95e2-0457a8f30bc5" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="65e615e2-f2d9-4f8c-9222-6a45df4ab29a">
+        <profileInstance Id="2dd3b580-0ce1-4c5c-b835-c15541c6f1d1" name="TextTemplateBindings">
+          <elementDefinition Id="a20c4422-55ab-4076-aea0-06e5727213d5" />
+        </profileInstance>
+        <elementDefinition Id="b7d93019-ce2e-461f-a822-694ee7b05640" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </useCaseModelRoot>

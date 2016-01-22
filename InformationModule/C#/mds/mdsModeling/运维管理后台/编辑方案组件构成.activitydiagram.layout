@@ -1,1 +1,9 @@
-﻿ 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="编辑方案组件构成">
+  <activityRootModelMoniker Id="43649ea3-8778-4549-b980-ef9fb43f3b69" />
+  <nestedChildShapes>
+    <initialNodeShape Id="2921f769-94af-4847-a628-985dbc21d698" absoluteBounds="1.75, 1.125, 0.125, 0.125" customColor="89, 89, 89">
+      <initialNodeMoniker Id="aeb5293c-1fdf-43ef-bfb8-721a92f42225" LastKnownName="配置方案组件构成变更" />
+    </initialNodeShape>
+  </nestedChildShapes>
+</activityDiagram>

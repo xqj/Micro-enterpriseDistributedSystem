@@ -3084,6 +3084,15 @@
               LastKnownLocation="mdsModeling.uml" />
           </dependency>
         </suppliersInternal>
+        <additions>
+          <include
+            Id="2a14f533-2236-4961-9a3d-9e3de4912cc0">
+            <useCaseMoniker
+              Id="0f61e605-983c-4cdc-851e-804fc2f13d1f"
+              LastKnownName="获取组件配置列表"
+              LastKnownLocation="mdsModeling.uml" />
+          </include>
+        </additions>
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -3255,6 +3264,48 @@
           </include>
         </additions>
       </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0f61e605-983c-4cdc-851e-804fc2f13d1f"
+        name="获取组件配置列表"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="b0a1c232-4f17-4c7b-9100-ed835e5af0e8">
+            <useCaseMoniker
+              Id="a67c66d3-8e59-4f3f-96d1-a2b5e57981f2"
+              LastKnownName="选中/取消组件，添加/移除方案"
+              LastKnownLocation="mdsModeling.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a67c66d3-8e59-4f3f-96d1-a2b5e57981f2"
+        name="选中/取消组件，添加/移除方案"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="c6549707-46e5-44f1-9bf9-6a83ef62c04c"
+        name="编辑方案组件构成"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="fed29749-18ff-4086-8237-275983abd229"
+            name="配置方案组件构成变更"
+            isLeaf="false" />
+        </nodes>
+      </activity>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
