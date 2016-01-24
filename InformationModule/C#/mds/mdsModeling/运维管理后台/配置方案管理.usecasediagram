@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="6bdb2193-7e20-4da6-9873-29ceee963f1e" name="配置方案管理" linkedPackageId="ead8a88a-57ec-407a-bc69-1581c577c99c" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="6bdb2193-7e20-4da6-9873-29ceee963f1e" name="配置方案管理" linkedPackageId="ead8a88a-57ec-407a-bc69-1581c577c99c" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <appliedStereotypesInternal>
     <stereotypeInstance Id="fcdfc46c-9083-431f-bad9-ade8c843266b" name="namespace" profile="CSharpProfile">
       <elementDefinition Id="54fefc0f-bdb9-4f83-871b-ac42289e4425" />
@@ -307,12 +307,6 @@
     <useCaseModelRootHasTypes>
       <useCase Id="17512976-ca5f-43fd-a524-2cc06aca1401" name="停用组件配置" isAbstract="false" isLeaf="false">
         <elementDefinition Id="c67d3759-7adf-45e6-967d-bab3c2f16f4a" />
-        <suppliersInternal>
-          <dependency Id="fece2b47-ae2d-4ff2-a0b2-8a3210eeb348">
-            <artifactMoniker Id="4231435a-b3ae-474d-b40f-9e55f35b8c8e" LastKnownName="停用组件配置.activitydiagram" />
-            <elementDefinition Id="37bb88d4-0ad3-4bb3-9729-10a01d1c59e8" />
-          </dependency>
-        </suppliersInternal>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
@@ -331,25 +325,9 @@
       </artifact>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <artifact Id="4231435a-b3ae-474d-b40f-9e55f35b8c8e" name="停用组件配置.activitydiagram" isAbstract="false" isLeaf="false" fileName="mdsModeling\运维管理后台\停用组件配置.activitydiagram">
-        <elementDefinition Id="66c8fc85-e890-47f1-ad3d-35bb570ef4df" />
-      </artifact>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
       <useCase Id="47a8e5a7-8aec-4a5b-9824-251ef3f74a3e" name="停用配置方案" isAbstract="false" isLeaf="false">
         <elementDefinition Id="20ec2b89-9045-41a6-aa3f-ed17e5da1cba" />
-        <suppliersInternal>
-          <dependency Id="371f17b4-82a9-4518-b239-af51d1f402b9">
-            <artifactMoniker Id="7d17e0e0-e8a9-47f8-9c50-c80973f2b7ca" LastKnownName="停用配置方案.activitydiagram" />
-            <elementDefinition Id="83924110-1351-48d3-a1b9-a748cc53f47c" />
-          </dependency>
-        </suppliersInternal>
       </useCase>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
-      <artifact Id="7d17e0e0-e8a9-47f8-9c50-c80973f2b7ca" name="停用配置方案.activitydiagram" isAbstract="false" isLeaf="false" fileName="mdsModeling\运维管理后台\停用配置方案.activitydiagram">
-        <elementDefinition Id="d9c1dd02-f688-44de-9771-255a6c2559b3" />
-      </artifact>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
       <useCase Id="adfb0f78-564b-48b0-889c-592670c62b48" name="获取组件配置列表" isAbstract="false" isLeaf="false">

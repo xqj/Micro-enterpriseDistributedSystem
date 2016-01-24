@@ -137,7 +137,7 @@
     <artifactShape Id="5c28d5f9-615e-4caf-aa75-c0e822012364" absoluteBounds="6.625, 0.5, 1.5, 0.625" customColor="161, 199, 231">
       <artifactMoniker Id="543939e3-5443-4330-8b7d-a344c5fbf7c7" LastKnownName="编辑方案组件构成.activitydiagram" />
     </artifactShape>
-    <useCaseDependencyConnector edgePoints="[(5.58339742973491 : 1.81368967161873); (6.81578947368421 : 1.125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+    <useCaseDependencyConnector edgePoints="[(5.58339742973491 : 1.81368967161873); (6.81578947368421 : 1.125)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
       <dependencyMoniker Id="f7a80be3-6ef4-47f8-b309-7f1e4a9ab666" />
       <relativeChildShapes />
       <nodes>
@@ -156,17 +156,6 @@
         <artifactShapeMoniker Id="3420c51e-9948-4a7d-b34f-b7d2f68c7c92" />
       </nodes>
     </useCaseDependencyConnector>
-    <artifactShape Id="8977b317-3c10-463f-801f-3ad184c6f270" absoluteBounds="6.5, 4.625, 1.5, 0.625" customColor="161, 199, 231">
-      <artifactMoniker Id="4231435a-b3ae-474d-b40f-9e55f35b8c8e" LastKnownName="停用组件配置.activitydiagram" />
-    </artifactShape>
-    <useCaseDependencyConnector edgePoints="[(4.37194186733681 : 4.77760788151871); (6.5 : 4.89583333333333)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
-      <dependencyMoniker Id="fece2b47-ae2d-4ff2-a0b2-8a3210eeb348" />
-      <relativeChildShapes />
-      <nodes>
-        <useCaseShapeMoniker Id="b3573142-ba33-44bc-bfd3-eddc505c9d6c" />
-        <artifactShapeMoniker Id="8977b317-3c10-463f-801f-3ad184c6f270" />
-      </nodes>
-    </useCaseDependencyConnector>
     <useCaseShape Id="f3145c01-7be6-441c-b9cc-983656ddc7f7" absoluteBounds="4.875, 3.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
       <useCaseMoniker Id="47a8e5a7-8aec-4a5b-9824-251ef3f74a3e" LastKnownName="停用配置方案" />
       <relativeChildShapes />
@@ -179,22 +168,11 @@
         <useCaseShapeMoniker Id="f3145c01-7be6-441c-b9cc-983656ddc7f7" />
       </nodes>
     </useCaseAssociationConnector>
-    <artifactShape Id="3cbf9949-76ac-41e8-a258-b377d96aa458" absoluteBounds="6.5, 3.5, 1.5, 0.625" customColor="161, 199, 231">
-      <artifactMoniker Id="7d17e0e0-e8a9-47f8-9c50-c80973f2b7ca" LastKnownName="停用配置方案.activitydiagram" />
-    </artifactShape>
-    <useCaseDependencyConnector edgePoints="[(5.84934164902526 : 3.57905694150421); (6.5 : 3.6875)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
-      <dependencyMoniker Id="371f17b4-82a9-4518-b239-af51d1f402b9" />
-      <relativeChildShapes />
-      <nodes>
-        <useCaseShapeMoniker Id="f3145c01-7be6-441c-b9cc-983656ddc7f7" />
-        <artifactShapeMoniker Id="3cbf9949-76ac-41e8-a258-b377d96aa458" />
-      </nodes>
-    </useCaseDependencyConnector>
     <useCaseShape Id="c1c3b2a0-db97-4ac7-8f47-675bf88893b1" absoluteBounds="6.625, 1.625, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
       <useCaseMoniker Id="adfb0f78-564b-48b0-889c-592670c62b48" LastKnownName="获取组件配置列表" />
       <relativeChildShapes />
     </useCaseShape>
-    <includeConnector edgePoints="[(5.74561395034132 : 1.96695906997725); (6.62938604965868 : 1.90804093002275)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«包括»">
+    <includeConnector edgePoints="[(5.74561395034132 : 1.96695906997725); (6.62938604965868 : 1.90804093002275)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«包括»">
       <includeMoniker Id="07cff910-16bf-4f6e-a844-c106ed8756d8" />
       <relativeChildShapes />
       <nodes>
@@ -206,7 +184,7 @@
       <useCaseMoniker Id="76dd042b-bb56-425a-a00e-416f246a1f7e" LastKnownName="选中/取消组件，添加/移除方案" />
       <relativeChildShapes />
     </useCaseShape>
-    <includeConnector edgePoints="[(7.6139012070387 : 1.92738227218272); (8.14863030055236 : 1.98467467505918)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«包括»">
+    <includeConnector edgePoints="[(7.6139012070387 : 1.92738227218272); (8.14863030055236 : 1.98467467505918)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«包括»">
       <includeMoniker Id="acee4451-21e5-4270-890a-45e739a013b9" />
       <relativeChildShapes />
       <nodes>

@@ -1,5 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="43649ea3-8778-4549-b980-ef9fb43f3b69" name="编辑方案组件构成" linkedPackageId="51c3fb3c-687b-4948-aaae-04e927332699" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="43649ea3-8778-4549-b980-ef9fb43f3b69" name="编辑方案组件构成" linkedPackageId="51c3fb3c-687b-4948-aaae-04e927332699" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="fd1bbef2-2206-4b9a-a172-bf13b4dd4786">
+      <elementDefinition Id="bd0c1577-9be9-4abf-b4ad-491961089f2f" />
+      <body>通过前端配置更新前端</body>
+      <annotatedElements>
+        <decisionNodeMoniker Id="5ab99fe5-2343-4284-9521-19ea15250522" LastKnownName="Decision1" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
   <appliedStereotypesInternal>
     <stereotypeInstance Id="3fc043a5-0811-45ed-b298-3923380cb2a6" name="namespace" profile="CSharpProfile">
       <elementDefinition Id="54fefc0f-bdb9-4f83-871b-ac42289e4425" />
@@ -72,45 +81,134 @@
       </propertyInstances>
     </stereotypeInstance>
   </appliedStereotypesInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="6e7e81eb-221c-4179-ae2e-e9ad7ae15d52">
-      <profileInstance Id="60a3cc6a-4e33-4f11-ba85-5d8962460cbc" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="b8008145-0916-40b7-9e89-079aa02f1d9f">
-      <profileInstance Id="5ebe349f-0e1d-4466-8854-b2a12aaa827d" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="840f4621-0a11-4b7a-9865-ea1e527ecedf">
-      <profileInstance Id="041856f6-ba73-430b-adf6-3d88f2263525" name="CSharpProfile">
-        <elementDefinition Id="f706b01c-3f25-4436-bfe5-e9e7049f889b" />
-      </profileInstance>
-      <elementDefinition Id="efba6404-4d90-47f2-95e2-0457a8f30bc5" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="f6c61191-eb10-4026-b196-638db7260c45">
-      <profileInstance Id="8579bc52-2b9d-4d21-b56b-d6311fe0c95a" name="TextTemplateBindings">
-        <elementDefinition Id="a20c4422-55ab-4076-aea0-06e5727213d5" />
-      </profileInstance>
-      <elementDefinition Id="b7d93019-ce2e-461f-a822-694ee7b05640" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="d0ee3f7d-de66-4e15-afc0-774ed876c76f" name="编辑方案组件构成" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
         <elementDefinition Id="c6549707-46e5-44f1-9bf9-6a83ef62c04c" />
         <nodes>
-          <initialNode Id="aeb5293c-1fdf-43ef-bfb8-721a92f42225" name="配置方案组件构成变更" isLeaf="false">
+          <initialNode Id="aeb5293c-1fdf-43ef-bfb8-721a92f42225" name="展示已有组件列表" isLeaf="false">
             <elementDefinition Id="fed29749-18ff-4086-8237-275983abd229" />
+            <flowNodeTargets>
+              <controlFlow Id="b9302cbc-4837-4447-a005-197f6dad40b9" isLeaf="false">
+                <opaqueActionMoniker Id="9076a1c9-a9ec-491b-a81d-d311b02a5da5" LastKnownName="获取可选组建配置列表" />
+                <elementDefinition Id="1c3b2211-ec67-40ae-b1ba-dbe545fa5e14" />
+              </controlFlow>
+            </flowNodeTargets>
           </initialNode>
+          <opaqueAction Id="9076a1c9-a9ec-491b-a81d-d311b02a5da5" name="获取可选组建配置列表" isLeaf="false">
+            <elementDefinition Id="10c93859-f8cd-49ff-a63a-fd065392e3a4" />
+            <flowNodeTargets>
+              <controlFlow Id="1806a097-599f-46b3-98eb-b903954be0f4" isLeaf="false">
+                <opaqueActionMoniker Id="f35c6966-c8b6-4509-879b-9c4161a1aed2" LastKnownName="选中组件" />
+                <elementDefinition Id="65b3be50-7b56-44d1-a9bf-781cc8afb51b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="f35c6966-c8b6-4509-879b-9c4161a1aed2" name="选中组件" isLeaf="false">
+            <elementDefinition Id="103db939-bdf3-479d-9928-e72477260937" />
+            <flowNodeTargets>
+              <controlFlow Id="28c62fcc-d180-40c3-b0f8-09143706a1da" isLeaf="false">
+                <opaqueActionMoniker Id="e1a380cd-3565-4787-8316-5bdf87630f0d" LastKnownName="更新方案组件配置列表" />
+                <elementDefinition Id="25bfe989-a467-41f6-88b0-e48557ad6e69" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="e1a380cd-3565-4787-8316-5bdf87630f0d" name="更新方案组件配置列表" isLeaf="false">
+            <elementDefinition Id="eb4f8495-e500-4cd0-b4ff-00621b74b72f" />
+            <objectFlowTargets>
+              <objectFlow Id="83fec551-88ed-4868-95d8-8e5758a89236" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="28390690-4527-46da-8d4d-10d104e267df" LastKnownName="配置消息通知服务" />
+                <elementDefinition Id="f58eecd8-167a-4edd-b991-c4bb0d9bfaa1" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <decisionNode Id="5ab99fe5-2343-4284-9521-19ea15250522" name="Decision1" isLeaf="false">
+            <elementDefinition Id="496158aa-93c6-4b40-ae54-3bac9be1f271" />
+            <flowNodeTargets>
+              <controlFlow Id="c9782353-0d74-4ccb-9225-d9b6f034e41c" isLeaf="false">
+                <opaqueActionMoniker Id="2a2d43d8-bdda-424d-8a6a-6275b1d024eb" LastKnownName="总是获取最新的配置，获取最新配置" />
+                <elementDefinition Id="344aed5a-477b-4a02-9644-7c2a22072229" />
+              </controlFlow>
+              <controlFlow Id="fbae150e-2cff-4f6d-b655-a54c9f34c49b" isLeaf="false">
+                <opaqueActionMoniker Id="565c8037-73b3-4ff6-8243-689c42ea6fe5" LastKnownName="保持配置客户端配置版本" />
+                <elementDefinition Id="3637a239-10ae-489c-ad9b-6fc1d7be3ed2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="2a2d43d8-bdda-424d-8a6a-6275b1d024eb" name="总是获取最新的配置，获取最新配置" isLeaf="false">
+            <elementDefinition Id="719d8a20-a3bd-4b2c-8d06-0f7f482ad6aa" />
+          </opaqueAction>
+          <objectNode Id="28390690-4527-46da-8d4d-10d104e267df" name="配置消息通知服务" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="d682633e-dce4-4440-bd92-e0a10637b893" />
+            <objectFlowTargets>
+              <objectFlow Id="62649f0d-749f-4320-8af1-1ace1d0f80cb" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="8419f8d1-7a9a-44ac-bb3e-7d1a1a82ba99" LastKnownName="更新通知" />
+                <elementDefinition Id="069a3a3c-fd7f-4c3a-9387-5370ef71a857" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="365b28b5-4203-4665-8389-a9d6fc67e99b" name="2147483647" value="2147483647">
+                <elementDefinition Id="afbc1860-75e0-48c1-a221-05dc359e6c6e" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="8419f8d1-7a9a-44ac-bb3e-7d1a1a82ba99" name="更新通知" isLeaf="false">
+            <elementDefinition Id="24127790-e87d-4dfa-8629-9684a51ff08d" />
+            <objectFlowTargets>
+              <objectFlow Id="cc2dbbe9-7c2f-43cc-aa38-1f93641ffdfb" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="16d6130d-7cd2-400a-a5a9-41a797e245b4" LastKnownName="程序服务实例" />
+                <elementDefinition Id="0cc20a65-392c-44b0-b425-c2acbd1364cc" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="565c8037-73b3-4ff6-8243-689c42ea6fe5" name="保持配置客户端配置版本" isLeaf="false">
+            <elementDefinition Id="99614529-8d76-4be9-95be-95a07287bc37" />
+          </opaqueAction>
+          <objectNode Id="16d6130d-7cd2-400a-a5a9-41a797e245b4" name="程序服务实例" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="b1539ae7-03d2-44cb-9e10-131b6e21aa84" />
+            <objectFlowTargets>
+              <objectFlow Id="0e3eeba7-0451-4ec4-87cb-90b16937c286" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <decisionNodeMoniker Id="5ab99fe5-2343-4284-9521-19ea15250522" LastKnownName="Decision1" />
+                <elementDefinition Id="a3781d41-ea02-4d41-b1d2-2a6bd82e6106" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="ed319b66-d8c6-439a-b633-473362dd8eb5" name="2147483647" value="2147483647">
+                <elementDefinition Id="3875f1c6-c46a-4af8-8ec5-83c8d61b1cb1" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
         </nodes>
       </activity>
     </activityRootModelHasActivity>
   </packagedElements>
   <package Id="51c3fb3c-687b-4948-aaae-04e927332699" name="mdsModeling">
     <elementDefinition Id="0087d537-cd05-4da0-a767-0975b5628e3b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="6e7e81eb-221c-4179-ae2e-e9ad7ae15d52">
+        <profileInstance Id="60a3cc6a-4e33-4f11-ba85-5d8962460cbc" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="b8008145-0916-40b7-9e89-079aa02f1d9f">
+        <profileInstance Id="5ebe349f-0e1d-4466-8854-b2a12aaa827d" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="840f4621-0a11-4b7a-9865-ea1e527ecedf">
+        <profileInstance Id="041856f6-ba73-430b-adf6-3d88f2263525" name="CSharpProfile">
+          <elementDefinition Id="f706b01c-3f25-4436-bfe5-e9e7049f889b" />
+        </profileInstance>
+        <elementDefinition Id="efba6404-4d90-47f2-95e2-0457a8f30bc5" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="f6c61191-eb10-4026-b196-638db7260c45">
+        <profileInstance Id="8579bc52-2b9d-4d21-b56b-d6311fe0c95a" name="TextTemplateBindings">
+          <elementDefinition Id="a20c4422-55ab-4076-aea0-06e5727213d5" />
+        </profileInstance>
+        <elementDefinition Id="b7d93019-ce2e-461f-a822-694ee7b05640" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>

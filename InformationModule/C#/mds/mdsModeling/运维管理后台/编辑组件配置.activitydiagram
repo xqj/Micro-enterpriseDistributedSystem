@@ -1,1 +1,168 @@
-﻿ 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="02d38b10-6cf1-4d46-a8ed-2f450d66ae99" name="编辑组件配置" linkedPackageId="702c82a7-f409-4900-854f-bfbfbc28d286" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="97389031-b871-494a-9d9b-2baf6e418d19">
+      <elementDefinition Id="167b5676-6d18-49f0-bdcf-ff42697df654" />
+      <body>判断是否确定更新版本</body>
+      <annotatedElements>
+        <decisionNodeMoniker Id="092bfe0e-644d-413d-b822-51aad628e89f" LastKnownName="Decision1" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="abf448b6-c436-430e-98ab-d26b3fcd24e8" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="54fefc0f-bdb9-4f83-871b-ac42289e4425" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="8f9fb1d4-a7d5-4968-be79-b5f76fc93748">
+          <propertyInstance Id="87f7b632-de09-4359-ae6f-984696710feb" name="BaseName">
+            <elementDefinition Id="48d21179-2544-42f6-a34f-bf6b6f5f7860" />
+          </propertyInstance>
+          <elementDefinition Id="321fa1ee-eea0-4142-91b5-0a8ca717e4e4" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="25a7ad6b-19c3-4d3a-9c38-e9ae7a77de81">
+          <propertyInstance Id="681a2782-5846-4489-b073-109d331f7f6b" name="ClrAttributes">
+            <elementDefinition Id="b8b42e66-9b1d-4bc7-b1ec-904ac00cc60b" />
+          </propertyInstance>
+          <elementDefinition Id="93bc0659-ad44-4742-8401-3ddf38af6528" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="745aa594-0cde-4df5-921b-5450094652df">
+          <propertyInstance Id="2692eb22-1d83-46a9-ae32-2397a762de07" name="Usings">
+            <elementDefinition Id="d1c865cd-6b6e-4950-a0d8-405a221e00c9" />
+          </propertyInstance>
+          <elementDefinition Id="42fef0fc-a4b1-4584-abe8-8a5e07dd286d" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="6f96010e-aac4-4580-8a1e-c354f544112f" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="296d11e3-3162-496c-a490-3e473b3f0222" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="c1853cb2-53da-4765-b5b2-305e02490d08">
+          <propertyInstance Id="e6ec0f48-82f8-42b6-a650-d8a45ab5f5e3" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="dd7867fe-db52-4157-a40d-9758276cad19" />
+          </propertyInstance>
+          <elementDefinition Id="036ca2e9-d731-4e78-b037-3ca45f127896" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="d1d94027-5555-4c2f-81e0-00f388d565a0">
+          <propertyInstance Id="b68b68cb-0dfa-42dc-80f3-017e904ad272" name="TemplateFilePath" value="ClassTemplate=D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="5b182fa0-8d5e-4d05-bb26-686721942696" />
+          </propertyInstance>
+          <elementDefinition Id="34aabaf4-c4ff-4568-9367-b51e323b6a69" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="9eee80a0-8d16-4b8c-a2b8-6e45d252b9d1">
+          <propertyInstance Id="fb0b0381-d807-4a1c-9435-7bfcb96288f5" name="ProjectPath" value="ClassTemplate=..\mds.BaseModel\mds.BaseModel.csproj|EnumTemplate=..\mdsModelingLib\mdsModelingLib.csproj|InterfaceTemplate=..\mds.Cache\mds.Cache.csproj|StructTemplate=..\mdsModelingLib\mdsModelingLib.csproj">
+            <elementDefinition Id="8fabca4b-d3b7-476d-bb51-5da01ad96003" />
+          </propertyInstance>
+          <elementDefinition Id="2b0a36f9-3a53-4e80-9f82-2e51213f6087" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="a195fb2a-425e-43bf-ab41-cd79fbc6d0b1">
+          <propertyInstance Id="649ca758-7454-4885-b5bf-7f034284be8a" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="bd7fbe61-7527-4173-98ee-3532ab7dfda9" />
+          </propertyInstance>
+          <elementDefinition Id="a79c641d-6f0f-4981-a151-42780d41e78c" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="caabfe5f-859f-4c60-925d-62c6c96b4693">
+          <propertyInstance Id="9c19ba84-6276-4c55-87fb-8b5904cfe5a1" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="c35be463-1623-48e7-9ba2-236543faa163" />
+          </propertyInstance>
+          <elementDefinition Id="fb2d7aab-049d-4f51-a858-c4914cf5eda2" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="804a8adf-7f9d-43d5-a14c-da9e1ade8843">
+          <propertyInstance Id="c938615a-f659-452d-90ec-300468af4221" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="c9eb3c52-ecbe-426c-8a41-c1e0481a0740" />
+          </propertyInstance>
+          <elementDefinition Id="164f5b18-76ee-495f-840e-72381606c52f" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="4d8d46b6-d5ce-4616-bb98-fc8591ec65c7">
+          <propertyInstance Id="59c5ed9b-413b-4937-8db9-40ea9be49b51" name="Parameters">
+            <elementDefinition Id="04a9c649-4fdb-45c3-8a6f-e2919848673f" />
+          </propertyInstance>
+          <elementDefinition Id="9920232f-7852-4f5f-a71f-60f1601aafc9" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="48e44ac9-e9f4-40da-b0c9-68a67caf9784">
+      <profileInstance Id="6e6c5037-7776-41d5-9692-f744576a7f99" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c67326d6-c2d3-4925-a15e-2f0ac4e7632a">
+      <profileInstance Id="ec0cd0da-6c74-4e97-bb1f-32b8a39636a6" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4ad096c4-f051-451f-b158-0ee748c5642a">
+      <profileInstance Id="b154a23f-5a01-4783-8cbb-f2754edf9c56" name="CSharpProfile">
+        <elementDefinition Id="f706b01c-3f25-4436-bfe5-e9e7049f889b" />
+      </profileInstance>
+      <elementDefinition Id="efba6404-4d90-47f2-95e2-0457a8f30bc5" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c41ba812-5e02-4ade-b5e0-65ab2eb9c33a">
+      <profileInstance Id="e5fd9118-4f62-4873-bd45-30457d3bda1e" name="TextTemplateBindings">
+        <elementDefinition Id="a20c4422-55ab-4076-aea0-06e5727213d5" />
+      </profileInstance>
+      <elementDefinition Id="b7d93019-ce2e-461f-a822-694ee7b05640" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="d7fb04ea-7b81-47b5-bd5d-13c1d8aa604a" name="编辑组件配置" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="92c1ef9f-a403-45b9-b8d1-f372502aa55e" />
+        <nodes>
+          <initialNode Id="509bae55-e92c-4cd1-9015-6c4df3a695f5" name="展开编辑页面" isLeaf="false">
+            <elementDefinition Id="ef34f21b-cac5-4367-a3be-2974d56a3cac" />
+            <flowNodeTargets>
+              <controlFlow Id="4c1b0107-e381-4238-9f0d-3fe51aaae884" isLeaf="false">
+                <opaqueActionMoniker Id="a8c3efc2-5141-4750-97e8-904ce7d43f77" LastKnownName="编辑组件配置" />
+                <elementDefinition Id="f2bda973-5eaf-47c1-8fd8-e08355392d2e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="a8c3efc2-5141-4750-97e8-904ce7d43f77" name="编辑组件配置" isLeaf="false">
+            <elementDefinition Id="fadd6f21-b342-4e58-8f25-4d648128f37d" />
+            <flowNodeTargets>
+              <controlFlow Id="ac207702-2455-4fdf-b238-e8a9fb4bb7f9" isLeaf="false">
+                <decisionNodeMoniker Id="092bfe0e-644d-413d-b822-51aad628e89f" LastKnownName="Decision1" />
+                <elementDefinition Id="9dc3f767-f71b-4059-a915-c8e11457a4b3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="534402b4-bfcf-4829-97e8-a0eb652e9509" name="另存新版本配置" isLeaf="false">
+            <elementDefinition Id="dbc09606-1bd2-449d-a9fa-22fbbef72a3e" />
+          </opaqueAction>
+          <opaqueAction Id="f5d789b8-234c-4eda-a6a4-b4b02a2cec05" name="递增配置版本字段" isLeaf="false">
+            <elementDefinition Id="adbd43ea-07fa-4abe-b477-10a202742dfe" />
+            <flowNodeTargets>
+              <controlFlow Id="cf5a69cd-9485-4b4a-94c3-c8a7b6367fcc" isLeaf="false">
+                <opaqueActionMoniker Id="534402b4-bfcf-4829-97e8-a0eb652e9509" LastKnownName="另存新版本配置" />
+                <elementDefinition Id="3e5e4b94-197e-488a-b9af-b5ef74b1268e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d476051b-dd8a-4132-b2a6-eda586a473ca" name="更新原配置" isLeaf="false">
+            <elementDefinition Id="e1e6e95c-ce46-4ca5-bbd5-8fc320abfb28" />
+          </opaqueAction>
+          <decisionNode Id="092bfe0e-644d-413d-b822-51aad628e89f" name="Decision1" isLeaf="false">
+            <elementDefinition Id="7c514c68-6657-4427-b301-7a856fe9c0fa" />
+            <flowNodeTargets>
+              <controlFlow Id="92e421f5-e92c-4fad-87c3-75cd5e9a4ecb" isLeaf="false">
+                <opaqueActionMoniker Id="f5d789b8-234c-4eda-a6a4-b4b02a2cec05" LastKnownName="递增配置版本字段" />
+                <elementDefinition Id="95c64a5e-675a-4c4b-94a9-15ea3abbb848" />
+              </controlFlow>
+              <controlFlow Id="75fa7514-b55e-42e9-a7a2-036a8e38be92" isLeaf="false">
+                <opaqueActionMoniker Id="d476051b-dd8a-4132-b2a6-eda586a473ca" LastKnownName="更新原配置" />
+                <elementDefinition Id="3c6ea4a6-e93f-46b8-8d5e-1642509d4ad5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="702c82a7-f409-4900-854f-bfbfbc28d286" name="mdsModeling">
+    <elementDefinition Id="0087d537-cd05-4da0-a767-0975b5628e3b" />
+  </package>
+</activityRootModel>
