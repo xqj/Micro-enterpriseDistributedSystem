@@ -60,6 +60,20 @@
       <SubType>Content</SubType>
       <DependentUpon>基础服务构件\mds服务工厂流程.activitydiagram</DependentUpon>
     </Content>
+    <Content Include="运维管理后台\服务实例管理.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="运维管理后台\服务实例管理.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>运维管理后台\服务实例管理.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="运维管理后台\程序与服务实例管理.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="运维管理后台\程序与服务实例管理.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>运维管理后台\程序与服务实例管理.usecasediagram</DependentUpon>
+    </Content>
     <Content Include="运维管理后台\程序用户管理.usecasediagram">
       <SubType>Content</SubType>
     </Content>

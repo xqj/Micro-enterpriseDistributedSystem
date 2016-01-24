@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="97d2fd94-9cd5-4727-a6cd-02d141b0237a" name="服务实例管理" linkedPackageId="b58688b2-a750-43b5-b59a-5cbcc8e687ca" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="71678517-0225-4560-a1b7-65140fed6539" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="54fefc0f-bdb9-4f83-871b-ac42289e4425" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="42f9405c-74c6-47ed-9548-2483377fad3e">
+          <propertyInstance Id="22e9e752-73e9-46cd-adec-7f4c67c91ac2" name="BaseName">
+            <elementDefinition Id="48d21179-2544-42f6-a34f-bf6b6f5f7860" />
+          </propertyInstance>
+          <elementDefinition Id="321fa1ee-eea0-4142-91b5-0a8ca717e4e4" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="fb482b74-cfe2-43bd-b1e6-a4ab11261f2c">
+          <propertyInstance Id="4b32fbd3-1359-4fa0-a910-d4cdb6df2477" name="ClrAttributes">
+            <elementDefinition Id="b8b42e66-9b1d-4bc7-b1ec-904ac00cc60b" />
+          </propertyInstance>
+          <elementDefinition Id="93bc0659-ad44-4742-8401-3ddf38af6528" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="7fdec853-e779-438e-83c0-a88017f88f7d">
+          <propertyInstance Id="5ff0a470-eb6b-4143-8e22-39b80596360d" name="Usings">
+            <elementDefinition Id="d1c865cd-6b6e-4950-a0d8-405a221e00c9" />
+          </propertyInstance>
+          <elementDefinition Id="42fef0fc-a4b1-4584-abe8-8a5e07dd286d" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="b3e73c05-0f98-45cd-92e6-1b763e9f4dbf" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="296d11e3-3162-496c-a490-3e473b3f0222" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="b7a65afa-2c7c-409e-99e8-c7bc7f782a57">
+          <propertyInstance Id="f37068c4-cd2b-4523-a2a4-8683cc2cd707" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="dd7867fe-db52-4157-a40d-9758276cad19" />
+          </propertyInstance>
+          <elementDefinition Id="036ca2e9-d731-4e78-b037-3ca45f127896" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="6bc1848c-69e6-4cb4-8330-eff63a7b1720">
+          <propertyInstance Id="c057fa32-5e75-410a-8833-cb9bee7753d3" name="TemplateFilePath" value="ClassTemplate=D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="5b182fa0-8d5e-4d05-bb26-686721942696" />
+          </propertyInstance>
+          <elementDefinition Id="34aabaf4-c4ff-4568-9367-b51e323b6a69" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="3dbef1dc-ea69-48ff-90b3-de91da78214d">
+          <propertyInstance Id="6615b70b-44a8-41c2-b972-04ff9e56879f" name="ProjectPath" value="ClassTemplate=..\mds.BaseModel\mds.BaseModel.csproj|EnumTemplate=..\mdsModelingLib\mdsModelingLib.csproj|InterfaceTemplate=..\mds.Cache\mds.Cache.csproj|StructTemplate=..\mdsModelingLib\mdsModelingLib.csproj">
+            <elementDefinition Id="8fabca4b-d3b7-476d-bb51-5da01ad96003" />
+          </propertyInstance>
+          <elementDefinition Id="2b0a36f9-3a53-4e80-9f82-2e51213f6087" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="e76ce1fb-e455-4ac2-8d85-1fdeb225c848">
+          <propertyInstance Id="f0863b73-dccb-4a4a-b6f6-0a8fd92f179a" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="bd7fbe61-7527-4173-98ee-3532ab7dfda9" />
+          </propertyInstance>
+          <elementDefinition Id="a79c641d-6f0f-4981-a151-42780d41e78c" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="9530454a-4418-4510-a9aa-a2004684adfe">
+          <propertyInstance Id="9a14ea2e-bc6e-4131-98b5-2a989acb4b6e" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="c35be463-1623-48e7-9ba2-236543faa163" />
+          </propertyInstance>
+          <elementDefinition Id="fb2d7aab-049d-4f51-a858-c4914cf5eda2" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="d83e635a-0ede-4542-be9f-762587c9bb5f">
+          <propertyInstance Id="9dfcbe58-eacb-4c9e-81e6-61ae04edc551" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="c9eb3c52-ecbe-426c-8a41-c1e0481a0740" />
+          </propertyInstance>
+          <elementDefinition Id="164f5b18-76ee-495f-840e-72381606c52f" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="3152bbb2-a0aa-4e39-97f8-81c5f80c679c">
+          <propertyInstance Id="3e12e25e-4a70-4400-a8db-afede09b86b3" name="Parameters">
+            <elementDefinition Id="04a9c649-4fdb-45c3-8a6f-e2919848673f" />
+          </propertyInstance>
+          <elementDefinition Id="9920232f-7852-4f5f-a71f-60f1601aafc9" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="e99525e9-be84-4e15-af39-b8dd0ac574e2">
+      <profileInstance Id="6522d81b-da89-4ada-8d61-831145f5210a" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="8bb5c633-8a12-4473-8297-fa77fcc4280a">
+      <profileInstance Id="fffc52ac-b6e8-4a12-a6c6-e73aa8c7c33c" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="90be18ef-9791-4422-944a-33eb001e1fcb">
+      <profileInstance Id="037392a3-b80f-444f-bc68-77836591f873" name="CSharpProfile">
+        <elementDefinition Id="f706b01c-3f25-4436-bfe5-e9e7049f889b" />
+      </profileInstance>
+      <elementDefinition Id="efba6404-4d90-47f2-95e2-0457a8f30bc5" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c9760091-5dda-4014-8d53-56171776d633">
+      <profileInstance Id="f5725e62-4d49-4e4e-a788-328cbe3056a8" name="TextTemplateBindings">
+        <elementDefinition Id="a20c4422-55ab-4076-aea0-06e5727213d5" />
+      </profileInstance>
+      <elementDefinition Id="b7d93019-ce2e-461f-a822-694ee7b05640" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="1b0825dd-fb03-4c7f-ba86-0d33ff5ec4ea" name="服务实例管理" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="76a8e66a-268b-491f-bd65-a4eb10664fc5" />
+        <nodes>
+          <initialNode Id="71876682-beae-41e3-9d96-3c7fd20fc19c" name="程序实例启动" isLeaf="false">
+            <elementDefinition Id="8124b484-0e06-406a-a1ea-e64b4b095841" />
+            <flowNodeTargets>
+              <controlFlow Id="1e28b8ed-6beb-43a3-870d-7fc79dcb9f20" isLeaf="false">
+                <sendSignalActionMoniker Id="74bce83e-76a5-4821-9c3a-17097c970ba7" LastKnownName="发出启动信号" />
+                <elementDefinition Id="524f84b2-cba0-46a4-a8dd-cea3a894395d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <objectNode Id="42697b32-72fe-44ab-ace6-057646a75338" name="运维后台信息接受服务" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="232b12f5-a2f5-4c6f-b891-d05a344b6388" />
+            <objectFlowTargets>
+              <objectFlow Id="cc0f3f11-3647-4853-b412-a87690c7010a" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <sendSignalActionMoniker Id="bbc9afba-67ca-432f-942c-fd36d18fa4b0" LastKnownName="获取服务实例信息" />
+                <elementDefinition Id="012ead48-c750-4b6f-95a6-5ab600339ec2" />
+              </objectFlow>
+              <objectFlow Id="fa75cfe4-ff5e-43c9-81db-8094c7298270" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <sendSignalActionMoniker Id="9fae6ae4-b20b-4923-9c8d-937067c5572b" LastKnownName="配置更新通知" />
+                <elementDefinition Id="18ca34cd-368c-4d0a-895f-43282a1c8d57" />
+              </objectFlow>
+              <objectFlow Id="174f45f8-4e06-4bde-95ab-8cb50dfddf24" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="15479d30-cd8a-4078-b919-a963822b3907" LastKnownName="获取服务实例列表" />
+                <elementDefinition Id="60dbc9e1-1052-47ad-ba3f-c34a4c1301fd" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="d30ebede-355c-43fb-9470-75833bfa9b49" name="2147483647" value="2147483647">
+                <elementDefinition Id="7536474f-cefb-47ae-a777-3f68109b2b1a" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <sendSignalAction Id="74bce83e-76a5-4821-9c3a-17097c970ba7" name="发出启动信号" isLeaf="false">
+            <elementDefinition Id="67375ad9-8491-4838-9ad7-fdaf4ad4013e" />
+            <flowNodeTargets>
+              <controlFlow Id="48e54a3b-9b91-4fef-b503-642da17baee2" isLeaf="false">
+                <sendSignalActionMoniker Id="a6267fe6-a119-4905-bf98-c5bd80f6fdd4" LastKnownName="发布启动完成信号" />
+                <elementDefinition Id="081671a2-8324-4b94-81f9-1094800a904d" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="bda37bca-efe1-46a3-8b48-298297818ca1" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="42697b32-72fe-44ab-ace6-057646a75338" LastKnownName="运维后台信息接受服务" />
+                <elementDefinition Id="66d726b7-2a05-44a3-bd06-af4876f56373" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <sendSignalAction Id="a6267fe6-a119-4905-bf98-c5bd80f6fdd4" name="发布启动完成信号" isLeaf="false">
+            <elementDefinition Id="a1ec30fa-9cf3-455e-abd4-865a4d79a33b" />
+            <flowNodeTargets>
+              <controlFlow Id="62ec97c8-628f-4cbf-8991-ea333c2ff67b" isLeaf="false">
+                <opaqueActionMoniker Id="8a3de355-89a8-48d9-ad83-a632841e1c48" LastKnownName="运行" />
+                <elementDefinition Id="efb5a8fb-ea05-4a06-b4eb-f576c15140db" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="6f1b157d-4b39-4aad-8690-651e73f187b5" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="42697b32-72fe-44ab-ace6-057646a75338" LastKnownName="运维后台信息接受服务" />
+                <elementDefinition Id="06a50ead-8f93-4059-b587-bedbec7eb592" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <objectNode Id="e0267523-f54d-4620-8e5e-27e18e4b8052" name="服务实例" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="b873928c-0de7-4185-bb57-7833dfc1d84f" />
+            <objectFlowTargets>
+              <objectFlow Id="4f9aeef9-d88a-4d17-a701-bbdd695cdb49" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <sendSignalActionMoniker Id="a74baf95-4842-4010-9ee4-46a890929904" LastKnownName="退出通知" />
+                <elementDefinition Id="9655dae7-331a-4d1e-8031-e4254962f67a" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="2dcbecd7-da97-49f8-be25-f9f9dfbd10f2" name="2147483647" value="2147483647">
+                <elementDefinition Id="a7b9e1a7-fd54-4c59-8873-204d92e82388" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="8a3de355-89a8-48d9-ad83-a632841e1c48" name="运行" isLeaf="false">
+            <elementDefinition Id="b19bf1ae-436a-451f-b53d-d79170abe94c" />
+            <objectFlowTargets>
+              <objectFlow Id="7577a096-ef3b-45d7-aa87-50d6a0129524" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="e0267523-f54d-4620-8e5e-27e18e4b8052" LastKnownName="服务实例" />
+                <elementDefinition Id="4b23e10e-2ff6-47a2-a08b-ce701da3a894" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <sendSignalAction Id="bbc9afba-67ca-432f-942c-fd36d18fa4b0" name="获取服务实例信息" isLeaf="false">
+            <elementDefinition Id="a6beb27f-2d78-4757-b091-0d83be658a1d" />
+            <objectFlowTargets>
+              <objectFlow Id="7fb3a542-58dd-4a6c-8561-8b969fb598c9" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="e0267523-f54d-4620-8e5e-27e18e4b8052" LastKnownName="服务实例" />
+                <elementDefinition Id="88be20ef-0929-44c0-90f4-341bfc07f720" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <sendSignalAction Id="9fae6ae4-b20b-4923-9c8d-937067c5572b" name="配置更新通知" isLeaf="false">
+            <elementDefinition Id="28f64c71-c122-4e41-9704-254b56a8e1ce" />
+            <objectFlowTargets>
+              <objectFlow Id="7f6a3661-54b4-4c5b-9c89-77baf002e1d8" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="e0267523-f54d-4620-8e5e-27e18e4b8052" LastKnownName="服务实例" />
+                <elementDefinition Id="5bf04815-fc00-4033-9cde-4305d76f8730" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <sendSignalAction Id="a74baf95-4842-4010-9ee4-46a890929904" name="退出通知" isLeaf="false">
+            <elementDefinition Id="a7839e40-e989-4024-8025-8ad767257e5d" />
+            <objectFlowTargets>
+              <objectFlow Id="6da54051-14f2-439f-a0da-d48af41df666" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="42697b32-72fe-44ab-ace6-057646a75338" LastKnownName="运维后台信息接受服务" />
+                <elementDefinition Id="78c2a3e5-e986-407d-904f-ebcd10ab32a0" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <opaqueAction Id="15479d30-cd8a-4078-b919-a963822b3907" name="获取服务实例列表" isLeaf="false">
+            <elementDefinition Id="6dcb42f9-89ed-442c-8a51-ecac0b9ce014" />
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="b58688b2-a750-43b5-b59a-5cbcc8e687ca" name="mdsModeling">
+    <elementDefinition Id="0087d537-cd05-4da0-a767-0975b5628e3b" />
+  </package>
+</activityRootModel>

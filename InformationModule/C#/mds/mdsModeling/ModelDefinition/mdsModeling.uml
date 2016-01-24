@@ -2356,6 +2356,45 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="64764190-f0d4-43ac-b85d-8415e8824903"
+            isDerived="false"
+            sourceEndRoleName="运维人员"
+            targetEndRoleName="程序列表"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="0bc043f1-2e87-47af-87a2-1c406434c95d"
+              LastKnownName="程序列表"
+              LastKnownLocation="mdsModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6aa8b9da-d6cb-48fe-a784-ee584d03bb1a"
+                  name="运维人员"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a5b0ee09-7c84-4d24-8292-c5050399d55a"
+                  name="程序列表"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </actor>
     </packageHasNamedElement>
@@ -3516,6 +3555,445 @@
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0bc043f1-2e87-47af-87a2-1c406434c95d"
+        name="程序列表"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="07d8fd10-e746-463f-b685-b817ebfd3877"
+            isDerived="false"
+            sourceEndRoleName="程序列表"
+            targetEndRoleName="添加程序"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a2d35f50-8e9e-4ac0-95a1-cd2fba449b98"
+              LastKnownName="添加程序"
+              LastKnownLocation="mdsModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dd97a901-aafc-4f29-b452-60bdabd36f95"
+                  name="程序列表"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="665b7d0d-ebb8-488e-bbf7-d263a9000085"
+                  name="添加程序"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0a6cd198-2623-4400-92b6-2b716c1016a9"
+            isDerived="false"
+            sourceEndRoleName="程序列表"
+            targetEndRoleName="编辑程序"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c4775c01-9c3e-4034-b635-75a457af04e4"
+              LastKnownName="编辑程序"
+              LastKnownLocation="mdsModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f5549020-6a71-4bd9-8f03-7f9163b489c4"
+                  name="程序列表"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e2050081-126c-43fe-9d19-9120a4216621"
+                  name="编辑程序"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4da5c0c7-16d5-4dd5-87e1-f50e7b84295a"
+            isDerived="false"
+            sourceEndRoleName="程序列表"
+            targetEndRoleName="查看程序"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="611b55ca-0a5e-42d6-9299-3895fb8571d2"
+              LastKnownName="查看程序"
+              LastKnownLocation="mdsModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="790c780a-9d8c-4f10-950a-16e71d65051e"
+                  name="程序列表"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5d370d80-811d-4ac7-a553-6912816dfefd"
+                  name="查看程序"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f3deb0f1-94bc-4286-ae7b-36f2917e8b26"
+        name="服务实例列表"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="17351875-4d74-448a-a865-db6a374daaca"
+            isDerived="false"
+            sourceEndRoleName="服务实例列表"
+            targetEndRoleName="更新配置通知"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c9a226da-b02c-4f70-b027-52027355be71"
+              LastKnownName="更新配置通知"
+              LastKnownLocation="mdsModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="df21bd9d-dad5-4b8f-839e-4508f488322b"
+                  name="服务实例列表"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8f1e7ecd-7f15-4acf-8905-85d61f65e6a8"
+                  name="更新配置通知"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a2d35f50-8e9e-4ac0-95a1-cd2fba449b98"
+        name="添加程序"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c4775c01-9c3e-4034-b635-75a457af04e4"
+        name="编辑程序"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="611b55ca-0a5e-42d6-9299-3895fb8571d2"
+        name="查看程序"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="b6aeb61a-97ca-4ac0-9d86-3d6e81fbf432">
+            <useCaseMoniker
+              Id="f3deb0f1-94bc-4286-ae7b-36f2917e8b26"
+              LastKnownName="服务实例列表"
+              LastKnownLocation="mdsModeling.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c9a226da-b02c-4f70-b027-52027355be71"
+        name="更新配置通知"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="76a8e66a-268b-491f-bd65-a4eb10664fc5"
+        name="服务实例管理"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="8124b484-0e06-406a-a1ea-e64b4b095841"
+            name="程序实例启动"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="524f84b2-cba0-46a4-a8dd-cea3a894395d"
+                isLeaf="false">
+                <sendSignalActionMoniker
+                  Id="67375ad9-8491-4838-9ad7-fdaf4ad4013e"
+                  LastKnownName="发出启动信号"
+                  LastKnownLocation="mdsModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <objectNode
+            Id="232b12f5-a2f5-4c6f-b891-d05a344b6388"
+            name="运维后台信息接受服务"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="012ead48-c750-4b6f-95a6-5ab600339ec2"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <sendSignalActionMoniker
+                  Id="a6beb27f-2d78-4757-b091-0d83be658a1d"
+                  LastKnownName="获取服务实例信息"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="18ca34cd-368c-4d0a-895f-43282a1c8d57"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <sendSignalActionMoniker
+                  Id="28f64c71-c122-4e41-9704-254b56a8e1ce"
+                  LastKnownName="配置更新通知"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="60dbc9e1-1052-47ad-ba3f-c34a4c1301fd"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="6dcb42f9-89ed-442c-8a51-ecac0b9ce014"
+                  LastKnownName="获取服务实例列表"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="7536474f-cefb-47ae-a777-3f68109b2b1a"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <sendSignalAction
+            Id="67375ad9-8491-4838-9ad7-fdaf4ad4013e"
+            name="发出启动信号"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="081671a2-8324-4b94-81f9-1094800a904d"
+                isLeaf="false">
+                <sendSignalActionMoniker
+                  Id="a1ec30fa-9cf3-455e-abd4-865a4d79a33b"
+                  LastKnownName="发布启动完成信号"
+                  LastKnownLocation="mdsModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow
+                Id="66d726b7-2a05-44a3-bd06-af4876f56373"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="232b12f5-a2f5-4c6f-b891-d05a344b6388"
+                  LastKnownName="运维后台信息接受服务"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <sendSignalAction
+            Id="a1ec30fa-9cf3-455e-abd4-865a4d79a33b"
+            name="发布启动完成信号"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="efb5a8fb-ea05-4a06-b4eb-f576c15140db"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b19bf1ae-436a-451f-b53d-d79170abe94c"
+                  LastKnownName="运行"
+                  LastKnownLocation="mdsModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow
+                Id="06a50ead-8f93-4059-b587-bedbec7eb592"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="232b12f5-a2f5-4c6f-b891-d05a344b6388"
+                  LastKnownName="运维后台信息接受服务"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <objectNode
+            Id="b873928c-0de7-4185-bb57-7833dfc1d84f"
+            name="服务实例"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="9655dae7-331a-4d1e-8031-e4254962f67a"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <sendSignalActionMoniker
+                  Id="a7839e40-e989-4024-8025-8ad767257e5d"
+                  LastKnownName="退出通知"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="a7b9e1a7-fd54-4c59-8873-204d92e82388"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <opaqueAction
+            Id="b19bf1ae-436a-451f-b53d-d79170abe94c"
+            name="运行"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="4b23e10e-2ff6-47a2-a08b-ce701da3a894"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="b873928c-0de7-4185-bb57-7833dfc1d84f"
+                  LastKnownName="服务实例"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <sendSignalAction
+            Id="a6beb27f-2d78-4757-b091-0d83be658a1d"
+            name="获取服务实例信息"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="88be20ef-0929-44c0-90f4-341bfc07f720"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="b873928c-0de7-4185-bb57-7833dfc1d84f"
+                  LastKnownName="服务实例"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <sendSignalAction
+            Id="28f64c71-c122-4e41-9704-254b56a8e1ce"
+            name="配置更新通知"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="5bf04815-fc00-4033-9cde-4305d76f8730"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="b873928c-0de7-4185-bb57-7833dfc1d84f"
+                  LastKnownName="服务实例"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <sendSignalAction
+            Id="a7839e40-e989-4024-8025-8ad767257e5d"
+            name="退出通知"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="78c2a3e5-e986-407d-904f-ebcd10ab32a0"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="232b12f5-a2f5-4c6f-b891-d05a344b6388"
+                  LastKnownName="运维后台信息接受服务"
+                  LastKnownLocation="mdsModeling.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <opaqueAction
+            Id="6dcb42f9-89ed-442c-8a51-ecac0b9ce014"
+            name="获取服务实例列表"
+            isLeaf="false" />
         </nodes>
       </activity>
     </packageHasNamedElement>

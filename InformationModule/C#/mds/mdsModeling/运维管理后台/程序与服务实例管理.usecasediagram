@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="b9cb9b11-7f72-41cb-b011-38a9aa543408" name="程序与服务实例管理" linkedPackageId="9f49eeac-0c58-4e8b-9241-539dc7b5beaa" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="0566c8f4-b988-4403-861c-d8ad0d5567d5" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="54fefc0f-bdb9-4f83-871b-ac42289e4425" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="d6b2d5bb-21bd-4226-9c14-b18562a08448">
+          <propertyInstance Id="71de4d88-377a-47f0-b1ca-29f747219cc1" name="BaseName">
+            <elementDefinition Id="48d21179-2544-42f6-a34f-bf6b6f5f7860" />
+          </propertyInstance>
+          <elementDefinition Id="321fa1ee-eea0-4142-91b5-0a8ca717e4e4" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="48384a4f-431f-4e46-b7c0-d61784908698">
+          <propertyInstance Id="3d917c57-67c6-4c93-90ce-3b7144bbee1f" name="ClrAttributes">
+            <elementDefinition Id="b8b42e66-9b1d-4bc7-b1ec-904ac00cc60b" />
+          </propertyInstance>
+          <elementDefinition Id="93bc0659-ad44-4742-8401-3ddf38af6528" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="23ceffbf-d272-4ac6-8f68-9e3ad0c81806">
+          <propertyInstance Id="bc4ed7ea-c139-4576-b301-c93727f3031e" name="Usings">
+            <elementDefinition Id="d1c865cd-6b6e-4950-a0d8-405a221e00c9" />
+          </propertyInstance>
+          <elementDefinition Id="42fef0fc-a4b1-4584-abe8-8a5e07dd286d" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="136d9ec0-0536-40cb-9412-81b0ea635bfa" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="296d11e3-3162-496c-a490-3e473b3f0222" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="d1f9323f-d3c4-4a67-af16-263988dd1083">
+          <propertyInstance Id="333c406b-f057-4f5f-86be-f8d61459b5b0" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="dd7867fe-db52-4157-a40d-9758276cad19" />
+          </propertyInstance>
+          <elementDefinition Id="036ca2e9-d731-4e78-b037-3ca45f127896" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="68733513-edcf-4b18-b629-2ceb64a941e8">
+          <propertyInstance Id="4b64eb85-9e7b-4905-b7e7-a936009ad7b8" name="TemplateFilePath" value="ClassTemplate=D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="5b182fa0-8d5e-4d05-bb26-686721942696" />
+          </propertyInstance>
+          <elementDefinition Id="34aabaf4-c4ff-4568-9367-b51e323b6a69" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="4e3cdca2-82a7-42bd-8e8b-9bfb32a72512">
+          <propertyInstance Id="0800d0fc-7150-4940-82a9-74f50c84ca1d" name="ProjectPath" value="ClassTemplate=..\mds.BaseModel\mds.BaseModel.csproj|EnumTemplate=..\mdsModelingLib\mdsModelingLib.csproj|InterfaceTemplate=..\mds.Cache\mds.Cache.csproj|StructTemplate=..\mdsModelingLib\mdsModelingLib.csproj">
+            <elementDefinition Id="8fabca4b-d3b7-476d-bb51-5da01ad96003" />
+          </propertyInstance>
+          <elementDefinition Id="2b0a36f9-3a53-4e80-9f82-2e51213f6087" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="b36b3ec8-5fb1-4a11-ae3f-7e81285bff3d">
+          <propertyInstance Id="c6e1a649-985e-4fda-afce-7bb382bbbdec" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="bd7fbe61-7527-4173-98ee-3532ab7dfda9" />
+          </propertyInstance>
+          <elementDefinition Id="a79c641d-6f0f-4981-a151-42780d41e78c" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="440df610-518f-4e11-bd32-816a9e218808">
+          <propertyInstance Id="1de467b2-6feb-4a8e-91af-045c2ca006c7" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="c35be463-1623-48e7-9ba2-236543faa163" />
+          </propertyInstance>
+          <elementDefinition Id="fb2d7aab-049d-4f51-a858-c4914cf5eda2" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="ca215cf9-ad7b-4e57-94d1-53f36440d3f8">
+          <propertyInstance Id="e5c79595-de9a-43ca-a292-5ca9672d4513" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="c9eb3c52-ecbe-426c-8a41-c1e0481a0740" />
+          </propertyInstance>
+          <elementDefinition Id="164f5b18-76ee-495f-840e-72381606c52f" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="ad30aeb0-e41d-4b55-b656-f1b634e2dedc">
+          <propertyInstance Id="353be795-8170-4958-8ce7-0aca69cb7d85" name="Parameters">
+            <elementDefinition Id="04a9c649-4fdb-45c3-8a6f-e2919848673f" />
+          </propertyInstance>
+          <elementDefinition Id="9920232f-7852-4f5f-a71f-60f1601aafc9" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="35baa10d-81eb-4cef-9ef7-ba53b0bf99a9">
+      <profileInstance Id="23dee2b6-bdd2-4616-95d6-22305a378a32" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c278887c-e78f-495d-9128-dcf1bf859f20">
+      <profileInstance Id="6373fa61-b617-4a9d-acc9-a57ed8fae492" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="2ae5184b-7039-433d-b219-124b06d42fa6">
+      <profileInstance Id="794f4436-4357-450a-8fcd-992da2f74b28" name="CSharpProfile">
+        <elementDefinition Id="f706b01c-3f25-4436-bfe5-e9e7049f889b" />
+      </profileInstance>
+      <elementDefinition Id="efba6404-4d90-47f2-95e2-0457a8f30bc5" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="8818afd6-ad2c-4900-aab7-f8c3788d525e">
+      <profileInstance Id="0fe8db00-87be-4d09-ba83-16c16e0e4fa7" name="TextTemplateBindings">
+        <elementDefinition Id="a20c4422-55ab-4076-aea0-06e5727213d5" />
+      </profileInstance>
+      <elementDefinition Id="b7d93019-ce2e-461f-a822-694ee7b05640" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="a6b1fb90-fab3-4fbb-87d4-f8103ea06257" name="运维人员" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0c401714-0660-439f-a01f-5544a9134c68" />
+        <targetEnds>
+          <association Id="5e52d0b2-e16f-4aff-9b86-ed5129c8f3d9" isDerived="false" sourceEndRoleName="运维人员" targetEndRoleName="程序列表" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="81cb3037-c1d3-4155-8ab5-db4fd88df94f" LastKnownName="程序列表" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dccb2020-e85f-425b-bab8-c576d0c2f08e" name="运维人员" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6aa8b9da-d6cb-48fe-a784-ee584d03bb1a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="92865820-3318-4d61-aa0f-0301630b57f3" name="程序列表" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a5b0ee09-7c84-4d24-8292-c5050399d55a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="64764190-f0d4-43ac-b85d-8415e8824903" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="81cb3037-c1d3-4155-8ab5-db4fd88df94f" name="程序列表" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0bc043f1-2e87-47af-87a2-1c406434c95d" />
+        <targetEnds>
+          <association Id="37a7b1a6-1475-43dc-bbb3-db808c1cf56c" isDerived="false" sourceEndRoleName="程序列表" targetEndRoleName="添加程序" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a069a32a-d61a-46ae-a08e-a68b44fbca87" LastKnownName="添加程序" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="27b3cb0b-a771-4a8f-b874-9371e337afb0" name="程序列表" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="dd97a901-aafc-4f29-b452-60bdabd36f95" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dc133786-aa74-4a20-b3e1-8c382d8f7096" name="添加程序" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="665b7d0d-ebb8-488e-bbf7-d263a9000085" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="07d8fd10-e746-463f-b685-b817ebfd3877" />
+          </association>
+          <association Id="c1b4125b-c1e1-4603-be0f-454c22e1af62" isDerived="false" sourceEndRoleName="程序列表" targetEndRoleName="编辑程序" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a326050b-ddc1-4c05-8f7e-45eee8824431" LastKnownName="编辑程序" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e71d0be8-3f40-47fa-9722-4d3806e2a0d6" name="程序列表" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f5549020-6a71-4bd9-8f03-7f9163b489c4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e5e374f6-f3f1-4050-ac87-6e870699f5ee" name="编辑程序" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e2050081-126c-43fe-9d19-9120a4216621" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0a6cd198-2623-4400-92b6-2b716c1016a9" />
+          </association>
+          <association Id="52acb7ae-5ff5-43ab-9df9-7c12b3c18824" isDerived="false" sourceEndRoleName="程序列表" targetEndRoleName="查看程序" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ebec50dc-2db4-4881-b504-1cfef72c633e" LastKnownName="查看程序" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c975ab3a-fe62-427a-abcd-310bed74a1f5" name="程序列表" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="790c780a-9d8c-4f10-950a-16e71d65051e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8afaa6d3-4616-43e7-a7de-6423dfb6913b" name="查看程序" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5d370d80-811d-4ac7-a553-6912816dfefd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4da5c0c7-16d5-4dd5-87e1-f50e7b84295a" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e4b6c8c4-9dea-42d1-8cf6-efd78f52586c" name="服务实例列表" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f3deb0f1-94bc-4286-ae7b-36f2917e8b26" />
+        <targetEnds>
+          <association Id="de3f0949-e4db-4d5b-bf06-52d8fc16c6dc" isDerived="false" sourceEndRoleName="服务实例列表" targetEndRoleName="更新配置通知" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e01545f0-70fb-48f6-a289-45ce64cfc059" LastKnownName="更新配置通知" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f056baae-1dd0-4117-b691-ca0f9a2af355" name="服务实例列表" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="df21bd9d-dad5-4b8f-839e-4508f488322b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="76e28b96-9ab9-4721-9e53-14143bee4e26" name="更新配置通知" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8f1e7ecd-7f15-4acf-8905-85d61f65e6a8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="17351875-4d74-448a-a865-db6a374daaca" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a069a32a-d61a-46ae-a08e-a68b44fbca87" name="添加程序" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a2d35f50-8e9e-4ac0-95a1-cd2fba449b98" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a326050b-ddc1-4c05-8f7e-45eee8824431" name="编辑程序" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c4775c01-9c3e-4034-b635-75a457af04e4" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ebec50dc-2db4-4881-b504-1cfef72c633e" name="查看程序" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="611b55ca-0a5e-42d6-9299-3895fb8571d2" />
+        <extendedCases>
+          <extend Id="cfb6a495-8be0-48e8-a480-4e00fe23c2ff">
+            <useCaseMoniker Id="e4b6c8c4-9dea-42d1-8cf6-efd78f52586c" LastKnownName="服务实例列表" />
+            <elementDefinition Id="b6aeb61a-97ca-4ac0-9d86-3d6e81fbf432" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e01545f0-70fb-48f6-a289-45ce64cfc059" name="更新配置通知" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c9a226da-b02c-4f70-b027-52027355be71" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="9f49eeac-0c58-4e8b-9241-539dc7b5beaa" name="mdsModeling">
+    <elementDefinition Id="0087d537-cd05-4da0-a767-0975b5628e3b" />
+  </package>
+</useCaseModelRoot>
