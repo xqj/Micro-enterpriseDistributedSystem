@@ -18,6 +18,30 @@ namespace mds.BaseModel
         /// 组件名称
         /// </summary>
         public string ComponentName { set; get; }
-
+        public string CompentAssemblyName
+        {
+            set; get;
+        }
+        /// <summary>
+        /// CompentAssemblyFileName
+        /// </summary>		
+        public string CompentAssemblyFileName
+        {
+            set; get;
+        }
+        /// <summary>
+        /// CompentServiceName
+        /// </summary>		
+        public string CompentServiceName
+        {
+            set; get;
+        }
+        /// <summary>
+        /// InterfaceName
+        /// </summary>		
+        public string InterfaceName
+        {
+            set; get;
+        }
     }
 }
