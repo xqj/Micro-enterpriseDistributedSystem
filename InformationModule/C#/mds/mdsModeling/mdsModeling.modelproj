@@ -25,6 +25,30 @@
     <Content Include="ModelDefinition\Package_1336.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="PD\ApiSysConfig.pdm">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PD\Bug.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PD\CodeRule.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PD\mds.eab">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PD\mds.eam">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PD\mds.pjb">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PD\mds.prj">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PD\SystemRules.txt">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="基础服务构件\mds.Config.activitydiagram">
       <SubType>Content</SubType>
     </Content>
@@ -113,6 +137,7 @@
     <Content Include="ModelDefinition\mdsModeling.uml">
       <SubType>Content</SubType>
     </Content>
+    <Folder Include="PD" />
     <Folder Include="基础服务构件" />
     <Folder Include="运维管理后台" />
   </ItemGroup>
