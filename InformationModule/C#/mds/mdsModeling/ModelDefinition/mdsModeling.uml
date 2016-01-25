@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="0087d537-cd05-4da0-a767-0975b5628e3b"
   name="mdsModeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -3248,13 +3248,6 @@
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
-        Id="6c44717c-49af-4499-b2ba-5871be9cf8a4"
-        name="UseCase1"
-        isAbstract="false"
-        isLeaf="false" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <useCase
         Id="bf198589-5814-42fb-91d5-bc942795bb39"
         name="选择程序执行员"
         isAbstract="false"
@@ -3996,6 +3989,111 @@
             isLeaf="false" />
         </nodes>
       </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="03aca7bc-642c-4b84-bcfc-35f3c43016a9"
+        name="开发人员"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="3896da8f-1bc0-4b01-9547-d68ee3ba21e6"
+            isDerived="false"
+            sourceEndRoleName="开发人员"
+            targetEndRoleName="使用资源组件客户端"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="990bc091-2f51-4526-9384-40a698110ed6"
+              LastKnownName="使用资源组件客户端"
+              LastKnownLocation="mdsModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4ca4811b-a15f-464d-b239-cdc815ca88c3"
+                  name="开发人员"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cb37d78d-c961-4447-8d72-86572d31bb4b"
+                  name="使用资源组件客户端"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="990bc091-2f51-4526-9384-40a698110ed6"
+        name="使用资源组件客户端"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="0199248e-9c45-4bba-af3a-e22ef2b621cf"
+            isDerived="false"
+            sourceEndRoleName="使用资源组件客户端"
+            targetEndRoleName="渲染资源块"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c46a9817-8c9c-4222-ab71-b2c8f199de37"
+              LastKnownName="渲染资源块"
+              LastKnownLocation="mdsModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c604f076-d6d2-4fa6-989d-54bd9e20f6bd"
+                  name="使用资源组件客户端"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="53e98fb4-a314-45d7-b759-c53711c2b857"
+                  name="渲染资源块"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c46a9817-8c9c-4222-ab71-b2c8f199de37"
+        name="渲染资源块"
+        isAbstract="false"
+        isLeaf="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

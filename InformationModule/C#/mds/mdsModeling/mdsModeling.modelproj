@@ -84,6 +84,13 @@
       <SubType>Content</SubType>
       <DependentUpon>基础服务构件\mds服务工厂流程.activitydiagram</DependentUpon>
     </Content>
+    <Content Include="基础服务构件\web资源组件用例.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="基础服务构件\web资源组件用例.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>基础服务构件\web资源组件用例.usecasediagram</DependentUpon>
+    </Content>
     <Content Include="运维管理后台\服务实例管理.activitydiagram">
       <SubType>Content</SubType>
     </Content>
